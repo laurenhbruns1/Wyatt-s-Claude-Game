@@ -48,16 +48,21 @@ function rollForRotationSlot(mode, slotIndex, slot, squadSoFar) {
   return { combo, pool }
 }
 
-function hasAllRoles(pool) {
-  const roles = new Set(pool.map((p) => p.role_tags[0]))
-  return SLOTS.every((slot) => roles.has(slot.id))
+function remainingRoles(squadSoFar) {
+  return SLOTS.filter((slot) => !squadSoFar[slot.id]).map((slot) => slot.id)
 }
 
-/** Every other mode: one spin covers the whole draft. Everyone eligible is
- * shown at once and each pick locks into its own slot, so the spin must
- * land on a pool that has at least one player for every one of the 4
- * roles — retry (deterministically, for Daily) otherwise. */
-function rollWholeDraft(mode) {
+function poolCoversRoles(pool, roleIds) {
+  return roleIds.every((role) => pool.some((p) => p.role_tags[0] === role))
+}
+
+/** Every other mode: re-spins before every pick too, same as Rotation, but
+ * shows everyone eligible from that spin at once (mixed roles) instead of
+ * one role at a time — each pick locks into its own slot, and the next
+ * spin only needs to cover whichever roles are still open. */
+function rollWholeDraft(mode, squadSoFar) {
+  const pickIndex = Object.keys(squadSoFar).length
+  const needed = remainingRoles(squadSoFar)
   let combo
   let pool
   for (let attempt = 0; attempt < MAX_SPIN_ATTEMPTS; attempt++) {
@@ -65,13 +70,15 @@ function rollWholeDraft(mode) {
       combo = { region: null, chapter: null }
       pool = poolFor({ ultimate: true })
     } else if (mode === 'daily') {
-      combo = spinComboForDaily(attempt)
-      pool = dailyPool(combo, attempt)
+      const seedSlot = pickIndex + attempt * 100
+      combo = spinComboForDaily(seedSlot)
+      pool = dailyPool(combo, seedSlot)
     } else {
       combo = spinCombo()
       pool = poolFor(combo)
     }
-    if (hasAllRoles(pool)) break
+    pool = excludeDrafted(pool, squadSoFar)
+    if (poolCoversRoles(pool, needed)) break
   }
   return { combo, pool }
 }
@@ -85,6 +92,7 @@ export default function App() {
   const [pool, setPool] = useState([])
   const [squad, setSquad] = useState({})
   const [activeSlotIndex, setActiveSlotIndex] = useState(0)
+  const [spinKey, setSpinKey] = useState(0)
   const [result, setResult] = useState(null)
   const [badges, setBadges] = useState([])
 
@@ -117,12 +125,13 @@ export default function App() {
     setResult(null)
     setBadges([])
     setActiveSlotIndex(0)
+    setSpinKey((k) => k + 1)
     if (rotation) {
       const { combo: nextCombo, pool: nextPool } = rollForRotationSlot(mode, 0, SLOTS[0], {})
       setCombo(nextCombo)
       setPool(nextPool)
     } else {
-      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode)
+      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode, {})
       setCombo(nextCombo)
       setPool(nextPool)
     }
@@ -139,6 +148,7 @@ export default function App() {
         setCombo(nextCombo)
         setPool(nextPool)
         setActiveSlotIndex(nextIndex)
+        setSpinKey((k) => k + 1)
         setScreen('spin')
         return
       }
@@ -148,11 +158,17 @@ export default function App() {
 
     // Free-pick modes: the player locks into whichever slot their best
     // stat matches — the UI only lets you click one when that slot is open.
+    // Every pick re-spins the region/chapter for whatever's left to draft.
     const role = player.role_tags[0]
     if (squad[role]) return
     const nextSquad = { ...squad, [role]: player }
     if (Object.keys(nextSquad).length < SLOTS.length) {
+      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode, nextSquad)
       setSquad(nextSquad)
+      setCombo(nextCombo)
+      setPool(nextPool)
+      setSpinKey((k) => k + 1)
+      setScreen('spin')
       return
     }
     finishDraft(nextSquad)
@@ -188,7 +204,7 @@ export default function App() {
       )}
       {screen === 'spin' && combo && (
         <SpinScreen
-          key={activeSlotIndex}
+          key={spinKey}
           combo={combo}
           mode={mode}
           squad={squad}

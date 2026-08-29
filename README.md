@@ -31,17 +31,20 @@ A few things about this data that are worth knowing:
   Rotator. There's no Build/Zero Build split either — one stat profile per
   player.
 
-**Drafting works two different ways depending on mode.** In Classic, Blind,
-Daily, and Ultimate: one spin covers the whole draft, and everyone eligible
-is shown at once — click anyone and they lock into whichever slot their
-best stat fits; picking one crosses them off (and greys out anyone else who
-locked to that now-filled slot), and the draft ends once all 4 slots are
-filled, regardless of pick order. **Rotation mode works differently on
-purpose**: it walks the 4 slots in a fixed order, re-spinning before each
-one, and keeps the older flexible fit system (any player, any slot, but a
-natural-fit pick is locked out and an off-role pick takes a stat penalty)
-since its whole premise is drafting off-role — the hard lock elsewhere
-would make that impossible.
+**Every mode re-spins the region/chapter before every single pick** — a
+squad can (and usually will) end up drawn from several different regions.
+The two draft flows differ in what "showing the pool" means, though.
+In Classic, Blind, Daily, and Ultimate: each spin's pool shows everyone
+eligible at once, mixed roles and all — click anyone and they lock into
+whichever slot their best stat fits, crossing them off (and greying out
+anyone else who locked to that now-filled slot); once you pick, it re-spins
+fresh for whatever's still open, until all 4 slots are filled, regardless
+of pick order. **Rotation mode works differently on purpose**: it walks
+the 4 slots in a fixed order (still re-spinning before each one) and keeps
+the older flexible fit system (any player, any slot, but a natural-fit pick
+is locked out and an off-role pick takes a stat penalty), since its whole
+premise is drafting off-role — the hard lock elsewhere would make that
+impossible.
 
 **The spin only offers chapters that actually have players loaded** (see
 `AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — right now that's just
