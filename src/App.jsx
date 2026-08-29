@@ -52,14 +52,21 @@ function remainingRoles(squadSoFar) {
   return SLOTS.filter((slot) => !squadSoFar[slot.id]).map((slot) => slot.id)
 }
 
-function poolCoversRoles(pool, roleIds) {
-  return roleIds.every((role) => pool.some((p) => p.role_tags[0] === role))
+/** A spin only needs to let you make ONE more pick — not every remaining
+ * role at once, since it re-spins again right after. Requiring full
+ * coverage was heavily biasing every draft toward whichever region
+ * happens to have all 4 roles (most don't — many regions/chapters are
+ * missing a role entirely, e.g. no drafted Chapter 1 Oceania player locks
+ * to Builder), since a small region almost never has all 4 by chance. */
+function poolHasAnyNeededRole(pool, roleIds) {
+  return pool.some((p) => roleIds.includes(p.role_tags[0]))
 }
 
 /** Every other mode: re-spins before every pick too, same as Rotation, but
  * shows everyone eligible from that spin at once (mixed roles) instead of
  * one role at a time — each pick locks into its own slot, and the next
- * spin only needs to cover whichever roles are still open. */
+ * spin only needs to offer at least one of whichever roles are still
+ * open, not necessarily all of them. */
 function rollWholeDraft(mode, squadSoFar) {
   const pickIndex = Object.keys(squadSoFar).length
   const needed = remainingRoles(squadSoFar)
@@ -78,7 +85,7 @@ function rollWholeDraft(mode, squadSoFar) {
       pool = poolFor(combo)
     }
     pool = excludeDrafted(pool, squadSoFar)
-    if (poolCoversRoles(pool, needed)) break
+    if (poolHasAnyNeededRole(pool, needed)) break
   }
   return { combo, pool }
 }
