@@ -21,9 +21,15 @@ A few things about this data that are worth knowing:
 - **Org/team affiliation isn't included** in the source data, so `org` is
   blank for every player — the org-synergy bonus simply won't trigger until
   orgs are added.
-- **Role tags (Fragger/IGL/Builder/Rotator) are inferred from the stat
-  profile itself** — e.g. high Fighting+Aim → Fragger — not from verified
-  real-world positions, since that wasn't supplied either.
+- **Each player is locked to exactly one slot**, whichever of their 5 stats
+  is highest: Fighting or Clutch → Fragger, Aim → Rotator, Mechanics →
+  Builder/Editor, Smarts → IGL (see `computeNaturalRole` in
+  `src/utils/fit.js`). This is a hard lock, not a soft preference — in
+  Classic/Blind/Daily/Ultimate modes, a slot's draft pool only shows
+  players who lock to it. **Rotation mode is the one exception**: it keeps
+  the older flexible fit system (any player, any slot, off-role picks take
+  a stat penalty) since its whole premise is off-role drafting, which the
+  hard lock would otherwise make impossible.
 - A player can be **eligible in more than one region** under the same
   `player_id` (e.g. a player who competed in both NA Central and Europe) —
   Ultimate mode de-dupes these down to one card.

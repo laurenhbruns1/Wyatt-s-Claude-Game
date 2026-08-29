@@ -28,8 +28,13 @@ const MAX_SPIN_ATTEMPTS = 50
 /** Rolls a fresh region/chapter/format spin + pool for one draft slot,
  * excluding anyone already drafted into an earlier slot. Data only covers
  * some region/chapter combos so far, so a spin can land on an empty pool —
- * retry (deterministically, for Daily) rather than dead-ending the draft. */
-function rollForSlot(mode, slotIndex, squadSoFar) {
+ * retry (deterministically, for Daily) rather than dead-ending the draft.
+ *
+ * Outside Rotation mode, a player is locked to the one slot matching their
+ * highest stat (see fit.js computeNaturalRole) — the pool is filtered down
+ * to only that slot's eligible players. Rotation mode is the deliberate
+ * off-role mode, so it keeps drafting from the full unfiltered pool. */
+function rollForSlot(mode, slotIndex, slot, squadSoFar) {
   let combo
   let pool
   for (let attempt = 0; attempt < MAX_SPIN_ATTEMPTS; attempt++) {
@@ -45,6 +50,9 @@ function rollForSlot(mode, slotIndex, squadSoFar) {
       pool = poolFor(combo)
     }
     pool = excludeDrafted(pool, squadSoFar)
+    if (mode !== 'rotation') {
+      pool = pool.filter((p) => p.role_tags[0] === slot.id)
+    }
     if (pool.length > 0) break
   }
   return { combo, pool }
@@ -72,7 +80,7 @@ export default function App() {
   const playstyleDef = PLAYSTYLES.find((p) => p.id === playstyle)
 
   function handleStart() {
-    const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, 0, {})
+    const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, 0, SLOTS[0], {})
     setCombo(nextCombo)
     setPool(nextPool)
     setSquad({})
@@ -87,7 +95,7 @@ export default function App() {
 
     if (activeSlotIndex + 1 < SLOTS.length) {
       const nextIndex = activeSlotIndex + 1
-      const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, nextIndex, nextSquad)
+      const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, nextIndex, SLOTS[nextIndex], nextSquad)
       setSquad(nextSquad)
       setCombo(nextCombo)
       setPool(nextPool)

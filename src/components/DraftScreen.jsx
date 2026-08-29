@@ -19,6 +19,11 @@ export default function DraftScreen({ squad, activeSlot, pool, format, mode, onD
             Rotation mode: natural fits for this slot are locked out.
           </div>
         )}
+        {!rotation && (
+          <div className="mt-1 text-xs font-medium text-slate-500">
+            Only players whose best stat locks them to {activeSlot.label} are eligible.
+          </div>
+        )}
         {blind && (
           <div className="mt-1 text-xs font-medium text-slate-500">
             Blind Draft: stats hidden. Go with your gut.

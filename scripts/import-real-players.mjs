@@ -67,20 +67,27 @@ function parseCsv(text) {
   })
 }
 
-// Infers a natural role from the stat profile itself (no verified real-world
-// role data was supplied). Coach is deliberately never auto-assigned — none
-// of these are documented as having played a coaching role.
+// A player is locked to exactly one slot, whichever of their 5 stats is
+// highest: Fighting/Clutch -> Fragger, Aim -> Rotator, Mechanics -> Builder,
+// Smarts -> IGL. Ties go to the first entry below tied for the max.
+const STAT_TO_ROLE = [
+  ['fighting', 'fragger'],
+  ['clutch', 'fragger'],
+  ['aim', 'rotator'],
+  ['mechanics', 'builder'],
+  ['smarts', 'igl'],
+]
+
 function inferRoleTags(stats) {
-  const scores = {
-    fragger: stats.fighting + stats.aim,
-    igl: stats.smarts + stats.clutch,
-    builder: stats.mechanics + stats.aim,
-    rotator: stats.smarts + stats.mechanics,
+  let bestRole = STAT_TO_ROLE[0][1]
+  let bestVal = -Infinity
+  for (const [key, role] of STAT_TO_ROLE) {
+    if (stats[key] > bestVal) {
+      bestVal = stats[key]
+      bestRole = role
+    }
   }
-  const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1])
-  const tags = [sorted[0][0]]
-  if (sorted[0][1] - sorted[1][1] <= 6) tags.push(sorted[1][0])
-  return tags
+  return [bestRole]
 }
 
 const rows = parseCsv(readFileSync(csvPath, 'utf8'))

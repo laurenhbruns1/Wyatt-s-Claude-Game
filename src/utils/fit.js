@@ -1,5 +1,30 @@
 import { FIT_LEVELS, ROLE_ADJACENCY } from '../data/constants'
 
+// Which stat, if it's a player's single highest, locks them to which slot.
+// Ties go to the first entry here that's tied for the max (Fragger wins a
+// Fighting/Clutch tie, then Rotator, then Builder, then IGL).
+const STAT_TO_ROLE = [
+  ['fighting', 'fragger'],
+  ['clutch', 'fragger'],
+  ['aim', 'rotator'],
+  ['mechanics', 'builder'],
+  ['smarts', 'igl'],
+]
+
+/** The one slot a player's stat profile locks them into — whichever of
+ * Fighting/Clutch/Aim/Mechanics/Smarts is their single highest stat. */
+export function computeNaturalRole(stats) {
+  let bestRole = STAT_TO_ROLE[0][1]
+  let bestVal = -Infinity
+  for (const [key, role] of STAT_TO_ROLE) {
+    if (stats[key] > bestVal) {
+      bestVal = stats[key]
+      bestRole = role
+    }
+  }
+  return bestRole
+}
+
 /** green = natural role, yellow = adjacent role, red = unrelated role. */
 export function getFitLevel(player, slotId) {
   if (!player) return 'red'
