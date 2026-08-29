@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
-import { CHAPTERS, REGIONS } from '../data/constants'
+import { REGIONS } from '../data/constants'
+import { AVAILABLE_CHAPTERS } from '../utils/draftPool'
 import SquadBoard from './SquadBoard'
 
 function SpinColumn({ label, finalValue, spinning, delay }) {
   const [display, setDisplay] = useState(finalValue)
-  const options = label === 'Region' ? REGIONS : CHAPTERS
+  const options = label === 'Region' ? REGIONS : AVAILABLE_CHAPTERS
 
   useEffect(() => {
     if (!spinning) {

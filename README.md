@@ -43,6 +43,11 @@ natural-fit pick is locked out and an off-role pick takes a stat penalty)
 since its whole premise is drafting off-role — the hard lock elsewhere
 would make that impossible.
 
+**The spin only offers chapters that actually have players loaded** (see
+`AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — right now that's just
+Chapter 1, so every spin lands there. This opens up automatically as more
+chapters are imported; no need to toggle anything by hand.
+
 To add another chapter's players, save a CSV with columns
 `Player ID,Player,Chapter,Region,Fighting,Aim,Mechanics,Smarts,Clutch` and run:
 

@@ -2,12 +2,19 @@ import players from '../data/players.json'
 import { CHAPTERS, REGIONS } from '../data/constants'
 import { mulberry32, pickWith, seedFromString, shuffleWith, todayKey } from './random'
 
+/** Only spin for chapters that actually have real players loaded — keeps
+ * this in sync with players.json automatically as more chapters are
+ * imported, no manual toggling needed. Falls back to the full list if
+ * somehow nothing has data yet, rather than leaving the game unplayable. */
+export const AVAILABLE_CHAPTERS = CHAPTERS.filter((c) => players.some((p) => p.chapter === c))
+const CHAPTER_POOL = AVAILABLE_CHAPTERS.length ? AVAILABLE_CHAPTERS : CHAPTERS
+
 /** A spin result: region + chapter, drawn randomly (or seeded). */
 export function spinCombo(rng = Math.random) {
   const roll = (arr) => arr[Math.floor(rng() * arr.length)]
   return {
     region: roll(REGIONS),
-    chapter: roll(CHAPTERS),
+    chapter: roll(CHAPTER_POOL),
   }
 }
 
