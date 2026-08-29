@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
-import { CHAPTERS, FORMATS, REGIONS } from '../data/constants'
+import { CHAPTERS, REGIONS } from '../data/constants'
 import SquadBoard from './SquadBoard'
-
-const FORMAT_LABEL = Object.fromEntries(FORMATS.map((f) => [f.id, f.label]))
 
 function SpinColumn({ label, finalValue, spinning, delay }) {
   const [display, setDisplay] = useState(finalValue)
-  const options = label === 'Region' ? REGIONS : label === 'Chapter' ? CHAPTERS : FORMATS.map((f) => f.label)
+  const options = label === 'Region' ? REGIONS : CHAPTERS
 
   useEffect(() => {
     if (!spinning) {
@@ -49,7 +47,6 @@ export default function SpinScreen({ combo, mode, squad, activeSlot, onContinue 
 
   const region = mode === 'ultimate' ? 'All-Time' : combo.region
   const chapter = mode === 'ultimate' ? 'Every Chapter' : combo.chapter
-  const format = FORMAT_LABEL[combo.format]
 
   return (
     <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 px-4 py-10 text-center">
@@ -58,16 +55,19 @@ export default function SpinScreen({ combo, mode, squad, activeSlot, onContinue 
         <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
           {mode === 'daily' ? "Today's Seed" : 'The Spin'}
         </h2>
-        {activeSlot && (
-          <p className="mt-1 text-slate-400">
-            Spinning up your <span className="font-semibold text-slate-200">{activeSlot.label}</span> pool
-          </p>
-        )}
+        <p className="mt-1 text-slate-400">
+          {activeSlot ? (
+            <>
+              Spinning up your <span className="font-semibold text-slate-200">{activeSlot.label}</span> pool
+            </>
+          ) : (
+            'Spinning up your draft pool'
+          )}
+        </p>
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <SpinColumn label="Region" finalValue={region} spinning={spinning} delay={0} />
         <SpinColumn label="Chapter" finalValue={chapter} spinning={spinning} delay={200} />
-        <SpinColumn label="Format" finalValue={format} spinning={spinning} delay={400} />
       </div>
       <button
         type="button"

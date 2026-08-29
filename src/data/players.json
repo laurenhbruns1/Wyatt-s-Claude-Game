@@ -9,22 +9,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 94,
-        "aim": 91,
-        "mechanics": 87,
-        "smarts": 96,
-        "clutch": 99
-      },
-      "zero_build": {
-        "fighting": 94,
-        "aim": 91,
-        "mechanics": 87,
-        "smarts": 96,
-        "clutch": 99
-      }
-    },
     "stats": {
       "fighting": 94,
       "aim": 91,
@@ -45,22 +29,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 88,
-        "aim": 82,
-        "mechanics": 90,
-        "smarts": 78,
-        "clutch": 58
-      },
-      "zero_build": {
-        "fighting": 88,
-        "aim": 82,
-        "mechanics": 90,
-        "smarts": 78,
-        "clutch": 58
-      }
-    },
     "stats": {
       "fighting": 88,
       "aim": 82,
@@ -81,22 +49,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 60,
-        "smarts": 58,
-        "clutch": 50
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 60,
-        "smarts": 58,
-        "clutch": 50
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 56,
@@ -117,22 +69,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 80,
-        "aim": 87,
-        "mechanics": 85,
-        "smarts": 82,
-        "clutch": 93
-      },
-      "zero_build": {
-        "fighting": 80,
-        "aim": 87,
-        "mechanics": 85,
-        "smarts": 82,
-        "clutch": 93
-      }
-    },
     "stats": {
       "fighting": 80,
       "aim": 87,
@@ -153,22 +89,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 55,
-        "aim": 53,
-        "mechanics": 60,
-        "smarts": 56,
-        "clutch": 48
-      },
-      "zero_build": {
-        "fighting": 55,
-        "aim": 53,
-        "mechanics": 60,
-        "smarts": 56,
-        "clutch": 48
-      }
-    },
     "stats": {
       "fighting": 55,
       "aim": 53,
@@ -189,22 +109,6 @@
     "role_tags": [
       "igl"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 78,
-        "aim": 75,
-        "mechanics": 77,
-        "smarts": 80,
-        "clutch": 68
-      },
-      "zero_build": {
-        "fighting": 78,
-        "aim": 75,
-        "mechanics": 77,
-        "smarts": 80,
-        "clutch": 68
-      }
-    },
     "stats": {
       "fighting": 78,
       "aim": 75,
@@ -225,22 +129,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 80,
-        "aim": 85,
-        "mechanics": 86,
-        "smarts": 81,
-        "clutch": 94
-      },
-      "zero_build": {
-        "fighting": 80,
-        "aim": 85,
-        "mechanics": 86,
-        "smarts": 81,
-        "clutch": 94
-      }
-    },
     "stats": {
       "fighting": 80,
       "aim": 85,
@@ -261,22 +149,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 60,
-        "aim": 63,
-        "mechanics": 61,
-        "smarts": 58,
-        "clutch": 52
-      },
-      "zero_build": {
-        "fighting": 60,
-        "aim": 63,
-        "mechanics": 61,
-        "smarts": 58,
-        "clutch": 52
-      }
-    },
     "stats": {
       "fighting": 60,
       "aim": 63,
@@ -297,22 +169,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 50,
-        "aim": 48,
-        "mechanics": 51,
-        "smarts": 47,
-        "clutch": 42
-      },
-      "zero_build": {
-        "fighting": 50,
-        "aim": 48,
-        "mechanics": 51,
-        "smarts": 47,
-        "clutch": 42
-      }
-    },
     "stats": {
       "fighting": 50,
       "aim": 48,
@@ -333,22 +189,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 76,
-        "aim": 72,
-        "mechanics": 74,
-        "smarts": 76,
-        "clutch": 65
-      },
-      "zero_build": {
-        "fighting": 76,
-        "aim": 72,
-        "mechanics": 74,
-        "smarts": 76,
-        "clutch": 65
-      }
-    },
     "stats": {
       "fighting": 76,
       "aim": 72,
@@ -369,22 +209,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 54,
-        "aim": 51,
-        "mechanics": 55,
-        "smarts": 52,
-        "clutch": 46
-      },
-      "zero_build": {
-        "fighting": 54,
-        "aim": 51,
-        "mechanics": 55,
-        "smarts": 52,
-        "clutch": 46
-      }
-    },
     "stats": {
       "fighting": 54,
       "aim": 51,
@@ -405,22 +229,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 59,
-        "smarts": 56,
-        "clutch": 50
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 59,
-        "smarts": 56,
-        "clutch": 50
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 60,
@@ -441,22 +249,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 62,
-        "aim": 88,
-        "mechanics": 58,
-        "smarts": 50,
-        "clutch": 45
-      },
-      "zero_build": {
-        "fighting": 62,
-        "aim": 88,
-        "mechanics": 58,
-        "smarts": 50,
-        "clutch": 45
-      }
-    },
     "stats": {
       "fighting": 62,
       "aim": 88,
@@ -477,22 +269,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 55,
-        "aim": 53,
-        "mechanics": 56,
-        "smarts": 53,
-        "clutch": 48
-      },
-      "zero_build": {
-        "fighting": 55,
-        "aim": 53,
-        "mechanics": 56,
-        "smarts": 53,
-        "clutch": 48
-      }
-    },
     "stats": {
       "fighting": 55,
       "aim": 53,
@@ -513,22 +289,6 @@
     "role_tags": [
       "igl"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 46,
-        "aim": 44,
-        "mechanics": 47,
-        "smarts": 49,
-        "clutch": 38
-      },
-      "zero_build": {
-        "fighting": 46,
-        "aim": 44,
-        "mechanics": 47,
-        "smarts": 49,
-        "clutch": 38
-      }
-    },
     "stats": {
       "fighting": 46,
       "aim": 44,
@@ -549,22 +309,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 56,
-        "aim": 60,
-        "mechanics": 54,
-        "smarts": 57,
-        "clutch": 55
-      },
-      "zero_build": {
-        "fighting": 56,
-        "aim": 60,
-        "mechanics": 54,
-        "smarts": 57,
-        "clutch": 55
-      }
-    },
     "stats": {
       "fighting": 56,
       "aim": 60,
@@ -585,22 +329,6 @@
     "role_tags": [
       "igl"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 54,
-        "smarts": 65,
-        "clutch": 50
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 54,
-        "smarts": 65,
-        "clutch": 50
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 56,
@@ -621,22 +349,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 42,
-        "aim": 38,
-        "mechanics": 48,
-        "smarts": 40,
-        "clutch": 30
-      },
-      "zero_build": {
-        "fighting": 42,
-        "aim": 38,
-        "mechanics": 48,
-        "smarts": 40,
-        "clutch": 30
-      }
-    },
     "stats": {
       "fighting": 42,
       "aim": 38,
@@ -657,22 +369,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 38,
-        "aim": 42,
-        "mechanics": 36,
-        "smarts": 40,
-        "clutch": 28
-      },
-      "zero_build": {
-        "fighting": 38,
-        "aim": 42,
-        "mechanics": 36,
-        "smarts": 40,
-        "clutch": 28
-      }
-    },
     "stats": {
       "fighting": 38,
       "aim": 42,
@@ -693,22 +389,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 44,
-        "aim": 40,
-        "mechanics": 58,
-        "smarts": 42,
-        "clutch": 35
-      },
-      "zero_build": {
-        "fighting": 44,
-        "aim": 40,
-        "mechanics": 58,
-        "smarts": 42,
-        "clutch": 35
-      }
-    },
     "stats": {
       "fighting": 44,
       "aim": 40,
@@ -729,22 +409,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 80,
-        "aim": 87,
-        "mechanics": 85,
-        "smarts": 82,
-        "clutch": 93
-      },
-      "zero_build": {
-        "fighting": 80,
-        "aim": 87,
-        "mechanics": 85,
-        "smarts": 82,
-        "clutch": 93
-      }
-    },
     "stats": {
       "fighting": 80,
       "aim": 87,
@@ -765,22 +429,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 80,
-        "aim": 85,
-        "mechanics": 86,
-        "smarts": 81,
-        "clutch": 94
-      },
-      "zero_build": {
-        "fighting": 80,
-        "aim": 85,
-        "mechanics": 86,
-        "smarts": 81,
-        "clutch": 94
-      }
-    },
     "stats": {
       "fighting": 80,
       "aim": 85,
@@ -801,22 +449,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 74,
-        "aim": 78,
-        "mechanics": 76,
-        "smarts": 74,
-        "clutch": 82
-      },
-      "zero_build": {
-        "fighting": 74,
-        "aim": 78,
-        "mechanics": 76,
-        "smarts": 74,
-        "clutch": 82
-      }
-    },
     "stats": {
       "fighting": 74,
       "aim": 78,
@@ -837,22 +469,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 75,
-        "aim": 80,
-        "mechanics": 78,
-        "smarts": 73,
-        "clutch": 84
-      },
-      "zero_build": {
-        "fighting": 75,
-        "aim": 80,
-        "mechanics": 78,
-        "smarts": 73,
-        "clutch": 84
-      }
-    },
     "stats": {
       "fighting": 75,
       "aim": 80,
@@ -873,22 +489,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 78,
-        "aim": 81,
-        "mechanics": 90,
-        "smarts": 78,
-        "clutch": 72
-      },
-      "zero_build": {
-        "fighting": 78,
-        "aim": 81,
-        "mechanics": 90,
-        "smarts": 78,
-        "clutch": 72
-      }
-    },
     "stats": {
       "fighting": 78,
       "aim": 81,
@@ -909,22 +509,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 82,
-        "aim": 84,
-        "mechanics": 88,
-        "smarts": 80,
-        "clutch": 78
-      },
-      "zero_build": {
-        "fighting": 82,
-        "aim": 84,
-        "mechanics": 88,
-        "smarts": 80,
-        "clutch": 78
-      }
-    },
     "stats": {
       "fighting": 82,
       "aim": 84,
@@ -945,22 +529,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 90,
-        "aim": 78,
-        "mechanics": 89,
-        "smarts": 74,
-        "clutch": 70
-      },
-      "zero_build": {
-        "fighting": 90,
-        "aim": 78,
-        "mechanics": 89,
-        "smarts": 74,
-        "clutch": 70
-      }
-    },
     "stats": {
       "fighting": 90,
       "aim": 78,
@@ -981,22 +549,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 76,
-        "aim": 74,
-        "mechanics": 82,
-        "smarts": 82,
-        "clutch": 68
-      },
-      "zero_build": {
-        "fighting": 76,
-        "aim": 74,
-        "mechanics": 82,
-        "smarts": 82,
-        "clutch": 68
-      }
-    },
     "stats": {
       "fighting": 76,
       "aim": 74,
@@ -1017,22 +569,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 62,
-        "mechanics": 60,
-        "smarts": 56,
-        "clutch": 48
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 62,
-        "mechanics": 60,
-        "smarts": 56,
-        "clutch": 48
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 62,
@@ -1053,22 +589,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 54,
-        "aim": 58,
-        "mechanics": 56,
-        "smarts": 53,
-        "clutch": 44
-      },
-      "zero_build": {
-        "fighting": 54,
-        "aim": 58,
-        "mechanics": 56,
-        "smarts": 53,
-        "clutch": 44
-      }
-    },
     "stats": {
       "fighting": 54,
       "aim": 58,
@@ -1089,22 +609,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 62,
-        "aim": 65,
-        "mechanics": 63,
-        "smarts": 60,
-        "clutch": 58
-      },
-      "zero_build": {
-        "fighting": 62,
-        "aim": 65,
-        "mechanics": 63,
-        "smarts": 60,
-        "clutch": 58
-      }
-    },
     "stats": {
       "fighting": 62,
       "aim": 65,
@@ -1125,22 +629,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 60,
-        "aim": 62,
-        "mechanics": 61,
-        "smarts": 58,
-        "clutch": 55
-      },
-      "zero_build": {
-        "fighting": 60,
-        "aim": 62,
-        "mechanics": 61,
-        "smarts": 58,
-        "clutch": 55
-      }
-    },
     "stats": {
       "fighting": 60,
       "aim": 62,
@@ -1161,22 +649,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 55,
-        "aim": 56,
-        "mechanics": 54,
-        "smarts": 53,
-        "clutch": 48
-      },
-      "zero_build": {
-        "fighting": 55,
-        "aim": 56,
-        "mechanics": 54,
-        "smarts": 53,
-        "clutch": 48
-      }
-    },
     "stats": {
       "fighting": 55,
       "aim": 56,
@@ -1197,22 +669,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 53,
-        "aim": 54,
-        "mechanics": 52,
-        "smarts": 54,
-        "clutch": 47
-      },
-      "zero_build": {
-        "fighting": 53,
-        "aim": 54,
-        "mechanics": 52,
-        "smarts": 54,
-        "clutch": 47
-      }
-    },
     "stats": {
       "fighting": 53,
       "aim": 54,
@@ -1233,22 +689,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 35,
-        "aim": 33,
-        "mechanics": 36,
-        "smarts": 34,
-        "clutch": 28
-      },
-      "zero_build": {
-        "fighting": 35,
-        "aim": 33,
-        "mechanics": 36,
-        "smarts": 34,
-        "clutch": 28
-      }
-    },
     "stats": {
       "fighting": 35,
       "aim": 33,
@@ -1269,22 +709,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 32,
-        "aim": 30,
-        "mechanics": 33,
-        "smarts": 31,
-        "clutch": 25
-      },
-      "zero_build": {
-        "fighting": 32,
-        "aim": 30,
-        "mechanics": 33,
-        "smarts": 31,
-        "clutch": 25
-      }
-    },
     "stats": {
       "fighting": 32,
       "aim": 30,
@@ -1305,22 +729,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 32,
-        "aim": 30,
-        "mechanics": 33,
-        "smarts": 31,
-        "clutch": 25
-      },
-      "zero_build": {
-        "fighting": 32,
-        "aim": 30,
-        "mechanics": 33,
-        "smarts": 31,
-        "clutch": 25
-      }
-    },
     "stats": {
       "fighting": 32,
       "aim": 30,
@@ -1341,22 +749,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 59,
-        "aim": 64,
-        "mechanics": 60,
-        "smarts": 57,
-        "clutch": 52
-      },
-      "zero_build": {
-        "fighting": 59,
-        "aim": 64,
-        "mechanics": 60,
-        "smarts": 57,
-        "clutch": 52
-      }
-    },
     "stats": {
       "fighting": 59,
       "aim": 64,
@@ -1377,22 +769,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 56,
-        "aim": 61,
-        "mechanics": 57,
-        "smarts": 55,
-        "clutch": 49
-      },
-      "zero_build": {
-        "fighting": 56,
-        "aim": 61,
-        "mechanics": 57,
-        "smarts": 55,
-        "clutch": 49
-      }
-    },
     "stats": {
       "fighting": 56,
       "aim": 61,
@@ -1413,22 +789,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 48,
-        "aim": 51,
-        "mechanics": 47,
-        "smarts": 46,
-        "clutch": 42
-      },
-      "zero_build": {
-        "fighting": 48,
-        "aim": 51,
-        "mechanics": 47,
-        "smarts": 46,
-        "clutch": 42
-      }
-    },
     "stats": {
       "fighting": 48,
       "aim": 51,
@@ -1449,22 +809,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 63,
-        "aim": 61,
-        "mechanics": 60,
-        "smarts": 62,
-        "clutch": 70
-      },
-      "zero_build": {
-        "fighting": 63,
-        "aim": 61,
-        "mechanics": 60,
-        "smarts": 62,
-        "clutch": 70
-      }
-    },
     "stats": {
       "fighting": 63,
       "aim": 61,
@@ -1485,22 +829,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 60,
-        "aim": 58,
-        "mechanics": 58,
-        "smarts": 60,
-        "clutch": 67
-      },
-      "zero_build": {
-        "fighting": 60,
-        "aim": 58,
-        "mechanics": 58,
-        "smarts": 60,
-        "clutch": 67
-      }
-    },
     "stats": {
       "fighting": 60,
       "aim": 58,
@@ -1521,22 +849,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 56,
-        "smarts": 58,
-        "clutch": 65
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 56,
-        "smarts": 58,
-        "clutch": 65
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 56,
@@ -1557,22 +869,6 @@
     "role_tags": [
       "igl"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 60,
-        "aim": 58,
-        "mechanics": 62,
-        "smarts": 64,
-        "clutch": 55
-      },
-      "zero_build": {
-        "fighting": 60,
-        "aim": 58,
-        "mechanics": 62,
-        "smarts": 64,
-        "clutch": 55
-      }
-    },
     "stats": {
       "fighting": 60,
       "aim": 58,
@@ -1593,22 +889,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 52,
-        "aim": 50,
-        "mechanics": 52,
-        "smarts": 51,
-        "clutch": 46
-      },
-      "zero_build": {
-        "fighting": 52,
-        "aim": 50,
-        "mechanics": 52,
-        "smarts": 51,
-        "clutch": 46
-      }
-    },
     "stats": {
       "fighting": 52,
       "aim": 50,
@@ -1629,22 +909,6 @@
     "role_tags": [
       "builder"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 55,
-        "aim": 53,
-        "mechanics": 60,
-        "smarts": 56,
-        "clutch": 48
-      },
-      "zero_build": {
-        "fighting": 55,
-        "aim": 53,
-        "mechanics": 60,
-        "smarts": 56,
-        "clutch": 48
-      }
-    },
     "stats": {
       "fighting": 55,
       "aim": 53,
@@ -1665,22 +929,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 44,
-        "aim": 42,
-        "mechanics": 44,
-        "smarts": 43,
-        "clutch": 36
-      },
-      "zero_build": {
-        "fighting": 44,
-        "aim": 42,
-        "mechanics": 44,
-        "smarts": 43,
-        "clutch": 36
-      }
-    },
     "stats": {
       "fighting": 44,
       "aim": 42,
@@ -1701,22 +949,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 38,
-        "aim": 36,
-        "mechanics": 38,
-        "smarts": 37,
-        "clutch": 30
-      },
-      "zero_build": {
-        "fighting": 38,
-        "aim": 36,
-        "mechanics": 38,
-        "smarts": 37,
-        "clutch": 30
-      }
-    },
     "stats": {
       "fighting": 38,
       "aim": 36,
@@ -1737,22 +969,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 40,
-        "aim": 38,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 32
-      },
-      "zero_build": {
-        "fighting": 40,
-        "aim": 38,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 32
-      }
-    },
     "stats": {
       "fighting": 40,
       "aim": 38,
@@ -1773,22 +989,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 35,
-        "aim": 33,
-        "mechanics": 35,
-        "smarts": 34,
-        "clutch": 28
-      },
-      "zero_build": {
-        "fighting": 35,
-        "aim": 33,
-        "mechanics": 35,
-        "smarts": 34,
-        "clutch": 28
-      }
-    },
     "stats": {
       "fighting": 35,
       "aim": 33,
@@ -1809,22 +1009,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 68,
-        "aim": 70,
-        "mechanics": 69,
-        "smarts": 71,
-        "clutch": 76
-      },
-      "zero_build": {
-        "fighting": 68,
-        "aim": 70,
-        "mechanics": 69,
-        "smarts": 71,
-        "clutch": 76
-      }
-    },
     "stats": {
       "fighting": 68,
       "aim": 70,
@@ -1845,22 +1029,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 66,
-        "aim": 68,
-        "mechanics": 67,
-        "smarts": 69,
-        "clutch": 74
-      },
-      "zero_build": {
-        "fighting": 66,
-        "aim": 68,
-        "mechanics": 67,
-        "smarts": 69,
-        "clutch": 74
-      }
-    },
     "stats": {
       "fighting": 66,
       "aim": 68,
@@ -1881,22 +1049,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 65,
-        "aim": 67,
-        "mechanics": 66,
-        "smarts": 68,
-        "clutch": 73
-      },
-      "zero_build": {
-        "fighting": 65,
-        "aim": 67,
-        "mechanics": 66,
-        "smarts": 68,
-        "clutch": 73
-      }
-    },
     "stats": {
       "fighting": 65,
       "aim": 67,
@@ -1917,22 +1069,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 55,
-        "aim": 57,
-        "mechanics": 56,
-        "smarts": 55,
-        "clutch": 50
-      },
-      "zero_build": {
-        "fighting": 55,
-        "aim": 57,
-        "mechanics": 56,
-        "smarts": 55,
-        "clutch": 50
-      }
-    },
     "stats": {
       "fighting": 55,
       "aim": 57,
@@ -1953,22 +1089,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 58,
-        "smarts": 57,
-        "clutch": 54
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 58,
-        "smarts": 57,
-        "clutch": 54
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 60,
@@ -1989,22 +1109,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 56,
-        "aim": 58,
-        "mechanics": 56,
-        "smarts": 55,
-        "clutch": 52
-      },
-      "zero_build": {
-        "fighting": 56,
-        "aim": 58,
-        "mechanics": 56,
-        "smarts": 55,
-        "clutch": 52
-      }
-    },
     "stats": {
       "fighting": 56,
       "aim": 58,
@@ -2025,22 +1129,6 @@
     "role_tags": [
       "igl"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 50,
-        "aim": 48,
-        "mechanics": 50,
-        "smarts": 52,
-        "clutch": 44
-      },
-      "zero_build": {
-        "fighting": 50,
-        "aim": 48,
-        "mechanics": 50,
-        "smarts": 52,
-        "clutch": 44
-      }
-    },
     "stats": {
       "fighting": 50,
       "aim": 48,
@@ -2061,22 +1149,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 40,
-        "aim": 38,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 34
-      },
-      "zero_build": {
-        "fighting": 40,
-        "aim": 38,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 34
-      }
-    },
     "stats": {
       "fighting": 40,
       "aim": 38,
@@ -2097,22 +1169,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 45,
-        "aim": 47,
-        "mechanics": 45,
-        "smarts": 44,
-        "clutch": 38
-      },
-      "zero_build": {
-        "fighting": 45,
-        "aim": 47,
-        "mechanics": 45,
-        "smarts": 44,
-        "clutch": 38
-      }
-    },
     "stats": {
       "fighting": 45,
       "aim": 47,
@@ -2133,22 +1189,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 44,
-        "aim": 45,
-        "mechanics": 44,
-        "smarts": 43,
-        "clutch": 37
-      },
-      "zero_build": {
-        "fighting": 44,
-        "aim": 45,
-        "mechanics": 44,
-        "smarts": 43,
-        "clutch": 37
-      }
-    },
     "stats": {
       "fighting": 44,
       "aim": 45,
@@ -2169,22 +1209,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 56,
-        "aim": 60,
-        "mechanics": 54,
-        "smarts": 57,
-        "clutch": 55
-      },
-      "zero_build": {
-        "fighting": 56,
-        "aim": 60,
-        "mechanics": 54,
-        "smarts": 57,
-        "clutch": 55
-      }
-    },
     "stats": {
       "fighting": 56,
       "aim": 60,
@@ -2205,22 +1229,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 57,
-        "aim": 61,
-        "mechanics": 55,
-        "smarts": 58,
-        "clutch": 56
-      },
-      "zero_build": {
-        "fighting": 57,
-        "aim": 61,
-        "mechanics": 55,
-        "smarts": 58,
-        "clutch": 56
-      }
-    },
     "stats": {
       "fighting": 57,
       "aim": 61,
@@ -2241,22 +1249,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 42,
-        "aim": 40,
-        "mechanics": 42,
-        "smarts": 41,
-        "clutch": 36
-      },
-      "zero_build": {
-        "fighting": 42,
-        "aim": 40,
-        "mechanics": 42,
-        "smarts": 41,
-        "clutch": 36
-      }
-    },
     "stats": {
       "fighting": 42,
       "aim": 40,
@@ -2277,22 +1269,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 48,
-        "aim": 46,
-        "mechanics": 47,
-        "smarts": 45,
-        "clutch": 40
-      },
-      "zero_build": {
-        "fighting": 48,
-        "aim": 46,
-        "mechanics": 47,
-        "smarts": 45,
-        "clutch": 40
-      }
-    },
     "stats": {
       "fighting": 48,
       "aim": 46,
@@ -2313,22 +1289,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 44,
-        "aim": 46,
-        "mechanics": 44,
-        "smarts": 43,
-        "clutch": 38
-      },
-      "zero_build": {
-        "fighting": 44,
-        "aim": 46,
-        "mechanics": 44,
-        "smarts": 43,
-        "clutch": 38
-      }
-    },
     "stats": {
       "fighting": 44,
       "aim": 46,
@@ -2349,22 +1309,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 43,
-        "aim": 42,
-        "mechanics": 43,
-        "smarts": 42,
-        "clutch": 37
-      },
-      "zero_build": {
-        "fighting": 43,
-        "aim": 42,
-        "mechanics": 43,
-        "smarts": 42,
-        "clutch": 37
-      }
-    },
     "stats": {
       "fighting": 43,
       "aim": 42,
@@ -2385,22 +1329,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 40,
-        "aim": 42,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 34
-      },
-      "zero_build": {
-        "fighting": 40,
-        "aim": 42,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 34
-      }
-    },
     "stats": {
       "fighting": 40,
       "aim": 42,
@@ -2421,22 +1349,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 38,
-        "aim": 37,
-        "mechanics": 38,
-        "smarts": 37,
-        "clutch": 32
-      },
-      "zero_build": {
-        "fighting": 38,
-        "aim": 37,
-        "mechanics": 38,
-        "smarts": 37,
-        "clutch": 32
-      }
-    },
     "stats": {
       "fighting": 38,
       "aim": 37,
@@ -2457,22 +1369,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 37,
-        "aim": 36,
-        "mechanics": 37,
-        "smarts": 36,
-        "clutch": 31
-      },
-      "zero_build": {
-        "fighting": 37,
-        "aim": 36,
-        "mechanics": 37,
-        "smarts": 36,
-        "clutch": 31
-      }
-    },
     "stats": {
       "fighting": 37,
       "aim": 36,
@@ -2493,22 +1389,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 68,
-        "aim": 66,
-        "mechanics": 67,
-        "smarts": 70,
-        "clutch": 78
-      },
-      "zero_build": {
-        "fighting": 68,
-        "aim": 66,
-        "mechanics": 67,
-        "smarts": 70,
-        "clutch": 78
-      }
-    },
     "stats": {
       "fighting": 68,
       "aim": 66,
@@ -2529,22 +1409,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 67,
-        "aim": 65,
-        "mechanics": 66,
-        "smarts": 69,
-        "clutch": 77
-      },
-      "zero_build": {
-        "fighting": 67,
-        "aim": 65,
-        "mechanics": 66,
-        "smarts": 69,
-        "clutch": 77
-      }
-    },
     "stats": {
       "fighting": 67,
       "aim": 65,
@@ -2565,22 +1429,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 65,
-        "aim": 64,
-        "mechanics": 65,
-        "smarts": 67,
-        "clutch": 75
-      },
-      "zero_build": {
-        "fighting": 65,
-        "aim": 64,
-        "mechanics": 65,
-        "smarts": 67,
-        "clutch": 75
-      }
-    },
     "stats": {
       "fighting": 65,
       "aim": 64,
@@ -2601,22 +1449,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 57,
-        "smarts": 58,
-        "clutch": 56
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 57,
-        "smarts": 58,
-        "clutch": 56
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 60,
@@ -2637,22 +1469,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 60,
-        "aim": 58,
-        "mechanics": 59,
-        "smarts": 61,
-        "clutch": 62
-      },
-      "zero_build": {
-        "fighting": 60,
-        "aim": 58,
-        "mechanics": 59,
-        "smarts": 61,
-        "clutch": 62
-      }
-    },
     "stats": {
       "fighting": 60,
       "aim": 58,
@@ -2673,22 +1489,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 57,
-        "smarts": 59,
-        "clutch": 60
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 56,
-        "mechanics": 57,
-        "smarts": 59,
-        "clutch": 60
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 56,
@@ -2709,22 +1509,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 54,
-        "aim": 55,
-        "mechanics": 53,
-        "smarts": 54,
-        "clutch": 50
-      },
-      "zero_build": {
-        "fighting": 54,
-        "aim": 55,
-        "mechanics": 53,
-        "smarts": 54,
-        "clutch": 50
-      }
-    },
     "stats": {
       "fighting": 54,
       "aim": 55,
@@ -2745,22 +1529,6 @@
     "role_tags": [
       "rotator"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 52,
-        "aim": 53,
-        "mechanics": 52,
-        "smarts": 51,
-        "clutch": 48
-      },
-      "zero_build": {
-        "fighting": 52,
-        "aim": 53,
-        "mechanics": 52,
-        "smarts": 51,
-        "clutch": 48
-      }
-    },
     "stats": {
       "fighting": 52,
       "aim": 53,
@@ -2781,22 +1549,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 42,
-        "aim": 40,
-        "mechanics": 41,
-        "smarts": 40,
-        "clutch": 35
-      },
-      "zero_build": {
-        "fighting": 42,
-        "aim": 40,
-        "mechanics": 41,
-        "smarts": 40,
-        "clutch": 35
-      }
-    },
     "stats": {
       "fighting": 42,
       "aim": 40,
@@ -2817,22 +1569,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 48,
-        "aim": 47,
-        "mechanics": 47,
-        "smarts": 46,
-        "clutch": 42
-      },
-      "zero_build": {
-        "fighting": 48,
-        "aim": 47,
-        "mechanics": 47,
-        "smarts": 46,
-        "clutch": 42
-      }
-    },
     "stats": {
       "fighting": 48,
       "aim": 47,
@@ -2853,22 +1589,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 62,
-        "aim": 64,
-        "mechanics": 63,
-        "smarts": 65,
-        "clutch": 74
-      },
-      "zero_build": {
-        "fighting": 62,
-        "aim": 64,
-        "mechanics": 63,
-        "smarts": 65,
-        "clutch": 74
-      }
-    },
     "stats": {
       "fighting": 62,
       "aim": 64,
@@ -2889,22 +1609,6 @@
     "role_tags": [
       "igl"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 56,
-        "aim": 58,
-        "mechanics": 55,
-        "smarts": 60,
-        "clutch": 58
-      },
-      "zero_build": {
-        "fighting": 56,
-        "aim": 58,
-        "mechanics": 55,
-        "smarts": 60,
-        "clutch": 58
-      }
-    },
     "stats": {
       "fighting": 56,
       "aim": 58,
@@ -2925,22 +1629,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 40,
-        "aim": 38,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 34
-      },
-      "zero_build": {
-        "fighting": 40,
-        "aim": 38,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 34
-      }
-    },
     "stats": {
       "fighting": 40,
       "aim": 38,
@@ -2961,22 +1649,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 57,
-        "smarts": 59,
-        "clutch": 60
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 57,
-        "smarts": 59,
-        "clutch": 60
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 60,
@@ -2997,22 +1669,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 60,
-        "aim": 62,
-        "mechanics": 59,
-        "smarts": 61,
-        "clutch": 63
-      },
-      "zero_build": {
-        "fighting": 60,
-        "aim": 62,
-        "mechanics": 59,
-        "smarts": 61,
-        "clutch": 63
-      }
-    },
     "stats": {
       "fighting": 60,
       "aim": 62,
@@ -3033,22 +1689,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 57,
-        "smarts": 59,
-        "clutch": 61
-      },
-      "zero_build": {
-        "fighting": 58,
-        "aim": 60,
-        "mechanics": 57,
-        "smarts": 59,
-        "clutch": 61
-      }
-    },
     "stats": {
       "fighting": 58,
       "aim": 60,
@@ -3069,22 +1709,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 55,
-        "aim": 57,
-        "mechanics": 54,
-        "smarts": 56,
-        "clutch": 57
-      },
-      "zero_build": {
-        "fighting": 55,
-        "aim": 57,
-        "mechanics": 54,
-        "smarts": 56,
-        "clutch": 57
-      }
-    },
     "stats": {
       "fighting": 55,
       "aim": 57,
@@ -3105,22 +1729,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 40,
-        "aim": 39,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 33
-      },
-      "zero_build": {
-        "fighting": 40,
-        "aim": 39,
-        "mechanics": 40,
-        "smarts": 39,
-        "clutch": 33
-      }
-    },
     "stats": {
       "fighting": 40,
       "aim": 39,
@@ -3141,22 +1749,6 @@
     "role_tags": [
       "fragger"
     ],
-    "format_stats": {
-      "build": {
-        "fighting": 39,
-        "aim": 38,
-        "mechanics": 39,
-        "smarts": 38,
-        "clutch": 32
-      },
-      "zero_build": {
-        "fighting": 39,
-        "aim": 38,
-        "mechanics": 39,
-        "smarts": 38,
-        "clutch": 32
-      }
-    },
     "stats": {
       "fighting": 39,
       "aim": 38,

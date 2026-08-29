@@ -36,18 +36,13 @@ function mulberry32(seed) {
   }
 }
 
-/** Builds per-slot effective (fit + format adjusted) profiles for a squad.
- * Each player was drafted under its own spin, so format comes from the
- * player itself (`_format`, attached by draftPool.poolFor) rather than one
- * squad-wide value. */
+/** Builds per-slot effective (fit-adjusted) profiles for a squad. */
 export function buildEffectiveSquad(squad) {
   const effective = {}
   for (const slot of SLOTS) {
     const player = squad[slot.id]
     if (!player) continue
-    const format = player._format || 'build'
-    const statBlock = player.format_stats[format] || player.stats
-    const { adjusted, level, penalty } = applyFit(statBlock, slot, player)
+    const { adjusted, level, penalty } = applyFit(player.stats, slot, player)
     effective[slot.id] = { player, slot, stats: adjusted, fitLevel: level, fitPenalty: penalty }
   }
   return effective

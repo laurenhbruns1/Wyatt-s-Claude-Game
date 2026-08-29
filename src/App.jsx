@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import HomeScreen from './components/HomeScreen'
 import SpinScreen from './components/SpinScreen'
 import DraftScreen from './components/DraftScreen'
+import FreeDraftScreen from './components/FreeDraftScreen'
 import SimulationScreen from './components/SimulationScreen'
 import ResultScreen from './components/ResultScreen'
 import { MODES, PLAYSTYLES, SLOTS } from './data/constants'
@@ -25,23 +26,15 @@ function isBetterRecord(next, prev) {
 
 const MAX_SPIN_ATTEMPTS = 50
 
-/** Rolls a fresh region/chapter/format spin + pool for one draft slot,
- * excluding anyone already drafted into an earlier slot. Data only covers
- * some region/chapter combos so far, so a spin can land on an empty pool —
- * retry (deterministically, for Daily) rather than dead-ending the draft.
- *
- * Outside Rotation mode, a player is locked to the one slot matching their
- * highest stat (see fit.js computeNaturalRole) — the pool is filtered down
- * to only that slot's eligible players. Rotation mode is the deliberate
- * off-role mode, so it keeps drafting from the full unfiltered pool. */
-function rollForSlot(mode, slotIndex, slot, squadSoFar) {
+/** Rotation mode only: re-spins before every one of the 4 slots (walked in
+ * a fixed order) and needs an off-role pick each time — a spin landing on
+ * an empty pool retries (deterministically, for Daily) instead of
+ * dead-ending the draft. */
+function rollForRotationSlot(mode, slotIndex, slot, squadSoFar) {
   let combo
   let pool
   for (let attempt = 0; attempt < MAX_SPIN_ATTEMPTS; attempt++) {
-    if (mode === 'ultimate') {
-      combo = { region: null, chapter: null, format: spinCombo().format }
-      pool = poolFor({ format: combo.format, ultimate: true })
-    } else if (mode === 'daily') {
+    if (mode === 'daily') {
       const seedSlot = slotIndex + attempt * 100
       combo = spinComboForDaily(seedSlot)
       pool = dailyPool(combo, seedSlot)
@@ -50,10 +43,35 @@ function rollForSlot(mode, slotIndex, slot, squadSoFar) {
       pool = poolFor(combo)
     }
     pool = excludeDrafted(pool, squadSoFar)
-    if (mode !== 'rotation') {
-      pool = pool.filter((p) => p.role_tags[0] === slot.id)
-    }
     if (pool.length > 0) break
+  }
+  return { combo, pool }
+}
+
+function hasAllRoles(pool) {
+  const roles = new Set(pool.map((p) => p.role_tags[0]))
+  return SLOTS.every((slot) => roles.has(slot.id))
+}
+
+/** Every other mode: one spin covers the whole draft. Everyone eligible is
+ * shown at once and each pick locks into its own slot, so the spin must
+ * land on a pool that has at least one player for every one of the 4
+ * roles — retry (deterministically, for Daily) otherwise. */
+function rollWholeDraft(mode) {
+  let combo
+  let pool
+  for (let attempt = 0; attempt < MAX_SPIN_ATTEMPTS; attempt++) {
+    if (mode === 'ultimate') {
+      combo = { region: null, chapter: null }
+      pool = poolFor({ ultimate: true })
+    } else if (mode === 'daily') {
+      combo = spinComboForDaily(attempt)
+      pool = dailyPool(combo, attempt)
+    } else {
+      combo = spinCombo()
+      pool = poolFor(combo)
+    }
+    if (hasAllRoles(pool)) break
   }
   return { combo, pool }
 }
@@ -76,34 +94,11 @@ export default function App() {
   const todayKey = useMemo(() => new Date().toISOString().slice(0, 10), [])
   const dailyDone = dailyHistory[todayKey] || null
 
+  const rotation = mode === 'rotation'
   const activeSlot = SLOTS[activeSlotIndex]
   const playstyleDef = PLAYSTYLES.find((p) => p.id === playstyle)
 
-  function handleStart() {
-    const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, 0, SLOTS[0], {})
-    setCombo(nextCombo)
-    setPool(nextPool)
-    setSquad({})
-    setActiveSlotIndex(0)
-    setResult(null)
-    setBadges([])
-    setScreen('spin')
-  }
-
-  function handleDraft(player) {
-    const nextSquad = { ...squad, [activeSlot.id]: player }
-
-    if (activeSlotIndex + 1 < SLOTS.length) {
-      const nextIndex = activeSlotIndex + 1
-      const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, nextIndex, SLOTS[nextIndex], nextSquad)
-      setSquad(nextSquad)
-      setCombo(nextCombo)
-      setPool(nextPool)
-      setActiveSlotIndex(nextIndex)
-      setScreen('spin')
-      return
-    }
-
+  function finishDraft(nextSquad) {
     setSquad(nextSquad)
     const seasonResult = simulateSeason({
       squad: nextSquad,
@@ -115,6 +110,52 @@ export default function App() {
     setResult(seasonResult)
     setBadges(earnedBadges)
     setScreen('sim')
+  }
+
+  function handleStart() {
+    setSquad({})
+    setResult(null)
+    setBadges([])
+    setActiveSlotIndex(0)
+    if (rotation) {
+      const { combo: nextCombo, pool: nextPool } = rollForRotationSlot(mode, 0, SLOTS[0], {})
+      setCombo(nextCombo)
+      setPool(nextPool)
+    } else {
+      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode)
+      setCombo(nextCombo)
+      setPool(nextPool)
+    }
+    setScreen('spin')
+  }
+
+  function handleDraft(player) {
+    if (rotation) {
+      const nextSquad = { ...squad, [activeSlot.id]: player }
+      if (activeSlotIndex + 1 < SLOTS.length) {
+        const nextIndex = activeSlotIndex + 1
+        const { combo: nextCombo, pool: nextPool } = rollForRotationSlot(mode, nextIndex, SLOTS[nextIndex], nextSquad)
+        setSquad(nextSquad)
+        setCombo(nextCombo)
+        setPool(nextPool)
+        setActiveSlotIndex(nextIndex)
+        setScreen('spin')
+        return
+      }
+      finishDraft(nextSquad)
+      return
+    }
+
+    // Free-pick modes: the player locks into whichever slot their best
+    // stat matches — the UI only lets you click one when that slot is open.
+    const role = player.role_tags[0]
+    if (squad[role]) return
+    const nextSquad = { ...squad, [role]: player }
+    if (Object.keys(nextSquad).length < SLOTS.length) {
+      setSquad(nextSquad)
+      return
+    }
+    finishDraft(nextSquad)
   }
 
   function handleSimFinish() {
@@ -151,19 +192,15 @@ export default function App() {
           combo={combo}
           mode={mode}
           squad={squad}
-          activeSlot={activeSlot}
+          activeSlot={rotation ? activeSlot : null}
           onContinue={() => setScreen('draft')}
         />
       )}
-      {screen === 'draft' && (
-        <DraftScreen
-          squad={squad}
-          activeSlot={activeSlot}
-          pool={pool}
-          format={combo.format}
-          mode={mode}
-          onDraft={handleDraft}
-        />
+      {screen === 'draft' && rotation && (
+        <DraftScreen squad={squad} activeSlot={activeSlot} pool={pool} onDraft={handleDraft} />
+      )}
+      {screen === 'draft' && !rotation && (
+        <FreeDraftScreen squad={squad} pool={pool} mode={mode} onDraft={handleDraft} />
       )}
       {screen === 'sim' && result && <SimulationScreen result={result} onFinish={handleSimFinish} />}
       {screen === 'result' && result && (

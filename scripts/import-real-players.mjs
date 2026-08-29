@@ -133,9 +133,6 @@ for (const row of rows) {
     chapter,
     org: '',
     role_tags: roleTags,
-    // Format-specific stats aren't split in the source data (Zero Build
-    // didn't exist yet for the earliest chapters) — same block for both.
-    format_stats: { build: stats, zero_build: stats },
     stats,
     flavor_text: `${row.Player} competed for ${region} in ${chapter}.`,
     real: true,

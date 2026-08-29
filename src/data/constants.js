@@ -18,13 +18,8 @@ export const CHAPTERS = [
   'Chapter 7',
 ]
 
-export const FORMATS = [
-  { id: 'build', label: 'Build' },
-  { id: 'zero_build', label: 'Zero Build' },
-]
-
-// Fixed squad slots, in draft order. `statKey` = which format_stats block key
-// matters most for the slot; used by the fit-penalty + sim weighting.
+// Fixed squad slots, in draft order. `primaryStats` = which stats matter
+// most for the slot; used by the fit-penalty + sim weighting.
 export const SLOTS = [
   {
     id: 'fragger',
@@ -105,7 +100,7 @@ export const MODES = [
   {
     id: 'daily',
     label: 'Daily Challenge',
-    blurb: 'Same seeded region/chapter/format/players for everyone today',
+    blurb: 'Same seeded region/chapter/players for everyone today',
   },
   {
     id: 'ultimate',

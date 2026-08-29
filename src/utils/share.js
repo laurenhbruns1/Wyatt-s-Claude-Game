@@ -1,8 +1,6 @@
 import { BADGE_DEFS } from './badges'
 import { ROLE_LABELS, SLOTS } from '../data/constants'
 
-const FORMAT_LABEL = { build: 'Build', zero_build: 'Zero Build' }
-
 export function buildShareText({ squad, result, badges, mode }) {
   const lines = []
   lines.push('UNDEFEATED — Season Result')
@@ -13,8 +11,7 @@ export function buildShareText({ squad, result, badges, mode }) {
     const p = squad[slot.id]
     if (p) {
       const region = p.region || 'All-Time'
-      const format = FORMAT_LABEL[p._format] || ''
-      lines.push(`  ${ROLE_LABELS[slot.id]}: ${p.name}${p.org ? ` (${p.org})` : ''} — ${region}${format ? ` · ${format}` : ''}`)
+      lines.push(`  ${ROLE_LABELS[slot.id]}: ${p.name}${p.org ? ` (${p.org})` : ''} — ${region}`)
     }
   }
   lines.push('')
