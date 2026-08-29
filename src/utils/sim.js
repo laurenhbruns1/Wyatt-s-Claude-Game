@@ -58,7 +58,7 @@ function countSynergy(squad) {
   const notes = []
   for (let i = 0; i < players.length; i++) {
     for (let j = i + 1; j < players.length; j++) {
-      if (players[i].org === players[j].org) {
+      if (players[i].org && players[i].org === players[j].org) {
         bonus += 2
         notes.push(`${players[i].name} & ${players[j].name} have scrimmed together at ${players[i].org}.`)
       }
@@ -140,7 +140,7 @@ export function simulateSeason({ squad, format, playstyle, region, mode, seed })
 
   const coachEntry = effectiveSquad[COACH_SLOT.id]
   const coachBoost = coachEntry
-    ? ((coachEntry.stats.consistency + coachEntry.stats.clutch) / 2 / 100) * coachEntry.fitPenalty
+    ? ((coachEntry.stats.smarts + coachEntry.stats.clutch) / 2 / 100) * coachEntry.fitPenalty
     : 0
 
   const { bonus: synergyBonus, notes: synergyNotes } = countSynergy(squad)
@@ -148,10 +148,10 @@ export function simulateSeason({ squad, format, playstyle, region, mode, seed })
 
   const regionMod = REGION_STRENGTH[region] ?? 0.5
   const opponentBaseline = 50 + regionMod * 14
-  const consistencyAvg =
-    fieldScores.reduce((a, f) => a + f.entry.stats.consistency, 0) / fieldScores.length
+  const smartsAvg =
+    fieldScores.reduce((a, f) => a + f.entry.stats.smarts, 0) / fieldScores.length
   const clutchAvg = fieldScores.reduce((a, f) => a + f.entry.stats.clutch, 0) / fieldScores.length
-  const spread = 14 * (1 - consistencyAvg / 140)
+  const spread = 14 * (1 - smartsAvg / 140)
 
   const events = []
   let wins = 0

@@ -11,7 +11,7 @@ export function buildShareText({ squad, result, badges, mode }) {
   lines.push('Roster:')
   for (const slot of SLOTS) {
     const p = squad[slot.id]
-    if (p) lines.push(`  ${ROLE_LABELS[slot.id]}: ${p.name} (${p.org})`)
+    if (p) lines.push(`  ${ROLE_LABELS[slot.id]}: ${p.name}${p.org ? ` (${p.org})` : ''}`)
   }
   lines.push('')
   lines.push(`MVP: ${result.mvp.name}`)

@@ -21,7 +21,8 @@ export default function PlayerCard({ player, slot, format, blind, disabled, onDr
         <div>
           <div className="font-semibold text-slate-100">{player.name}</div>
           <div className="text-xs text-slate-400">
-            {player.org} &middot; {player.region}
+            {player.org ? `${player.org} · ` : ''}
+            {player.region}
           </div>
         </div>
         {!blind && <FitDot level={fitLevel} />}

@@ -23,10 +23,22 @@ export function spinComboForDaily() {
 
 /** Players eligible for a given region/chapter/format combo. */
 export function poolFor({ region, chapter, format, ultimate = false }) {
-  let pool = ultimate
-    ? players
-    : players.filter((p) => p.region === region && p.active_chapters.includes(chapter))
+  let pool = ultimate ? dedupeByPlayerId(players) : players.filter((p) => p.region === region && p.chapter === chapter)
   return pool.map((p) => ({ ...p, _format: format }))
+}
+
+/** Ultimate mode pools every region together — collapse a player who's
+ * eligible in multiple regions (same player_id) down to one card. */
+function dedupeByPlayerId(pool) {
+  const seen = new Set()
+  const out = []
+  for (const p of pool) {
+    const key = p.player_id ?? p.id
+    if (seen.has(key)) continue
+    seen.add(key)
+    out.push(p)
+  }
+  return out
 }
 
 /** Daily Challenge: same combo + same trimmed pool (down to ~14) for everyone that day. */

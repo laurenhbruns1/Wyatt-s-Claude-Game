@@ -1,5 +1,4 @@
 export const REGIONS = [
-  'NA East',
   'NA West',
   'NA Central',
   'Europe',
@@ -31,31 +30,31 @@ export const SLOTS = [
     id: 'fragger',
     label: 'Fragger',
     blurb: 'Primary elims / fight-winning',
-    primaryStats: ['fights', 'clutch'],
+    primaryStats: ['fighting', 'aim'],
   },
   {
     id: 'igl',
     label: 'IGL',
     blurb: 'Shotcalling / decision-making',
-    primaryStats: ['placement', 'consistency'],
+    primaryStats: ['smarts', 'clutch'],
   },
   {
     id: 'builder',
     label: 'Builder/Editor',
     blurb: 'Mechanical building & editing',
-    primaryStats: ['mechanics', 'consistency'],
+    primaryStats: ['mechanics', 'aim'],
   },
   {
     id: 'rotator',
     label: 'Rotator',
     blurb: 'Positioning & survival',
-    primaryStats: ['placement', 'mechanics'],
+    primaryStats: ['smarts', 'mechanics'],
   },
   {
     id: 'coach',
     label: 'Coach',
     blurb: 'Passive team modifier — no in-game stats',
-    primaryStats: ['consistency', 'clutch'],
+    primaryStats: ['smarts', 'clutch'],
     isCoach: true,
   },
 ]
@@ -73,25 +72,25 @@ export const PLAYSTYLES = [
     id: 'aggro',
     label: 'Aggro',
     blurb: 'Rewards elims/fights, punishes low placement consistency',
-    weights: { fights: 1.35, clutch: 1.15, placement: 0.7, consistency: 0.85, mechanics: 1.0 },
+    weights: { fighting: 1.4, aim: 1.2, clutch: 1.15, mechanics: 0.9, smarts: 0.7 },
   },
   {
     id: 'placement',
     label: 'Placement/Rotation',
     blurb: 'Rewards survival & positioning, punishes low fight stats',
-    weights: { fights: 0.7, clutch: 0.9, placement: 1.35, consistency: 1.2, mechanics: 0.9 },
+    weights: { smarts: 1.35, clutch: 1.0, mechanics: 1.0, aim: 0.75, fighting: 0.65 },
   },
   {
     id: 'build_battle',
     label: 'Build Battle',
     blurb: 'Rewards mechanical/editing skill, punishes low material efficiency',
-    weights: { fights: 0.9, clutch: 1.0, placement: 0.85, consistency: 1.0, mechanics: 1.4 },
+    weights: { mechanics: 1.45, aim: 1.15, clutch: 1.0, smarts: 0.85, fighting: 0.85 },
   },
   {
     id: 'balanced',
     label: 'Balanced',
     blurb: 'Even weighting across the board',
-    weights: { fights: 1.0, clutch: 1.0, placement: 1.0, consistency: 1.0, mechanics: 1.0 },
+    weights: { fighting: 1.0, aim: 1.0, mechanics: 1.0, smarts: 1.0, clutch: 1.0 },
   },
 ]
 
@@ -124,11 +123,11 @@ export const MODES = [
 ]
 
 export const STAT_LABELS = {
-  fights: 'Fights Won',
-  placement: 'Placement',
-  consistency: 'Consistency',
-  clutch: 'Clutch',
+  fighting: 'Fighting',
+  aim: 'Aim',
   mechanics: 'Mechanics',
+  smarts: 'Smarts',
+  clutch: 'Clutch',
 }
 
 export const RIVAL_ORG_PAIRS = [
@@ -142,11 +141,10 @@ export const TOURNAMENTS_PER_SEASON = 16
 // Flavor-only "competitiveness" modifier per region (higher = tougher
 // opposition, harder to stay undefeated). Not modeling anything real.
 export const REGION_STRENGTH = {
-  'NA East': 1.0,
   Europe: 1.0,
+  'NA Central': 0.9,
   Asia: 0.7,
   'NA West': 0.6,
-  'NA Central': 0.5,
   Brazil: 0.4,
   Oceania: 0.2,
   'Middle East': 0.1,

@@ -86,7 +86,7 @@ export default function ResultScreen({ squad, result, badges, mode, onPlayAgain 
                   {ROLE_LABELS[slot.id]}
                 </div>
                 <div className="mt-1 text-sm font-medium text-slate-100">{p?.name}</div>
-                <div className="text-xs text-slate-500">{p?.org}</div>
+                {p?.org && <div className="text-xs text-slate-500">{p.org}</div>}
               </div>
             )
           })}
