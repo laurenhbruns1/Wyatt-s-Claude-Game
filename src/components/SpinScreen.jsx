@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { CHAPTERS, FORMATS, REGIONS } from '../data/constants'
+import SquadBoard from './SquadBoard'
 
 const FORMAT_LABEL = Object.fromEntries(FORMATS.map((f) => [f.id, f.label]))
 
@@ -34,24 +35,35 @@ function SpinColumn({ label, finalValue, spinning, delay }) {
   )
 }
 
-export default function SpinScreen({ combo, mode, onContinue }) {
+export default function SpinScreen({ combo, mode, squad, activeSlot, onContinue }) {
   const [spinning, setSpinning] = useState(mode !== 'ultimate')
 
   useEffect(() => {
     if (mode === 'ultimate') return
     const t = setTimeout(() => setSpinning(false), 1100)
     return () => clearTimeout(t)
-  }, [mode])
+    // Runs once per mounted instance — App.jsx keys this component by slot
+    // index so a fresh spin always re-mounts (and re-animates) it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const region = mode === 'ultimate' ? 'All-Time' : combo.region
   const chapter = mode === 'ultimate' ? 'Every Chapter' : combo.chapter
   const format = FORMAT_LABEL[combo.format]
 
   return (
-    <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 px-4 py-16 text-center">
-      <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
-        {mode === 'daily' ? "Today's Seed" : 'The Spin'}
-      </h2>
+    <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 px-4 py-10 text-center">
+      {squad && activeSlot && <SquadBoard squad={squad} activeSlotId={activeSlot.id} />}
+      <div>
+        <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
+          {mode === 'daily' ? "Today's Seed" : 'The Spin'}
+        </h2>
+        {activeSlot && (
+          <p className="mt-1 text-slate-400">
+            Spinning up your <span className="font-semibold text-slate-200">{activeSlot.label}</span> pool
+          </p>
+        )}
+      </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <SpinColumn label="Region" finalValue={region} spinning={spinning} delay={0} />
         <SpinColumn label="Chapter" finalValue={chapter} spinning={spinning} delay={200} />

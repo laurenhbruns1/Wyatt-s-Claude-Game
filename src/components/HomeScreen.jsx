@@ -16,7 +16,7 @@ export default function HomeScreen({
           UNDEFEATED
         </h1>
         <p className="mt-2 text-slate-400">
-          Spin a region &amp; era, draft a five-slot competitive Fortnite squad, and see if
+          Spin a region &amp; era before every pick, draft a four-slot competitive Fortnite squad, and see if
           they run the season without dropping a single tournament.
         </p>
         {bestRecord && (

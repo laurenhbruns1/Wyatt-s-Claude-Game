@@ -1,17 +1,21 @@
 import { BADGE_DEFS } from './badges'
 import { ROLE_LABELS, SLOTS } from '../data/constants'
 
+const FORMAT_LABEL = { build: 'Build', zero_build: 'Zero Build' }
+
 export function buildShareText({ squad, result, badges, mode }) {
   const lines = []
   lines.push('UNDEFEATED — Season Result')
   lines.push(`Record: ${result.record.wins}-${result.record.losses}`)
-  const regionLabel = result.region || 'All-Time'
-  lines.push(`Region: ${regionLabel} · ${result.format === 'build' ? 'Build' : 'Zero Build'}`)
   lines.push('')
   lines.push('Roster:')
   for (const slot of SLOTS) {
     const p = squad[slot.id]
-    if (p) lines.push(`  ${ROLE_LABELS[slot.id]}: ${p.name}${p.org ? ` (${p.org})` : ''}`)
+    if (p) {
+      const region = p.region || 'All-Time'
+      const format = FORMAT_LABEL[p._format] || ''
+      lines.push(`  ${ROLE_LABELS[slot.id]}: ${p.name}${p.org ? ` (${p.org})` : ''} — ${region}${format ? ` · ${format}` : ''}`)
+    }
   }
   lines.push('')
   lines.push(`MVP: ${result.mvp.name}`)

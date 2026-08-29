@@ -16,8 +16,10 @@ export function todaysSeed() {
   return seedFromString(todayKey())
 }
 
-export function spinComboForDaily() {
-  const rng = mulberry32(todaysSeed())
+/** Each draft slot re-spins, so Daily Challenge needs a distinct but
+ * reproducible seed per slot — everyone gets the same 4 spins that day. */
+export function spinComboForDaily(slotIndex = 0) {
+  const rng = mulberry32(todaysSeed() + slotIndex * 2)
   return spinCombo(rng)
 }
 
@@ -42,8 +44,8 @@ function dedupeByPlayerId(pool) {
 }
 
 /** Daily Challenge: same combo + same trimmed pool (down to ~14) for everyone that day. */
-export function dailyPool(combo) {
-  const rng = mulberry32(todaysSeed() + 1)
+export function dailyPool(combo, slotIndex = 0) {
+  const rng = mulberry32(todaysSeed() + slotIndex * 2 + 1)
   const full = poolFor(combo)
   const shuffled = shuffleWith(full, rng)
   return shuffled.slice(0, Math.min(14, shuffled.length))
@@ -51,4 +53,10 @@ export function dailyPool(combo) {
 
 export function pickRandomPlayer(pool, rng = Math.random) {
   return pickWith(pool, rng)
+}
+
+/** Keeps a player from showing up twice across re-rolled slots. */
+export function excludeDrafted(pool, squad) {
+  const draftedIds = new Set(Object.values(squad).filter(Boolean).map((p) => p.player_id))
+  return pool.filter((p) => !draftedIds.has(p.player_id))
 }

@@ -7,9 +7,6 @@ import {
   TOURNAMENTS_PER_SEASON,
 } from '../data/constants'
 
-const FIELD_SLOTS = SLOTS.filter((s) => !s.isCoach)
-const COACH_SLOT = SLOTS.find((s) => s.isCoach)
-
 function weightedScore(stats, weights) {
   let num = 0
   let den = 0
@@ -39,17 +36,31 @@ function mulberry32(seed) {
   }
 }
 
-/** Builds per-slot effective (fit + format adjusted) profiles for a squad. */
-export function buildEffectiveSquad(squad, format) {
+/** Builds per-slot effective (fit + format adjusted) profiles for a squad.
+ * Each player was drafted under its own spin, so format comes from the
+ * player itself (`_format`, attached by draftPool.poolFor) rather than one
+ * squad-wide value. */
+export function buildEffectiveSquad(squad) {
   const effective = {}
   for (const slot of SLOTS) {
     const player = squad[slot.id]
     if (!player) continue
+    const format = player._format || 'build'
     const statBlock = player.format_stats[format] || player.stats
     const { adjusted, level, penalty } = applyFit(statBlock, slot, player)
     effective[slot.id] = { player, slot, stats: adjusted, fitLevel: level, fitPenalty: penalty }
   }
   return effective
+}
+
+/** The squad can span multiple regions (each slot was drafted from its own
+ * spin) — average their competitiveness modifiers for the opposition's
+ * baseline difficulty. */
+function averageRegionStrength(squad) {
+  const players = Object.values(squad).filter(Boolean)
+  if (!players.length) return 0.5
+  const sum = players.reduce((a, p) => a + (REGION_STRENGTH[p.region] ?? 0.5), 0)
+  return sum / players.length
 }
 
 function countSynergy(squad) {
@@ -99,10 +110,6 @@ const FALLAPART_FLAVOR = {
     '{name} gets caught in the open storm surge with nowhere to rotate to.',
     '{name} takes the wrong lane back and gets collapsed on by three teams.',
   ],
-  coach: [
-    'A communication breakdown mid-match leaves the team without a plan.',
-    '{name} clocks a no-show right before the bracket reset — the squad plays a player down.',
-  ],
 }
 
 function fallApartMoment(effectiveSquad, rng) {
@@ -128,25 +135,20 @@ const CLUTCH_FLAVOR = [
  * Simulates a full season. `seed` makes it reproducible (used for Daily
  * Challenge); omit for a fresh random run each time.
  */
-export function simulateSeason({ squad, format, playstyle, region, mode, seed }) {
+export function simulateSeason({ squad, playstyle, mode, seed }) {
   const rng = mulberry32(seed ?? Math.floor(Math.random() * 2 ** 31))
-  const effectiveSquad = buildEffectiveSquad(squad, format)
+  const effectiveSquad = buildEffectiveSquad(squad)
 
-  const fieldScores = FIELD_SLOTS.map((slot) => {
+  const fieldScores = SLOTS.map((slot) => {
     const entry = effectiveSquad[slot.id]
     return { slot, entry, score: weightedScore(entry.stats, playstyle.weights) }
   })
   const squadScore = fieldScores.reduce((a, f) => a + f.score, 0) / fieldScores.length
 
-  const coachEntry = effectiveSquad[COACH_SLOT.id]
-  const coachBoost = coachEntry
-    ? ((coachEntry.stats.smarts + coachEntry.stats.clutch) / 2 / 100) * coachEntry.fitPenalty
-    : 0
-
   const { bonus: synergyBonus, notes: synergyNotes } = countSynergy(squad)
   const { penalty: rivalryPenalty, notes: rivalryNotes } = countRivalry(squad)
 
-  const regionMod = REGION_STRENGTH[region] ?? 0.5
+  const regionMod = averageRegionStrength(squad)
   const opponentBaseline = 50 + regionMod * 14
   const smartsAvg =
     fieldScores.reduce((a, f) => a + f.entry.stats.smarts, 0) / fieldScores.length
@@ -164,8 +166,7 @@ export function simulateSeason({ squad, format, playstyle, region, mode, seed })
     if (usedNames.has(tourneyName)) tourneyName = `${tourneyName} II`
     usedNames.add(tourneyName)
 
-    const performance =
-      squadScore + synergyBonus - rivalryPenalty + coachBoost * 10 + gaussian(rng) * spread
+    const performance = squadScore + synergyBonus - rivalryPenalty + gaussian(rng) * spread
     const opponentRoll = opponentBaseline + gaussian(rng) * 10
     let margin = performance - opponentRoll
     let win = margin > 0
@@ -225,7 +226,6 @@ export function simulateSeason({ squad, format, playstyle, region, mode, seed })
     events,
     record: { wins, losses },
     squadScore: Math.round(squadScore * 10) / 10,
-    coachBoost: Math.round(coachBoost * 100),
     synergyNotes,
     rivalryNotes,
     mvp,
@@ -233,8 +233,6 @@ export function simulateSeason({ squad, format, playstyle, region, mode, seed })
     closestLoss,
     effectiveSquad,
     mode,
-    format,
-    region,
     seed,
   }
 }

@@ -50,13 +50,6 @@ export const SLOTS = [
     blurb: 'Positioning & survival',
     primaryStats: ['smarts', 'mechanics'],
   },
-  {
-    id: 'coach',
-    label: 'Coach',
-    blurb: 'Passive team modifier — no in-game stats',
-    primaryStats: ['smarts', 'clutch'],
-    isCoach: true,
-  },
 ]
 
 export const ROLE_LABELS = {
@@ -64,7 +57,6 @@ export const ROLE_LABELS = {
   igl: 'IGL',
   builder: 'Builder/Editor',
   rotator: 'Rotator',
-  coach: 'Coach',
 }
 
 export const PLAYSTYLES = [
@@ -154,10 +146,9 @@ export const REGION_STRENGTH = {
 // the open slot takes a smaller penalty than a totally unrelated one).
 export const ROLE_ADJACENCY = {
   fragger: ['builder', 'igl'],
-  igl: ['rotator', 'coach', 'fragger'],
+  igl: ['rotator', 'fragger'],
   builder: ['fragger', 'rotator'],
   rotator: ['igl', 'builder'],
-  coach: ['igl'],
 }
 
 export const TOURNAMENT_NAMES = [

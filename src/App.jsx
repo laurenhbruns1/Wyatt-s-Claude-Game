@@ -5,7 +5,14 @@ import DraftScreen from './components/DraftScreen'
 import SimulationScreen from './components/SimulationScreen'
 import ResultScreen from './components/ResultScreen'
 import { MODES, PLAYSTYLES, SLOTS } from './data/constants'
-import { dailyPool, poolFor, spinCombo, spinComboForDaily, todaysSeed } from './utils/draftPool'
+import {
+  dailyPool,
+  excludeDrafted,
+  poolFor,
+  spinCombo,
+  spinComboForDaily,
+  todaysSeed,
+} from './utils/draftPool'
 import { simulateSeason } from './utils/sim'
 import { computeBadges } from './utils/badges'
 import { useLocalStorage } from './hooks/useLocalStorage'
@@ -14,6 +21,33 @@ function isBetterRecord(next, prev) {
   if (!prev) return true
   if (next.losses !== prev.losses) return next.losses < prev.losses
   return next.wins > prev.wins
+}
+
+const MAX_SPIN_ATTEMPTS = 50
+
+/** Rolls a fresh region/chapter/format spin + pool for one draft slot,
+ * excluding anyone already drafted into an earlier slot. Data only covers
+ * some region/chapter combos so far, so a spin can land on an empty pool —
+ * retry (deterministically, for Daily) rather than dead-ending the draft. */
+function rollForSlot(mode, slotIndex, squadSoFar) {
+  let combo
+  let pool
+  for (let attempt = 0; attempt < MAX_SPIN_ATTEMPTS; attempt++) {
+    if (mode === 'ultimate') {
+      combo = { region: null, chapter: null, format: spinCombo().format }
+      pool = poolFor({ format: combo.format, ultimate: true })
+    } else if (mode === 'daily') {
+      const seedSlot = slotIndex + attempt * 100
+      combo = spinComboForDaily(seedSlot)
+      pool = dailyPool(combo, seedSlot)
+    } else {
+      combo = spinCombo()
+      pool = poolFor(combo)
+    }
+    pool = excludeDrafted(pool, squadSoFar)
+    if (pool.length > 0) break
+  }
+  return { combo, pool }
 }
 
 export default function App() {
@@ -38,18 +72,7 @@ export default function App() {
   const playstyleDef = PLAYSTYLES.find((p) => p.id === playstyle)
 
   function handleStart() {
-    let nextCombo
-    let nextPool
-    if (mode === 'ultimate') {
-      nextCombo = { region: null, chapter: null, format: spinCombo().format }
-      nextPool = poolFor({ format: nextCombo.format, ultimate: true })
-    } else if (mode === 'daily') {
-      nextCombo = spinComboForDaily()
-      nextPool = dailyPool(nextCombo)
-    } else {
-      nextCombo = spinCombo()
-      nextPool = poolFor(nextCombo)
-    }
+    const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, 0, {})
     setCombo(nextCombo)
     setPool(nextPool)
     setSquad({})
@@ -61,22 +84,24 @@ export default function App() {
 
   function handleDraft(player) {
     const nextSquad = { ...squad, [activeSlot.id]: player }
-    const nextPool = pool.filter((p) => p.id !== player.id)
-    setSquad(nextSquad)
-    setPool(nextPool)
 
     if (activeSlotIndex + 1 < SLOTS.length) {
-      setActiveSlotIndex(activeSlotIndex + 1)
+      const nextIndex = activeSlotIndex + 1
+      const { combo: nextCombo, pool: nextPool } = rollForSlot(mode, nextIndex, nextSquad)
+      setSquad(nextSquad)
+      setCombo(nextCombo)
+      setPool(nextPool)
+      setActiveSlotIndex(nextIndex)
+      setScreen('spin')
       return
     }
 
+    setSquad(nextSquad)
     const seasonResult = simulateSeason({
       squad: nextSquad,
-      format: combo.format,
       playstyle: playstyleDef,
-      region: combo.region,
       mode,
-      seed: mode === 'daily' ? todaysSeed() + 2 : undefined,
+      seed: mode === 'daily' ? todaysSeed() + 100 : undefined,
     })
     const earnedBadges = computeBadges({ squad: nextSquad, result: seasonResult, mode })
     setResult(seasonResult)
@@ -113,7 +138,14 @@ export default function App() {
         />
       )}
       {screen === 'spin' && combo && (
-        <SpinScreen combo={combo} mode={mode} onContinue={() => setScreen('draft')} />
+        <SpinScreen
+          key={activeSlotIndex}
+          combo={combo}
+          mode={mode}
+          squad={squad}
+          activeSlot={activeSlot}
+          onContinue={() => setScreen('draft')}
+        />
       )}
       {screen === 'draft' && (
         <DraftScreen

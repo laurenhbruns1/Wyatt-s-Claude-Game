@@ -1,7 +1,8 @@
 # Undefeated — Fortnite Roster Builder
 
-Spin a random region + chapter + format, draft a five-slot competitive
-Fortnite squad, and simulate a season to see if it runs the table.
+Spin a fresh random region + chapter + format before every pick, draft a
+four-slot competitive Fortnite squad, and simulate a season to see if it
+runs the table.
 
 Inspired by the "82-0" NBA roster-builder concept, reskinned for competitive
 Fortnite (Build vs. Zero Build, regions, chapters/eras).
@@ -22,12 +23,13 @@ A few things about this data that are worth knowing:
   orgs are added.
 - **Role tags (Fragger/IGL/Builder/Rotator) are inferred from the stat
   profile itself** — e.g. high Fighting+Aim → Fragger — not from verified
-  real-world positions, since that wasn't supplied either. No player is ever
-  auto-tagged "Coach" (none of these are documented coaches), so every real
-  player takes an off-fit penalty if drafted into that slot.
+  real-world positions, since that wasn't supplied either.
 - A player can be **eligible in more than one region** under the same
   `player_id` (e.g. a player who competed in both NA Central and Europe) —
   Ultimate mode de-dupes these down to one card.
+- **The squad has no Coach slot** — just Fragger, IGL, Builder/Editor,
+  Rotator — and **region/chapter/format re-spins before every single pick**,
+  so a squad can (and usually will) span multiple regions and eras.
 
 To add another chapter's players, save a CSV with columns
 `Player ID,Player,Chapter,Region,Fighting,Aim,Mechanics,Smarts,Clutch` and run:
@@ -44,7 +46,7 @@ only new rows get appended.
 - **Classic** — full stats visible while drafting
 - **Blind Draft** — only names shown, no stats
 - **Rotation** — every slot must be filled by an off-role player
-- **Daily Challenge** — same seeded region/chapter/format/pool for everyone that day
+- **Daily Challenge** — same 4 seeded spins/pools for everyone that day
 - **Ultimate/All-Time** — draft across every region and chapter
 
 ## Tech

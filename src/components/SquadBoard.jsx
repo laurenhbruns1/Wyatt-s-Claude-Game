@@ -4,7 +4,7 @@ import FitDot from './FitDot'
 
 export default function SquadBoard({ squad, activeSlotId }) {
   return (
-    <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+    <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
       {SLOTS.map((slot) => {
         const player = squad[slot.id]
         const isActive = slot.id === activeSlotId

@@ -77,7 +77,7 @@ export default function ResultScreen({ squad, result, badges, mode, onPlayAgain 
         <h3 className="mb-2 text-sm font-semibold uppercase tracking-wider text-slate-400">
           Roster
         </h3>
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-5">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           {SLOTS.map((slot) => {
             const p = squad[slot.id]
             return (
@@ -86,7 +86,7 @@ export default function ResultScreen({ squad, result, badges, mode, onPlayAgain 
                   {ROLE_LABELS[slot.id]}
                 </div>
                 <div className="mt-1 text-sm font-medium text-slate-100">{p?.name}</div>
-                {p?.org && <div className="text-xs text-slate-500">{p.org}</div>}
+                <div className="text-xs text-slate-500">{p?.org ? `${p.org} · ` : ''}{p?.region}</div>
               </div>
             )
           })}
