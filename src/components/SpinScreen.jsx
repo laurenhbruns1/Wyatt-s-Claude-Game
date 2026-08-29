@@ -1,0 +1,70 @@
+import { useEffect, useState } from 'react'
+import { CHAPTERS, FORMATS, REGIONS } from '../data/constants'
+
+const FORMAT_LABEL = Object.fromEntries(FORMATS.map((f) => [f.id, f.label]))
+
+function SpinColumn({ label, finalValue, spinning, delay }) {
+  const [display, setDisplay] = useState(finalValue)
+  const options = label === 'Region' ? REGIONS : label === 'Chapter' ? CHAPTERS : FORMATS.map((f) => f.label)
+
+  useEffect(() => {
+    if (!spinning) {
+      setDisplay(finalValue)
+      return
+    }
+    const interval = setInterval(() => {
+      setDisplay(options[Math.floor(Math.random() * options.length)])
+    }, 70)
+    const timeout = setTimeout(() => {
+      clearInterval(interval)
+      setDisplay(finalValue)
+    }, 900 + delay)
+    return () => {
+      clearInterval(interval)
+      clearTimeout(timeout)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [spinning, finalValue, delay])
+
+  return (
+    <div className="flex flex-col items-center gap-1 rounded-xl border border-slate-700 bg-slate-900 px-6 py-5">
+      <span className="text-xs uppercase tracking-wider text-slate-500">{label}</span>
+      <span className="text-2xl font-bold text-slate-50">{display}</span>
+    </div>
+  )
+}
+
+export default function SpinScreen({ combo, mode, onContinue }) {
+  const [spinning, setSpinning] = useState(mode !== 'ultimate')
+
+  useEffect(() => {
+    if (mode === 'ultimate') return
+    const t = setTimeout(() => setSpinning(false), 1100)
+    return () => clearTimeout(t)
+  }, [mode])
+
+  const region = mode === 'ultimate' ? 'All-Time' : combo.region
+  const chapter = mode === 'ultimate' ? 'Every Chapter' : combo.chapter
+  const format = FORMAT_LABEL[combo.format]
+
+  return (
+    <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 px-4 py-16 text-center">
+      <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
+        {mode === 'daily' ? "Today's Seed" : 'The Spin'}
+      </h2>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <SpinColumn label="Region" finalValue={region} spinning={spinning} delay={0} />
+        <SpinColumn label="Chapter" finalValue={chapter} spinning={spinning} delay={200} />
+        <SpinColumn label="Format" finalValue={format} spinning={spinning} delay={400} />
+      </div>
+      <button
+        type="button"
+        disabled={spinning}
+        onClick={onContinue}
+        className="rounded-xl bg-fuchsia-500 px-6 py-3 text-lg font-semibold text-white shadow-lg shadow-fuchsia-500/20 transition hover:bg-fuchsia-400 disabled:cursor-not-allowed disabled:bg-slate-700 disabled:shadow-none"
+      >
+        {spinning ? 'Spinning…' : 'Start Draft →'}
+      </button>
+    </div>
+  )
+}
