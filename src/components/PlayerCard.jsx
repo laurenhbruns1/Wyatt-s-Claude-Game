@@ -37,7 +37,7 @@ export default function PlayerCard({
       </div>
 
       {!blind && (
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap items-center gap-1">
           {player.role_tags.map((tag) => (
             <span
               key={tag}
@@ -46,6 +46,14 @@ export default function PlayerCard({
               {tag}
             </span>
           ))}
+          {player.role_assigned && (
+            <span
+              className="text-[10px] italic text-slate-500"
+              title="Assigned by hand to cover a role gap in this region, not derived from their own stats"
+            >
+              (assigned)
+            </span>
+          )}
         </div>
       )}
 

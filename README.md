@@ -24,6 +24,13 @@ A few things about this data that are worth knowing:
   is highest: Fighting or Clutch → Fragger, Aim → Rotator, Mechanics →
   Builder/Editor, Smarts → IGL (see `computeNaturalRole` in
   `src/utils/fit.js`). This is a hard lock, not a soft preference.
+- A **handful of players carry a manual role override** (`role_assigned:
+  true`, shown as "(assigned)" on their card) instead of their stat-derived
+  role — some regions had zero players whose own stats locked to a given
+  slot (e.g. Chapter 1 Brazil had no Builder at all), so a real player
+  already in that region was hand-picked (favoring lower/mid stats, so it
+  isn't a free power boost) to fill the gap. See
+  `scripts/assign-role-overrides.mjs` to add more.
 - A player can be **eligible in more than one region** under the same
   `player_id` (e.g. a player who competed in both NA Central and Europe) —
   Ultimate mode de-dupes these down to one card.
