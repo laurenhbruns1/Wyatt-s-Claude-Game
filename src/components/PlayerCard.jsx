@@ -5,6 +5,7 @@ import StatBar from './StatBar'
 export default function PlayerCard({
   player,
   blind,
+  showChapter,
   disabled,
   disabledLabel,
   crossedOff,
@@ -31,6 +32,7 @@ export default function PlayerCard({
           <div className="text-xs text-slate-400">
             {player.org ? `${player.org} · ` : ''}
             {player.region}
+            {showChapter ? ` · ${player.chapter}` : ''}
           </div>
         </div>
         {!blind && fitLevel && <FitDot level={fitLevel} />}

@@ -130,6 +130,7 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
               key={player.id}
               player={player}
               blind={blind}
+              showChapter={ultimate}
               disabled={disabled}
               disabledLabel={`${ROLE_LABELS[role]} already filled`}
               crossedOff={crossedOff}

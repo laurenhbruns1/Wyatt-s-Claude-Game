@@ -93,7 +93,11 @@ only new rows get appended.
 - **Daily Challenge** — same seeded spin/pool (or 4 seeded spins, in Rotation) for everyone that day
 - **Ultimate/All-Time** — draft across every region and chapter; Region/Position/Chapter
   dropdown filters narrow the pool while browsing (the only mode that has them,
-  since it's the only one with a pool big enough to need it)
+  since it's the only one with a pool big enough to need it). Since the same
+  player can show up multiple times here (a different card per chapter, e.g.
+  Chapter 1 Bugha vs. Chapter 5 Bugha), each card's subtitle also shows which
+  chapter it's from — the only mode where that's shown, since every other
+  mode is already scoped to one chapter per spin
 
 ## Tech
 
