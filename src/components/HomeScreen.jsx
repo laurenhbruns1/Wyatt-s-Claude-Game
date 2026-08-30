@@ -12,7 +12,6 @@ export default function HomeScreen({
   setLockedChapter,
   onStart,
   bestRecord,
-  dailyDone,
 }) {
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-8 px-4 py-10">
@@ -49,11 +48,6 @@ export default function HomeScreen({
             >
               <div className="font-semibold text-slate-100">{m.label}</div>
               <div className="text-sm text-slate-400">{m.blurb}</div>
-              {m.id === 'daily' && dailyDone && (
-                <div className="mt-2 text-xs font-medium text-emerald-400">
-                  Completed today: {dailyDone.record.wins}-{dailyDone.record.losses}
-                </div>
-              )}
             </button>
           ))}
         </div>

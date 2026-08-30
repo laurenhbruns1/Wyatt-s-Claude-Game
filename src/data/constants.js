@@ -98,11 +98,6 @@ export const MODES = [
     blurb: 'Every slot must be filled by an off-role player — hardest mode',
   },
   {
-    id: 'daily',
-    label: 'Daily Challenge',
-    blurb: 'Same seeded region/chapter/players for everyone today',
-  },
-  {
     id: 'ultimate',
     label: 'Ultimate/All-Time',
     blurb: 'No region/chapter restriction — draft across everything',

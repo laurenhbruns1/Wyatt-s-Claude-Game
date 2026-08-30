@@ -1,5 +1,5 @@
 /** A plain name-search box, shared by every draft screen (Classic, Blind,
- * Rotation, Daily, Ultimate) so you can jump straight to a player by typing
+ * Rotation, Ultimate, Region Lock, Chapter Lock) so you can jump straight to a player by typing
  * instead of scanning the whole pool. */
 export default function PlayerSearchInput({ value, onChange }) {
   return (

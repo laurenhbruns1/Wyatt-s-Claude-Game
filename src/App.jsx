@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import HomeScreen from './components/HomeScreen'
 import SpinScreen from './components/SpinScreen'
 import DraftScreen from './components/DraftScreen'
@@ -8,14 +8,11 @@ import ResultScreen from './components/ResultScreen'
 import { MODES, PLAYSTYLES, REGIONS, SLOTS } from './data/constants'
 import {
   AVAILABLE_CHAPTERS,
-  dailyPool,
   excludeDrafted,
   poolFor,
   spinCombo,
   spinComboChapterLocked,
-  spinComboForDaily,
   spinComboRegionLocked,
-  todaysSeed,
 } from './utils/draftPool'
 import { simulateSeason } from './utils/sim'
 import { computeBadges } from './utils/badges'
@@ -31,20 +28,13 @@ const MAX_SPIN_ATTEMPTS = 50
 
 /** Rotation mode only: re-spins before every one of the 4 slots (walked in
  * a fixed order) and needs an off-role pick each time — a spin landing on
- * an empty pool retries (deterministically, for Daily) instead of
- * dead-ending the draft. */
-function rollForRotationSlot(mode, slotIndex, slot, squadSoFar) {
+ * an empty pool retries instead of dead-ending the draft. */
+function rollForRotationSlot(slotIndex, slot, squadSoFar) {
   let combo
   let pool
   for (let attempt = 0; attempt < MAX_SPIN_ATTEMPTS; attempt++) {
-    if (mode === 'daily') {
-      const seedSlot = slotIndex + attempt * 100
-      combo = spinComboForDaily(seedSlot)
-      pool = dailyPool(combo, seedSlot)
-    } else {
-      combo = spinCombo()
-      pool = poolFor(combo)
-    }
+    combo = spinCombo()
+    pool = poolFor(combo)
     pool = excludeDrafted(pool, squadSoFar)
     if (pool.length > 0) break
   }
@@ -72,7 +62,6 @@ function poolHasAnyNeededRole(pool, roleIds) {
  * open, not necessarily all of them. `locks` carries the user-chosen
  * region/chapter for Region Lock/Chapter Lock mode. */
 function rollWholeDraft(mode, squadSoFar, locks = {}) {
-  const pickIndex = Object.keys(squadSoFar).length
   const needed = remainingRoles(squadSoFar)
   let combo
   let pool
@@ -80,10 +69,6 @@ function rollWholeDraft(mode, squadSoFar, locks = {}) {
     if (mode === 'ultimate') {
       combo = { region: null, chapter: null }
       pool = poolFor({ ultimate: true })
-    } else if (mode === 'daily') {
-      const seedSlot = pickIndex + attempt * 100
-      combo = spinComboForDaily(seedSlot)
-      pool = dailyPool(combo, seedSlot)
     } else if (mode === 'region_lock') {
       combo = spinComboRegionLocked(locks.region)
       pool = poolFor(combo)
@@ -123,10 +108,6 @@ export default function App() {
   const [blindLog, setBlindLog] = useState([])
 
   const [bestRecord, setBestRecord] = useLocalStorage('undefeated:bestRecord', null)
-  const [dailyHistory, setDailyHistory] = useLocalStorage('undefeated:dailyHistory', {})
-
-  const todayKey = useMemo(() => new Date().toISOString().slice(0, 10), [])
-  const dailyDone = dailyHistory[todayKey] || null
 
   const rotation = mode === 'rotation'
   const activeSlot = SLOTS[activeSlotIndex]
@@ -139,7 +120,6 @@ export default function App() {
       squad: nextSquad,
       playstyle: playstyleDef,
       mode,
-      seed: mode === 'daily' ? todaysSeed() + 100 : undefined,
     })
     const earnedBadges = computeBadges({ squad: nextSquad, result: seasonResult, mode })
     setResult(seasonResult)
@@ -155,7 +135,7 @@ export default function App() {
     setActiveSlotIndex(0)
     setSpinKey((k) => k + 1)
     if (rotation) {
-      const { combo: nextCombo, pool: nextPool } = rollForRotationSlot(mode, 0, SLOTS[0], {})
+      const { combo: nextCombo, pool: nextPool } = rollForRotationSlot(0, SLOTS[0], {})
       setCombo(nextCombo)
       setPool(nextPool)
     } else {
@@ -171,7 +151,7 @@ export default function App() {
       const nextSquad = { ...squad, [activeSlot.id]: player }
       if (activeSlotIndex + 1 < SLOTS.length) {
         const nextIndex = activeSlotIndex + 1
-        const { combo: nextCombo, pool: nextPool } = rollForRotationSlot(mode, nextIndex, SLOTS[nextIndex], nextSquad)
+        const { combo: nextCombo, pool: nextPool } = rollForRotationSlot(nextIndex, SLOTS[nextIndex], nextSquad)
         setSquad(nextSquad)
         setCombo(nextCombo)
         setPool(nextPool)
@@ -214,9 +194,6 @@ export default function App() {
     if (isBetterRecord(result.record, bestRecord)) {
       setBestRecord({ ...result.record, modeLabel })
     }
-    if (mode === 'daily' && !dailyHistory[todayKey]) {
-      setDailyHistory({ ...dailyHistory, [todayKey]: { record: result.record, badgeCount: badges.length } })
-    }
     setScreen('result')
   }
 
@@ -238,7 +215,6 @@ export default function App() {
           setLockedChapter={setLockedChapter}
           onStart={handleStart}
           bestRecord={bestRecord}
-          dailyDone={dailyDone}
         />
       )}
       {screen === 'spin' && combo && (

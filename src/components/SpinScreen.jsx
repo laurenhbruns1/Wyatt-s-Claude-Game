@@ -54,7 +54,7 @@ export default function SpinScreen({ combo, mode, squad, activeSlot, onContinue 
       {squad && activeSlot && <SquadBoard squad={squad} activeSlotId={activeSlot.id} />}
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
-          {mode === 'daily' ? "Today's Seed" : 'The Spin'}
+          The Spin
         </h2>
         <p className="mt-1 text-slate-400">
           {activeSlot ? (

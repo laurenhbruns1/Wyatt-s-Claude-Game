@@ -127,8 +127,8 @@ const CLUTCH_FLAVOR = [
 ]
 
 /**
- * Simulates a full season. `seed` makes it reproducible (used for Daily
- * Challenge); omit for a fresh random run each time.
+ * Simulates a full season. `seed` makes it reproducible; omit for a fresh
+ * random run each time.
  */
 export function simulateSeason({ squad, playstyle, mode, seed }) {
   const rng = mulberry32(seed ?? Math.floor(Math.random() * 2 ** 31))

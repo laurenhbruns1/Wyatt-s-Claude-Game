@@ -26,7 +26,7 @@ function FilterSelect({ label, value, onChange, options }) {
   )
 }
 
-/** Classic/Blind/Daily/Ultimate: every eligible player is visible at once.
+/** Classic/Blind/Ultimate/Region Lock/Chapter Lock: every eligible player is visible at once.
  * Click anyone and they fill the one slot their best stat locks them to;
  * anyone else who locks to that same slot gets crossed off the board too,
  * since there's no room left for them. Keeps going until all 4 are filled. */

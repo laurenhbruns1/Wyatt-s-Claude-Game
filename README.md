@@ -54,14 +54,15 @@ A few things about this data that are worth knowing:
 **Every mode re-spins the region/chapter before every single pick** — a
 squad can (and usually will) end up drawn from several different regions.
 The two draft flows differ in what "showing the pool" means, though.
-In Classic, Blind, Daily, and Ultimate: each spin's pool shows everyone
-eligible at once, mixed roles and all — click anyone and they lock into
-whichever slot their best stat fits, crossing them off (and greying out
-anyone else who locked to that now-filled slot); once you pick, it re-spins
-fresh for whatever's still open, until all 4 slots are filled, regardless
-of pick order. **In every mode where stats are visible** (Classic, Daily,
-Ultimate), the still-pickable cards are also sorted best-first (by average
-of the 5 stats) — Blind Draft keeps its shuffled order instead, since
+In Classic, Blind, Ultimate, Region Lock, and Chapter Lock: each spin's
+pool shows everyone eligible at once, mixed roles and all — click anyone
+and they lock into whichever slot their best stat fits, crossing them off
+(and greying out anyone else who locked to that now-filled slot); once you
+pick, it re-spins fresh for whatever's still open, until all 4 slots are
+filled, regardless of pick order. **In every mode where stats are visible**
+(every one of those except Blind), the still-pickable cards are also
+sorted best-first (by average of the 5 stats) — Blind Draft keeps its
+shuffled order instead, since
 revealing skill through list position would defeat the whole "no stats"
 premise. **Rotation mode works differently on purpose**: it walks
 the 4 slots in a fixed order (still re-spinning before each one) and keeps
@@ -100,7 +101,6 @@ only new rows get appended.
   next to whoever was actually the best-stat player locked to that same
   slot in the exact pool you saw at the time
 - **Rotation** — every slot must be filled by an off-role player
-- **Daily Challenge** — same seeded spin/pool (or 4 seeded spins, in Rotation) for everyone that day
 - **Ultimate/All-Time** — draft across every region and chapter; Region/Position/Chapter
   dropdown filters narrow the pool while browsing (the only mode that has them,
   since it's the only one with a pool big enough to need it). Since the same
@@ -118,7 +118,7 @@ only new rows get appended.
 ## Tech
 
 React + Tailwind CSS (v4, via `@tailwindcss/vite`), Vite, client-side only
-(localStorage for best-record + Daily Challenge history — no backend).
+(localStorage for best-record history — no backend).
 
 ## Development
 
