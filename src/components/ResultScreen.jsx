@@ -1,9 +1,83 @@
 import { useState } from 'react'
-import { ROLE_LABELS, SLOTS } from '../data/constants'
+import { ROLE_LABELS, SLOTS, STAT_LABELS } from '../data/constants'
 import { BADGE_DEFS } from '../utils/badges'
 import { buildShareText, copyToClipboard } from '../utils/share'
+import StatBar from './StatBar'
 
-export default function ResultScreen({ squad, result, badges, mode, onPlayAgain }) {
+function statAverage(stats) {
+  return (stats.fighting + stats.aim + stats.mechanics + stats.smarts + stats.clutch) / 5
+}
+
+/** For one blind-draft pick: the best-stat player who was actually locked
+ * to that same role in that exact pool, so the comparison is apples-to-
+ * apples (never someone who wasn't even a legal pick for the slot). */
+function bestAvailableFor(role, pool) {
+  const candidates = pool.filter((p) => p.role_tags[0] === role)
+  return candidates.reduce((best, p) => (statAverage(p.stats) > statAverage(best.stats) ? p : best), candidates[0])
+}
+
+function PlayerStatCard({ label, player }) {
+  return (
+    <div className="flex-1 rounded-lg border border-slate-800 bg-slate-900 p-3">
+      <div className="text-[11px] uppercase tracking-wider text-slate-500">{label}</div>
+      <div className="mt-0.5 text-sm font-semibold text-slate-100">{player.name}</div>
+      <div className="text-xs text-slate-500">{player.org ? `${player.org} · ` : ''}{player.region}</div>
+      <div className="mt-2 flex flex-col gap-1">
+        {Object.keys(STAT_LABELS).map((key) => (
+          <StatBar key={key} label={STAT_LABELS[key]} value={player.stats[key]} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+/** Blind Draft only: after the fact, reveals the stats you never saw —
+ * both what you actually picked, and who was the best-stat player locked
+ * to that same slot in that exact pool. */
+function BlindReveal({ blindLog }) {
+  const [revealed, setRevealed] = useState(false)
+
+  return (
+    <div>
+      <button
+        type="button"
+        onClick={() => setRevealed((r) => !r)}
+        className="w-full rounded-xl border border-slate-700 px-4 py-2.5 text-sm font-medium text-slate-200 transition hover:border-slate-500"
+      >
+        {revealed ? 'Hide Reveal' : 'Reveal Best Picks'}
+      </button>
+
+      {revealed && (
+        <div className="mt-3 flex flex-col gap-4">
+          {SLOTS.map((slot) => {
+            const entry = blindLog.find((e) => e.role === slot.id)
+            if (!entry) return null
+            const best = bestAvailableFor(slot.id, entry.pool)
+            const nailedIt = best?.id === entry.picked.id
+            return (
+              <div key={slot.id}>
+                <div className="mb-1.5 flex items-center gap-2 text-xs uppercase tracking-wider text-slate-500">
+                  <span>{ROLE_LABELS[slot.id]}</span>
+                  {nailedIt && (
+                    <span className="rounded-full bg-emerald-400/10 px-2 py-0.5 text-emerald-300">
+                      Best pick!
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col gap-2 sm:flex-row">
+                  <PlayerStatCard label="You Picked" player={entry.picked} />
+                  {!nailedIt && best && <PlayerStatCard label="Best Available" player={best} />}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default function ResultScreen({ squad, result, badges, mode, blindLog, onPlayAgain }) {
   const [copied, setCopied] = useState(false)
   const perfect = result.record.losses === 0
 
@@ -92,6 +166,8 @@ export default function ResultScreen({ squad, result, badges, mode, onPlayAgain 
           })}
         </div>
       </div>
+
+      {mode === 'blind' && blindLog.length > 0 && <BlindReveal blindLog={blindLog} />}
 
       <div className="flex flex-col gap-3 sm:flex-row">
         <button

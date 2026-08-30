@@ -102,6 +102,11 @@ export default function App() {
   const [spinKey, setSpinKey] = useState(0)
   const [result, setResult] = useState(null)
   const [badges, setBadges] = useState([])
+  // Blind Draft only: one entry per pick, capturing exactly the pool that
+  // was on screen at that moment (before stats were ever shown) — lets the
+  // result screen reveal what you picked vs. who was actually the best
+  // available option for that slot, after the fact.
+  const [blindLog, setBlindLog] = useState([])
 
   const [bestRecord, setBestRecord] = useLocalStorage('undefeated:bestRecord', null)
   const [dailyHistory, setDailyHistory] = useLocalStorage('undefeated:dailyHistory', {})
@@ -131,6 +136,7 @@ export default function App() {
     setSquad({})
     setResult(null)
     setBadges([])
+    setBlindLog([])
     setActiveSlotIndex(0)
     setSpinKey((k) => k + 1)
     if (rotation) {
@@ -171,6 +177,9 @@ export default function App() {
     // extra click and would reset the region/position/chapter filters.
     const role = player.role_tags[0]
     if (squad[role]) return
+    if (mode === 'blind') {
+      setBlindLog((log) => [...log, { role, picked: player, pool }])
+    }
     const nextSquad = { ...squad, [role]: player }
     if (Object.keys(nextSquad).length < SLOTS.length) {
       const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode, nextSquad)
@@ -231,7 +240,14 @@ export default function App() {
       )}
       {screen === 'sim' && result && <SimulationScreen result={result} onFinish={handleSimFinish} />}
       {screen === 'result' && result && (
-        <ResultScreen squad={squad} result={result} badges={badges} mode={mode} onPlayAgain={handlePlayAgain} />
+        <ResultScreen
+          squad={squad}
+          result={result}
+          badges={badges}
+          mode={mode}
+          blindLog={blindLog}
+          onPlayAgain={handlePlayAgain}
+        />
       )}
     </div>
   )

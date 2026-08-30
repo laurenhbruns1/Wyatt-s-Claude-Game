@@ -95,7 +95,10 @@ only new rows get appended.
 ## Modes
 
 - **Classic** — full stats visible while drafting
-- **Blind Draft** — only names shown, no stats
+- **Blind Draft** — only names shown, no stats; the result screen has a
+  "Reveal Best Picks" button afterward, showing each pick's full stats
+  next to whoever was actually the best-stat player locked to that same
+  slot in the exact pool you saw at the time
 - **Rotation** — every slot must be filled by an off-role player
 - **Daily Challenge** — same seeded spin/pool (or 4 seeded spins, in Rotation) for everyone that day
 - **Ultimate/All-Time** — draft across every region and chapter; Region/Position/Chapter
