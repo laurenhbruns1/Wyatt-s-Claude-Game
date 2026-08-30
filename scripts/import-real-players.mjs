@@ -67,12 +67,12 @@ function parseCsv(text) {
   })
 }
 
-// A player is locked to exactly one slot, whichever of their 5 stats is
-// highest: Fighting/Clutch -> Fragger, Aim -> Rotator, Mechanics -> Builder,
-// Smarts -> IGL. Ties go to the first entry below tied for the max.
+// A player is locked to exactly one slot, whichever of their stats (Clutch
+// excluded — that's sim-only, not a role driver) is highest: Fighting ->
+// Fragger, Aim -> Rotator, Mechanics -> Builder, Smarts -> IGL. Ties go to
+// the first entry below tied for the max.
 const STAT_TO_ROLE = [
   ['fighting', 'fragger'],
-  ['clutch', 'fragger'],
   ['aim', 'rotator'],
   ['mechanics', 'builder'],
   ['smarts', 'igl'],

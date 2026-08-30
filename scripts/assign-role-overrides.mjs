@@ -93,6 +93,29 @@ const OVERRIDES = {
   'battal_001__middle_east__chapter_6': 'igl', // Middle East had no IGL
   'rew_001__middle_east__chapter_6': 'builder', // Middle East had no Builder
 
+  // Clutch stopped counting toward Fragger (Fighting is now the only route
+  // in) — these regions' only Fragger had gotten there via a Clutch-highest
+  // stat line, so they lost their sole Fragger once that stopped applying.
+  'gordinn_001__brazil__chapter_1': 'fragger', // Brazil had no Fragger after Clutch stopped counting
+  'jahq_001__na_central__chapter_2': 'fragger', // NA Central had no Fragger after Clutch stopped counting
+  'looter_001__oceania__chapter_2': 'fragger', // Oceania had no Fragger after Clutch stopped counting
+  'seeyun_001__brazil__chapter_2': 'fragger', // Brazil had no Fragger after Clutch stopped counting
+  'wildhawk_001__asia__chapter_2': 'fragger', // Asia had no Fragger after Clutch stopped counting
+  'kai_001__middle_east__chapter_2': 'fragger', // Middle East had no Fragger after Clutch stopped counting
+  'sunz_001__oceania__chapter_3': 'fragger', // Oceania had no Fragger after Clutch stopped counting
+  'barroso_001__brazil__chapter_3': 'fragger', // Brazil had no Fragger after Clutch stopped counting
+  'balor_001__middle_east__chapter_3': 'fragger', // Middle East had no Fragger after Clutch stopped counting
+  'oreo_001__oceania__chapter_4': 'fragger', // Oceania had no Fragger after Clutch stopped counting
+  'kitoz_001__brazil__chapter_4': 'fragger', // Brazil had no Fragger after Clutch stopped counting
+  'nachiiri_001__middle_east__chapter_4': 'fragger', // Middle East had no Fragger after Clutch stopped counting
+  'threats_001__na_central__chapter_5': 'fragger', // NA Central had no Fragger after Clutch stopped counting
+  'cazi_001__oceania__chapter_5': 'fragger', // Oceania had no Fragger after Clutch stopped counting
+  'diguera_001__brazil__chapter_5': 'fragger', // Brazil had no Fragger after Clutch stopped counting
+  'salva_001__middle_east__chapter_5': 'fragger', // Middle East had no Fragger after Clutch stopped counting
+  'mariuscow_001__europe__chapter_6': 'fragger', // Europe had no Fragger after Clutch stopped counting
+  'mace_001__oceania__chapter_6': 'fragger', // Oceania had no Fragger after Clutch stopped counting
+  'diguera_001__brazil__chapter_6': 'fragger', // Brazil had no Fragger after Clutch stopped counting
+
   // Requested overrides (not gap-fills — the region already had this role
   // covered by someone else; this is just a deliberate reassignment)
   'bugha_001__na_central__chapter_3': 'igl', // was fragger by stats (clutch highest)

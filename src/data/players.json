@@ -7,7 +7,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 94,
@@ -67,7 +67,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 80,
@@ -127,7 +127,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "builder"
     ],
     "stats": {
       "fighting": 80,
@@ -407,7 +407,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 80,
@@ -427,7 +427,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "builder"
     ],
     "stats": {
       "fighting": 80,
@@ -447,7 +447,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 74,
@@ -467,7 +467,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 75,
@@ -1009,7 +1009,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 68,
@@ -1029,7 +1029,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 66,
@@ -1049,7 +1049,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 65,
@@ -1392,7 +1392,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 68,
@@ -1412,7 +1412,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 67,
@@ -1432,7 +1432,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 65,
@@ -1472,7 +1472,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 60,
@@ -1492,7 +1492,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 58,
@@ -1532,7 +1532,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 52,
@@ -1542,7 +1542,8 @@
       "clutch": 48
     },
     "flavor_text": "GordiNN competed for Brazil in Chapter 1.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "gustavo_001__brazil__chapter_1",
@@ -1594,7 +1595,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 62,
@@ -1655,7 +1656,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 58,
@@ -1675,7 +1676,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 60,
@@ -1695,7 +1696,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 58,
@@ -1715,7 +1716,7 @@
     "chapter": "Chapter 1",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 55,
@@ -1776,7 +1777,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "builder"
     ],
     "stats": {
       "fighting": 90,
@@ -1876,7 +1877,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 76,
@@ -1896,7 +1897,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 72,
@@ -1916,7 +1917,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 82,
@@ -1936,7 +1937,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "builder"
     ],
     "stats": {
       "fighting": 74,
@@ -1956,7 +1957,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 76,
@@ -2076,7 +2077,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 42,
@@ -2086,7 +2087,8 @@
       "clutch": 33
     },
     "flavor_text": "Jahq competed for NA Central in Chapter 2.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "zexrow_001__na_central__chapter_2",
@@ -2176,7 +2178,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 80,
@@ -2196,7 +2198,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 76,
@@ -2216,7 +2218,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 74,
@@ -2236,7 +2238,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 72,
@@ -2256,7 +2258,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 78,
@@ -2276,7 +2278,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 74,
@@ -2316,7 +2318,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 82,
@@ -2577,7 +2579,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "builder"
     ],
     "stats": {
       "fighting": 78,
@@ -2597,7 +2599,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 76,
@@ -2617,7 +2619,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 74,
@@ -2718,7 +2720,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 62,
@@ -2778,7 +2780,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 72,
@@ -2798,7 +2800,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 68,
@@ -2818,7 +2820,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 66,
@@ -2838,7 +2840,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 68,
@@ -2858,7 +2860,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 62,
@@ -2898,7 +2900,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 46,
@@ -2908,7 +2910,8 @@
       "clutch": 38
     },
     "flavor_text": "Looter competed for Oceania in Chapter 2.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "speedy_001__oceania__chapter_2",
@@ -2959,7 +2962,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 64,
@@ -2979,7 +2982,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 74,
@@ -3039,7 +3042,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 44,
@@ -3049,7 +3052,8 @@
       "clutch": 36
     },
     "flavor_text": "Seeyun competed for Brazil in Chapter 2.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "opai_001__brazil__chapter_2",
@@ -3121,7 +3125,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 60,
@@ -3141,7 +3145,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 62,
@@ -3161,7 +3165,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 58,
@@ -3181,7 +3185,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 68,
@@ -3201,7 +3205,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 62,
@@ -3221,7 +3225,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 64,
@@ -3241,7 +3245,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 62,
@@ -3261,7 +3265,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 58,
@@ -3281,7 +3285,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 56,
@@ -3362,7 +3366,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 40,
@@ -3372,7 +3376,8 @@
       "clutch": 32
     },
     "flavor_text": "WildHawk competed for Asia in Chapter 2.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "vagnar_001__middle_east__chapter_2",
@@ -3382,7 +3387,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 64,
@@ -3402,7 +3407,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 60,
@@ -3422,7 +3427,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 58,
@@ -3442,7 +3447,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 56,
@@ -3502,7 +3507,7 @@
     "chapter": "Chapter 2",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 38,
@@ -3512,7 +3517,8 @@
       "clutch": 30
     },
     "flavor_text": "Kai competed for Middle East in Chapter 2.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "abufal7_001__middle_east__chapter_2",
@@ -3605,7 +3611,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 84,
@@ -3825,7 +3831,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 78,
@@ -4025,7 +4031,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 78,
@@ -4265,7 +4271,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 84,
@@ -4587,7 +4593,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 68,
@@ -4647,7 +4653,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 74,
@@ -4729,7 +4735,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 70,
@@ -4769,7 +4775,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 40,
@@ -4779,7 +4785,8 @@
       "clutch": 32
     },
     "flavor_text": "Sunz competed for Oceania in Chapter 3.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "phzin_001__brazil__chapter_3",
@@ -4809,7 +4816,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 76,
@@ -4930,7 +4937,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 38,
@@ -4940,7 +4947,8 @@
       "clutch": 30
     },
     "flavor_text": "Barroso competed for Brazil in Chapter 3.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "nutifps_001__brazil__chapter_3",
@@ -5233,7 +5241,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 66,
@@ -5253,7 +5261,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 60,
@@ -5375,7 +5383,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 38,
@@ -5385,7 +5393,8 @@
       "clutch": 30
     },
     "flavor_text": "Balor competed for Middle East in Chapter 3.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "dukez_001__na_central__chapter_4",
@@ -5495,7 +5504,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 76,
@@ -5515,7 +5524,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "builder"
     ],
     "stats": {
       "fighting": 86,
@@ -5535,7 +5544,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 86,
@@ -5575,7 +5584,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 80,
@@ -5615,7 +5624,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 62,
@@ -5815,7 +5824,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 85,
@@ -5915,7 +5924,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 84,
@@ -5935,7 +5944,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 82,
@@ -6095,7 +6104,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 76,
@@ -6397,7 +6406,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 76,
@@ -6417,7 +6426,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 72,
@@ -6497,7 +6506,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 44,
@@ -6507,7 +6516,8 @@
       "clutch": 36
     },
     "flavor_text": "Oreo competed for Oceania in Chapter 4.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "danath_001__oceania__chapter_4",
@@ -6599,7 +6609,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 78,
@@ -6659,7 +6669,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 54,
@@ -6669,7 +6679,8 @@
       "clutch": 46
     },
     "flavor_text": "Kitoz competed for Brazil in Chapter 4.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "cadu_001__brazil__chapter_4",
@@ -6760,7 +6771,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 62,
@@ -7023,7 +7034,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 68,
@@ -7043,7 +7054,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 62,
@@ -7063,7 +7074,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 60,
@@ -7185,7 +7196,7 @@
     "chapter": "Chapter 4",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 54,
@@ -7195,7 +7206,8 @@
       "clutch": 46
     },
     "flavor_text": "Nachiiri competed for Middle East in Chapter 4.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "cold_001__na_central__chapter_5",
@@ -7205,7 +7217,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 82,
@@ -7265,7 +7277,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "builder"
     ],
     "stats": {
       "fighting": 90,
@@ -7385,7 +7397,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 82,
@@ -7565,7 +7577,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 38,
@@ -7575,7 +7587,8 @@
       "clutch": 30
     },
     "flavor_text": "Threats competed for NA Central in Chapter 5.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "curve_001__na_central__chapter_5",
@@ -8007,7 +8020,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 74,
@@ -8047,7 +8060,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 78,
@@ -8148,7 +8161,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 50,
@@ -8158,7 +8171,8 @@
       "clutch": 42
     },
     "flavor_text": "Cazi competed for Oceania in Chapter 5.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "aspect_001__oceania__chapter_5",
@@ -8209,7 +8223,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 78,
@@ -8330,7 +8344,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 56,
@@ -8340,7 +8354,8 @@
       "clutch": 48
     },
     "flavor_text": "Diguera competed for Brazil in Chapter 5.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "kitoz_001__brazil__chapter_5",
@@ -8653,7 +8668,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 70,
@@ -8673,7 +8688,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 64,
@@ -8713,7 +8728,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 50,
@@ -8723,7 +8738,8 @@
       "clutch": 42
     },
     "flavor_text": "SaLva competed for Middle East in Chapter 5.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "phantom_001__middle_east__chapter_5",
@@ -8753,7 +8769,7 @@
     "chapter": "Chapter 5",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 58,
@@ -8875,7 +8891,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 78,
@@ -8895,7 +8911,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 84,
@@ -9015,7 +9031,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 74,
@@ -9135,7 +9151,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 80,
@@ -9175,7 +9191,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 72,
@@ -9195,7 +9211,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 68,
@@ -9335,7 +9351,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 84,
@@ -9395,7 +9411,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 44,
@@ -9405,7 +9421,8 @@
       "clutch": 36
     },
     "flavor_text": "MariusCOW competed for Europe in Chapter 6.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "tjino_001__europe__chapter_6",
@@ -9537,7 +9554,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 86,
@@ -9557,7 +9574,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 84,
@@ -9577,7 +9594,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "rotator"
     ],
     "stats": {
       "fighting": 78,
@@ -9980,7 +9997,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 58,
@@ -10000,7 +10017,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 50,
@@ -10010,7 +10027,8 @@
       "clutch": 42
     },
     "flavor_text": "Mace competed for Oceania in Chapter 6.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "skits_001__oceania__chapter_6",
@@ -10041,7 +10059,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 82,
@@ -10183,7 +10201,7 @@
     "chapter": "Chapter 6",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
       "fighting": 60,
@@ -10193,7 +10211,8 @@
       "clutch": 52
     },
     "flavor_text": "Diguera competed for Brazil in Chapter 6.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "xeat_001__brazil__chapter_6",

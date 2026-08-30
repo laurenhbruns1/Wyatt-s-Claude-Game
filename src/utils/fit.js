@@ -1,18 +1,20 @@
 import { FIT_LEVELS, ROLE_ADJACENCY } from '../data/constants'
 
 // Which stat, if it's a player's single highest, locks them to which slot.
-// Ties go to the first entry here that's tied for the max (Fragger wins a
-// Fighting/Clutch tie, then Rotator, then Builder, then IGL).
+// Ties go to the first entry here that's tied for the max (Fragger, then
+// Rotator, then Builder, then IGL). Clutch does NOT lock anyone to Fragger —
+// it's purely a tournament-sim stat (comeback mechanic), not a role driver;
+// Fighting is the only route into Fragger.
 const STAT_TO_ROLE = [
   ['fighting', 'fragger'],
-  ['clutch', 'fragger'],
   ['aim', 'rotator'],
   ['mechanics', 'builder'],
   ['smarts', 'igl'],
 ]
 
 /** The one slot a player's stat profile locks them into — whichever of
- * Fighting/Clutch/Aim/Mechanics/Smarts is their single highest stat. */
+ * Fighting/Aim/Mechanics/Smarts is their single highest stat (Clutch is
+ * excluded — it only matters in the season sim, not role assignment). */
 export function computeNaturalRole(stats) {
   let bestRole = STAT_TO_ROLE[0][1]
   let bestVal = -Infinity

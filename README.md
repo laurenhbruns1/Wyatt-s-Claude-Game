@@ -20,10 +20,12 @@ A few things about this data that are worth knowing:
 - **Org/team affiliation isn't included** in the source data, so `org` is
   blank for every player — the org-synergy bonus simply won't trigger until
   orgs are added.
-- **Each player is locked to exactly one slot**, whichever of their 5 stats
-  is highest: Fighting or Clutch → Fragger, Aim → Rotator, Mechanics →
-  Builder/Editor, Smarts → IGL (see `computeNaturalRole` in
-  `src/utils/fit.js`). This is a hard lock, not a soft preference.
+- **Each player is locked to exactly one slot**, whichever of their stats
+  is highest: Fighting → Fragger, Aim → Rotator, Mechanics → Builder/Editor,
+  Smarts → IGL (see `computeNaturalRole` in `src/utils/fit.js`). This is a
+  hard lock, not a soft preference. **Clutch does not drive role
+  assignment** — it's purely a tournament-sim stat (comeback mechanic), not
+  a route into Fragger.
 - A **handful of players carry a manual role override** (`role_assigned:
   true`, shown as "(assigned)" on their card) instead of their stat-derived
   role — some regions had zero players whose own stats locked to a given
