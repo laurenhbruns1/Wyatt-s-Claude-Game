@@ -134,6 +134,10 @@ const OVERRIDES = {
   // Requested overrides (not gap-fills — the region already had this role
   // covered by someone else; this is just a deliberate reassignment)
   'bugha_001__na_central__chapter_3': 'igl', // was fragger by stats (clutch highest)
+  'malibuca_001__europe__chapter_7': 'igl', // was fragger by stats (elite-overall tier)
+  't3eny_001__europe__chapter_7': 'igl', // was fragger by stats (elite-overall tier)
+  'kami_001__europe__chapter_7': 'igl', // was rotator by stats (aim highest)
+  'sky_001__europe__chapter_7': 'igl', // was rotator by stats (aim highest)
 }
 
 const players = JSON.parse(readFileSync(DATA_PATH, 'utf8'))

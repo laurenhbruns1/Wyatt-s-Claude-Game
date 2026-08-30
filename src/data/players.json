@@ -11266,7 +11266,7 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "rotator"
+      "igl"
     ],
     "stats": {
       "fighting": 82,
@@ -11276,7 +11276,8 @@
       "clutch": 94
     },
     "flavor_text": "Sky competed for Europe in Chapter 7.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "scroll_001__europe__chapter_7",
@@ -11366,7 +11367,7 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 96,
@@ -11376,7 +11377,8 @@
       "clutch": 98
     },
     "flavor_text": "Malibuca competed for Europe in Chapter 7.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "japko_001__europe__chapter_7",
@@ -11689,7 +11691,7 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 90,
@@ -11699,7 +11701,8 @@
       "clutch": 92
     },
     "flavor_text": "t3eny competed for Europe in Chapter 7.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "swizzy_001__europe__chapter_7",
@@ -11769,7 +11772,7 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "rotator"
+      "igl"
     ],
     "stats": {
       "fighting": 82,
@@ -11779,7 +11782,8 @@
       "clutch": 88
     },
     "flavor_text": "Kami competed for Europe in Chapter 7.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "cr1nge_001__europe__chapter_7",
