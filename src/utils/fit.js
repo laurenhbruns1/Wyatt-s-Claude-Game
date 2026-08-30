@@ -12,10 +12,24 @@ const STAT_TO_ROLE = [
   ['smarts', 'igl'],
 ]
 
+// A rare "elite overall" tier overrides the normal highest-stat lock: a
+// player this stacked across the board (Fighting/Aim/Mechanics/Smarts, not
+// just one specialty) plays like a Fragger regardless of which single stat
+// happens to edge out the others — e.g. Chapter 1 Bugha (94/91/87/96), whose
+// Smarts barely edges Fighting but who's clearly an elite fight-winner.
+const ELITE_AVG_THRESHOLD = 90
+
+function eliteAverage(stats) {
+  return (stats.fighting + stats.aim + stats.mechanics + stats.smarts) / 4
+}
+
 /** The one slot a player's stat profile locks them into — whichever of
  * Fighting/Aim/Mechanics/Smarts is their single highest stat (Clutch is
- * excluded — it only matters in the season sim, not role assignment). */
+ * excluded — it only matters in the season sim, not role assignment) —
+ * unless they clear the elite-overall bar, which locks them to Fragger
+ * outright. */
 export function computeNaturalRole(stats) {
+  if (eliteAverage(stats) >= ELITE_AVG_THRESHOLD) return 'fragger'
   let bestRole = STAT_TO_ROLE[0][1]
   let bestVal = -Infinity
   for (const [key, role] of STAT_TO_ROLE) {

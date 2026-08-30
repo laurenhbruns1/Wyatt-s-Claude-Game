@@ -19,8 +19,12 @@ const STAT_TO_ROLE = [
   ['mechanics', 'builder'],
   ['smarts', 'igl'],
 ]
+const ELITE_AVG_THRESHOLD = 90
 
 function computeNaturalRole(stats) {
+  const eliteAverage = (stats.fighting + stats.aim + stats.mechanics + stats.smarts) / 4
+  if (eliteAverage >= ELITE_AVG_THRESHOLD) return 'fragger'
+
   let bestRole = STAT_TO_ROLE[0][1]
   let bestVal = -Infinity
   for (const [key, role] of STAT_TO_ROLE) {

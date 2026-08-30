@@ -70,15 +70,21 @@ function parseCsv(text) {
 // A player is locked to exactly one slot, whichever of their stats (Clutch
 // excluded — that's sim-only, not a role driver) is highest: Fighting ->
 // Fragger, Aim -> Rotator, Mechanics -> Builder, Smarts -> IGL. Ties go to
-// the first entry below tied for the max.
+// the first entry below tied for the max. An "elite overall" tier (avg of
+// Fighting/Aim/Mechanics/Smarts >= 90) overrides this and locks to Fragger
+// outright — must match src/utils/fit.js's computeNaturalRole exactly.
 const STAT_TO_ROLE = [
   ['fighting', 'fragger'],
   ['aim', 'rotator'],
   ['mechanics', 'builder'],
   ['smarts', 'igl'],
 ]
+const ELITE_AVG_THRESHOLD = 90
 
 function inferRoleTags(stats) {
+  const eliteAverage = (stats.fighting + stats.aim + stats.mechanics + stats.smarts) / 4
+  if (eliteAverage >= ELITE_AVG_THRESHOLD) return ['fragger']
+
   let bestRole = STAT_TO_ROLE[0][1]
   let bestVal = -Infinity
   for (const [key, role] of STAT_TO_ROLE) {
