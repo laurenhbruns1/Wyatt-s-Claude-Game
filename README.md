@@ -53,7 +53,15 @@ A few things about this data that are worth knowing:
 
 **Every mode re-spins the region/chapter before every single pick** — a
 squad can (and usually will) end up drawn from several different regions.
-The two draft flows differ in what "showing the pool" means, though.
+**Every spin is weighted by how many real players actually exist for that
+exact region+chapter combo** (see `spinCombo`/`spinComboRegionLocked`/
+`spinComboChapterLocked` in `src/utils/draftPool.js`) — a stacked combo
+like Chapter 7 NA Central/Europe (30 players each) comes up roughly twice
+as often as a combo with half the roster, and a combo with zero players
+(e.g. Chapter 5 NA West, which has no data) can never come up at all. This
+applies everywhere a spin happens, including which chapter Region Lock
+lands on and which region Chapter Lock lands on. The two draft flows
+differ in what "showing the pool" means, though.
 In Classic, Blind, Ultimate, Region Lock, and Chapter Lock: each spin's
 pool shows everyone eligible at once, mixed roles and all — click anyone
 and they lock into whichever slot their best stat fits, crossing them off
