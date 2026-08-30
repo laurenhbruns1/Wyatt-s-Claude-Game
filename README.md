@@ -52,7 +52,11 @@ eligible at once, mixed roles and all — click anyone and they lock into
 whichever slot their best stat fits, crossing them off (and greying out
 anyone else who locked to that now-filled slot); once you pick, it re-spins
 fresh for whatever's still open, until all 4 slots are filled, regardless
-of pick order. **Rotation mode works differently on purpose**: it walks
+of pick order. **In Classic mode specifically**, the still-pickable cards
+are also sorted best-first (by average of the 5 stats), since stats are
+already visible there — Blind Draft keeps its shuffled order instead, since
+revealing skill through list position would defeat the whole "no stats"
+premise. **Rotation mode works differently on purpose**: it walks
 the 4 slots in a fixed order (still re-spinning before each one) and keeps
 the older flexible fit system (any player, any slot, but a natural-fit pick
 is locked out and an off-role pick takes a stat penalty), since its whole

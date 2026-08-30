@@ -29,9 +29,14 @@ function FilterSelect({ label, value, onChange, options }) {
  * Click anyone and they fill the one slot their best stat locks them to;
  * anyone else who locks to that same slot gets crossed off the board too,
  * since there's no room left for them. Keeps going until all 4 are filled. */
+function statAverage(stats) {
+  return (stats.fighting + stats.aim + stats.mechanics + stats.smarts + stats.clutch) / 5
+}
+
 export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
   const blind = mode === 'blind'
   const ultimate = mode === 'ultimate'
+  const classic = mode === 'classic'
   const filledCount = Object.keys(squad).length
 
   // Ultimate's pool spans every region/chapter/player, so it's worth being
@@ -109,7 +114,15 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
           })
           // Pickable cards first — anything crossed off or role-filled sinks
           // to the bottom so there's nothing to scroll past to keep drafting.
-          .sort((a, b) => (a.disabled || a.crossedOff ? 1 : 0) - (b.disabled || b.crossedOff ? 1 : 0))
+          // Classic mode additionally sorts the still-pickable group best-first
+          // (by overall stat average) since stats are visible anyway.
+          .sort((a, b) => {
+            const sunkA = a.disabled || a.crossedOff ? 1 : 0
+            const sunkB = b.disabled || b.crossedOff ? 1 : 0
+            if (sunkA !== sunkB) return sunkA - sunkB
+            if (classic) return statAverage(b.player.stats) - statAverage(a.player.stats)
+            return 0
+          })
           .map(({ player, role, crossedOff, disabled }) => (
             <PlayerCard
               key={player.id}
