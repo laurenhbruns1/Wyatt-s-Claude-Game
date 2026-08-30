@@ -165,7 +165,10 @@ export default function App() {
 
     // Free-pick modes: the player locks into whichever slot their best
     // stat matches — the UI only lets you click one when that slot is open.
-    // Every pick re-spins the region/chapter for whatever's left to draft.
+    // Every pick re-spins the region/chapter for whatever's left to draft —
+    // except Ultimate, whose "spin" never actually changes (always every
+    // region/chapter at once), so re-showing it would just be a pointless
+    // extra click and would reset the region/position/chapter filters.
     const role = player.role_tags[0]
     if (squad[role]) return
     const nextSquad = { ...squad, [role]: player }
@@ -174,6 +177,7 @@ export default function App() {
       setSquad(nextSquad)
       setCombo(nextCombo)
       setPool(nextPool)
+      if (mode === 'ultimate') return
       setSpinKey((k) => k + 1)
       setScreen('spin')
       return

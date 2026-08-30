@@ -80,7 +80,9 @@ only new rows get appended.
 - **Blind Draft** — only names shown, no stats
 - **Rotation** — every slot must be filled by an off-role player
 - **Daily Challenge** — same seeded spin/pool (or 4 seeded spins, in Rotation) for everyone that day
-- **Ultimate/All-Time** — draft across every region and chapter
+- **Ultimate/All-Time** — draft across every region and chapter; Region/Position/Chapter
+  dropdown filters narrow the pool while browsing (the only mode that has them,
+  since it's the only one with a pool big enough to need it)
 
 ## Tech
 
