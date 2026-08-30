@@ -54,6 +54,10 @@ const OVERRIDES = {
   'merem_001__asia__chapter_3': 'builder', // Asia had no Builder
   'tacky_001__middle_east__chapter_3': 'igl', // Middle East had no IGL
   'nachiiri_001__middle_east__chapter_3': 'builder', // Middle East had no Builder
+
+  // Requested overrides (not gap-fills — the region already had this role
+  // covered by someone else; this is just a deliberate reassignment)
+  'bugha_001__na_central__chapter_3': 'igl', // was fragger by stats (clutch highest)
 }
 
 const players = JSON.parse(readFileSync(DATA_PATH, 'utf8'))

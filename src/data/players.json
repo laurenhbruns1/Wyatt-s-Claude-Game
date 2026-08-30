@@ -3584,7 +3584,7 @@
     "chapter": "Chapter 3",
     "org": "",
     "role_tags": [
-      "fragger"
+      "igl"
     ],
     "stats": {
       "fighting": 88,
@@ -3594,7 +3594,8 @@
       "clutch": 92
     },
     "flavor_text": "Bugha competed for NA Central in Chapter 3.",
-    "real": true
+    "real": true,
+    "role_assigned": true
   },
   {
     "id": "mero_001__na_central__chapter_3",
