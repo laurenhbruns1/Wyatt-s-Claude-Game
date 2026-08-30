@@ -1,4 +1,6 @@
+import { useMemo } from 'react'
 import { ROLE_LABELS } from '../data/constants'
+import { shuffleWith } from '../utils/random'
 import PlayerCard from './PlayerCard'
 import SquadBoard from './SquadBoard'
 
@@ -9,6 +11,13 @@ import SquadBoard from './SquadBoard'
 export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
   const blind = mode === 'blind'
   const filledCount = Object.keys(squad).length
+
+  // players.json rows trend strongest-to-weakest within a region, so in
+  // Blind Draft (the whole point being "no stats, guess by name") showing
+  // that raw order would silently leak skill through list position —
+  // shuffle it. Memoized on the pool itself so it doesn't re-shuffle (and
+  // visually jump) on every render, only when a fresh spin hands in a new pool.
+  const displayPool = useMemo(() => (blind ? shuffleWith(pool, Math.random) : pool), [pool, blind])
 
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-8">
@@ -28,7 +37,7 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {pool
+        {displayPool
           .map((player) => {
             const role = player.role_tags[0]
             const holder = squad[role]
