@@ -28,12 +28,18 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {pool.map((player) => {
-          const role = player.role_tags[0]
-          const holder = squad[role]
-          const crossedOff = holder?.id === player.id
-          const disabled = Boolean(holder) && !crossedOff
-          return (
+        {pool
+          .map((player) => {
+            const role = player.role_tags[0]
+            const holder = squad[role]
+            const crossedOff = holder?.id === player.id
+            const disabled = Boolean(holder) && !crossedOff
+            return { player, role, crossedOff, disabled }
+          })
+          // Pickable cards first — anything crossed off or role-filled sinks
+          // to the bottom so there's nothing to scroll past to keep drafting.
+          .sort((a, b) => (a.disabled || a.crossedOff ? 1 : 0) - (b.disabled || b.crossedOff ? 1 : 0))
+          .map(({ player, role, crossedOff, disabled }) => (
             <PlayerCard
               key={player.id}
               player={player}
@@ -43,8 +49,7 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
               crossedOff={crossedOff}
               onDraft={onDraft}
             />
-          )
-        })}
+          ))}
         {pool.length === 0 && (
           <p className="col-span-full text-center text-slate-500">
             No eligible players left in this pool.

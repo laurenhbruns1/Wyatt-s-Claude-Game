@@ -19,10 +19,15 @@ export default function DraftScreen({ squad, activeSlot, pool, onDraft }) {
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {pool.map((player) => {
-          const fitLevel = getFitLevel(player, activeSlot.id)
-          const disabled = fitLevel === 'green'
-          return (
+        {pool
+          .map((player) => {
+            const fitLevel = getFitLevel(player, activeSlot.id)
+            return { player, fitLevel, disabled: fitLevel === 'green' }
+          })
+          // Pickable cards first — natural fits locked out this slot sink
+          // to the bottom so there's nothing to scroll past to keep drafting.
+          .sort((a, b) => (a.disabled ? 1 : 0) - (b.disabled ? 1 : 0))
+          .map(({ player, fitLevel, disabled }) => (
             <PlayerCard
               key={player.id}
               player={player}
@@ -31,8 +36,7 @@ export default function DraftScreen({ squad, activeSlot, pool, onDraft }) {
               disabledLabel="Not allowed in Rotation mode"
               onDraft={onDraft}
             />
-          )
-        })}
+          ))}
         {pool.length === 0 && (
           <p className="col-span-full text-center text-slate-500">
             No eligible players left in this pool.
