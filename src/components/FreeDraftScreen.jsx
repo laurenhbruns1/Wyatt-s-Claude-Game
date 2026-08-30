@@ -3,6 +3,7 @@ import { REGIONS, ROLE_LABELS, SLOTS } from '../data/constants'
 import { AVAILABLE_CHAPTERS } from '../utils/draftPool'
 import { shuffleWith } from '../utils/random'
 import PlayerCard from './PlayerCard'
+import PlayerSearchInput from './PlayerSearchInput'
 import SquadBoard from './SquadBoard'
 
 function FilterSelect({ label, value, onChange, options }) {
@@ -47,6 +48,7 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
   const [regionFilter, setRegionFilter] = useState('all')
   const [chapterFilter, setChapterFilter] = useState('all')
   const [roleFilter, setRoleFilter] = useState('all')
+  const [nameQuery, setNameQuery] = useState('')
 
   // players.json rows trend strongest-to-weakest within a region, so in
   // Blind Draft (the whole point being "no stats, guess by name") showing
@@ -56,14 +58,19 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
   const shuffledPool = useMemo(() => (blind ? shuffleWith(pool, Math.random) : pool), [pool, blind])
 
   const displayPool = useMemo(() => {
-    if (!ultimate) return shuffledPool
-    return shuffledPool.filter(
-      (p) =>
-        (regionFilter === 'all' || p.region === regionFilter) &&
-        (chapterFilter === 'all' || p.chapter === chapterFilter) &&
-        (roleFilter === 'all' || p.role_tags[0] === roleFilter),
-    )
-  }, [shuffledPool, ultimate, regionFilter, chapterFilter, roleFilter])
+    let result = shuffledPool
+    if (ultimate) {
+      result = result.filter(
+        (p) =>
+          (regionFilter === 'all' || p.region === regionFilter) &&
+          (chapterFilter === 'all' || p.chapter === chapterFilter) &&
+          (roleFilter === 'all' || p.role_tags[0] === roleFilter),
+      )
+    }
+    const q = nameQuery.trim().toLowerCase()
+    if (q) result = result.filter((p) => p.name.toLowerCase().includes(q))
+    return result
+  }, [shuffledPool, ultimate, regionFilter, chapterFilter, roleFilter, nameQuery])
 
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-8">
@@ -81,6 +88,8 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
           </div>
         )}
       </div>
+
+      <PlayerSearchInput value={nameQuery} onChange={setNameQuery} />
 
       {ultimate && (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
@@ -139,7 +148,11 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
           ))}
         {displayPool.length === 0 && (
           <p className="col-span-full text-center text-slate-500">
-            {ultimate ? 'No players match these filters.' : 'No eligible players left in this pool.'}
+            {nameQuery.trim()
+              ? 'No players match that search.'
+              : ultimate
+                ? 'No players match these filters.'
+                : 'No eligible players left in this pool.'}
           </p>
         )}
       </div>

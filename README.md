@@ -70,6 +70,13 @@ is locked out and an off-role pick takes a stat penalty), since its whole
 premise is drafting off-role — the hard lock elsewhere would make that
 impossible.
 
+**Every draft screen, in every mode, has a name-search box** above the pool
+(`PlayerSearchInput`) so you can jump straight to a player by typing instead
+of scanning the whole grid — it's a plain substring match against the
+player's name and works fine in Blind Draft too, since Blind only hides
+stats, not names. In Ultimate it stacks with the Region/Position/Chapter
+dropdowns rather than replacing them.
+
 **The spin only offers chapters that actually have players loaded** (see
 `AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — Chapters 1-6 right now.
 This opens up automatically as more chapters are imported; no need to

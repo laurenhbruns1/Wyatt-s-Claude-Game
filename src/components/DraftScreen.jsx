@@ -1,10 +1,19 @@
+import { useMemo, useState } from 'react'
 import PlayerCard from './PlayerCard'
+import PlayerSearchInput from './PlayerSearchInput'
 import SquadBoard from './SquadBoard'
 import { getFitLevel } from '../utils/fit'
 
 /** Rotation mode only: walks the 4 slots in order, one spin per slot, and
  * requires an off-role (non-green-fit) pick for each one. */
 export default function DraftScreen({ squad, activeSlot, pool, onDraft }) {
+  const [nameQuery, setNameQuery] = useState('')
+
+  const displayPool = useMemo(() => {
+    const q = nameQuery.trim().toLowerCase()
+    return q ? pool.filter((p) => p.name.toLowerCase().includes(q)) : pool
+  }, [pool, nameQuery])
+
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-8">
       <SquadBoard squad={squad} activeSlotId={activeSlot.id} />
@@ -18,8 +27,10 @@ export default function DraftScreen({ squad, activeSlot, pool, onDraft }) {
         </div>
       </div>
 
+      <PlayerSearchInput value={nameQuery} onChange={setNameQuery} />
+
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {pool
+        {displayPool
           .map((player) => {
             const fitLevel = getFitLevel(player, activeSlot.id)
             return { player, fitLevel, disabled: fitLevel === 'green' }
@@ -37,9 +48,9 @@ export default function DraftScreen({ squad, activeSlot, pool, onDraft }) {
               onDraft={onDraft}
             />
           ))}
-        {pool.length === 0 && (
+        {displayPool.length === 0 && (
           <p className="col-span-full text-center text-slate-500">
-            No eligible players left in this pool.
+            {nameQuery.trim() ? 'No players match that search.' : 'No eligible players left in this pool.'}
           </p>
         )}
       </div>
