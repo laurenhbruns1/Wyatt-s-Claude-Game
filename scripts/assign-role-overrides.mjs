@@ -67,6 +67,18 @@ const OVERRIDES = {
   'hellonsteam_001__middle_east__chapter_4': 'igl', // Middle East had no IGL
   'phantom_001__middle_east__chapter_4': 'builder', // Middle East had no Builder
 
+  // Chapter 5
+  'czb_001__europe__chapter_5': 'fragger', // Europe had no Fragger
+  'skyboy_001__europe__chapter_5': 'builder', // Europe had no Builder
+  'deymo_001__oceania__chapter_5': 'igl', // Oceania had no IGL
+  'aspect_001__oceania__chapter_5': 'builder', // Oceania had no Builder
+  'seeyun_001__brazil__chapter_5': 'igl', // Brazil had no IGL
+  'stryker_001__brazil__chapter_5': 'builder', // Brazil had no Builder
+  'xmipoli_001__asia__chapter_5': 'fragger', // Asia had no Fragger
+  'job_001__asia__chapter_5': 'builder', // Asia had no Builder
+  'hellonsteam_001__middle_east__chapter_5': 'igl', // Middle East had no IGL
+  'rv_001__middle_east__chapter_5': 'builder', // Middle East had no Builder
+
   // Requested overrides (not gap-fills — the region already had this role
   // covered by someone else; this is just a deliberate reassignment)
   'bugha_001__na_central__chapter_3': 'igl', // was fragger by stats (clutch highest)
