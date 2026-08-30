@@ -9,8 +9,8 @@ Fortnite (regions, chapters/eras).
 ## Data
 
 Players in `src/data/players.json` are **real competitive Fortnite players**,
-supplied chapter-by-chapter (currently just Chapter 1) with real stats for
-five categories: Fighting, Aim, Mechanics, Smarts, Clutch.
+supplied chapter-by-chapter (Chapters 1-2 so far, 178 players) with real
+stats for five categories: Fighting, Aim, Mechanics, Smarts, Clutch.
 
 A few things about this data that are worth knowing:
 
@@ -31,9 +31,15 @@ A few things about this data that are worth knowing:
   already in that region was hand-picked (favoring lower/mid stats, so it
   isn't a free power boost) to fill the gap. See
   `scripts/assign-role-overrides.mjs` to add more.
-- A player can be **eligible in more than one region** under the same
-  `player_id` (e.g. a player who competed in both NA Central and Europe) —
-  Ultimate mode de-dupes these down to one card.
+- A player can be **eligible in more than one region within the same
+  chapter** under the same `player_id` (e.g. a Chapter 1 player who
+  competed in both NA Central and Europe) — Ultimate mode de-dupes these
+  down to one card. A player who reappears in a **later chapter** is kept
+  as a separate card, though (e.g. Chapter 1 Bugha and Chapter 2 Bugha are
+  two different draftable versions with different stats, not a duplicate)
+  — de-dupe keys on `player_id` + `chapter` together, never `player_id`
+  alone. Each row's `id` is `player_id__region__chapter`, so the same real
+  person can safely reappear across chapters without colliding.
 - **The squad has no Coach slot** — just Fragger, IGL, Builder/Editor,
   Rotator. There's no Build/Zero Build split either — one stat profile per
   player.
@@ -54,9 +60,9 @@ premise is drafting off-role — the hard lock elsewhere would make that
 impossible.
 
 **The spin only offers chapters that actually have players loaded** (see
-`AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — right now that's just
-Chapter 1, so every spin lands there. This opens up automatically as more
-chapters are imported; no need to toggle anything by hand.
+`AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — Chapters 1-2 right now.
+This opens up automatically as more chapters are imported; no need to
+toggle anything by hand.
 
 To add another chapter's players, save a CSV with columns
 `Player ID,Player,Chapter,Region,Fighting,Aim,Mechanics,Smarts,Clutch` and run:

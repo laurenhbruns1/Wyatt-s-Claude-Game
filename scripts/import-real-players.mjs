@@ -105,7 +105,7 @@ for (const row of rows) {
   const region = normalizeRegion(row.Region)
   const chapter = normalizeChapter(row.Chapter)
   const playerId = row['Player ID']
-  const id = `${playerId}__${slug(region)}`
+  const id = `${playerId}__${slug(region)}__${slug(chapter)}`
 
   if (existingIds.has(id)) {
     skipped++

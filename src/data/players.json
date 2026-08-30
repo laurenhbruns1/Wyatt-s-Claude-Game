@@ -1,6 +1,6 @@
 [
   {
-    "id": "bugha_001__na_central",
+    "id": "bugha_001__na_central__chapter_1",
     "player_id": "bugha_001",
     "name": "Bugha",
     "region": "NA Central",
@@ -20,7 +20,7 @@
     "real": true
   },
   {
-    "id": "tfue_001__na_central",
+    "id": "tfue_001__na_central__chapter_1",
     "player_id": "tfue_001",
     "name": "Tfue",
     "region": "NA Central",
@@ -40,7 +40,7 @@
     "real": true
   },
   {
-    "id": "ceice_001__na_central",
+    "id": "ceice_001__na_central__chapter_1",
     "player_id": "ceice_001",
     "name": "Ceice",
     "region": "NA Central",
@@ -60,7 +60,7 @@
     "real": true
   },
   {
-    "id": "aqua_001__na_central",
+    "id": "aqua_001__na_central__chapter_1",
     "player_id": "aqua_001",
     "name": "Aqua",
     "region": "NA Central",
@@ -80,7 +80,7 @@
     "real": true
   },
   {
-    "id": "epikwhale_001__na_central",
+    "id": "epikwhale_001__na_central__chapter_1",
     "player_id": "epikwhale_001",
     "name": "EpikWhale",
     "region": "NA Central",
@@ -100,7 +100,7 @@
     "real": true
   },
   {
-    "id": "zayt_001__na_central",
+    "id": "zayt_001__na_central__chapter_1",
     "player_id": "zayt_001",
     "name": "Zayt",
     "region": "NA Central",
@@ -120,7 +120,7 @@
     "real": true
   },
   {
-    "id": "nyhrox_001__na_central",
+    "id": "nyhrox_001__na_central__chapter_1",
     "player_id": "nyhrox_001",
     "name": "Nyhrox",
     "region": "NA Central",
@@ -140,7 +140,7 @@
     "real": true
   },
   {
-    "id": "dubs_001__na_central",
+    "id": "dubs_001__na_central__chapter_1",
     "player_id": "dubs_001",
     "name": "Dubs",
     "region": "NA Central",
@@ -160,7 +160,7 @@
     "real": true
   },
   {
-    "id": "ronaldoo7_001__na_central",
+    "id": "ronaldoo7_001__na_central__chapter_1",
     "player_id": "ronaldoo7_001",
     "name": "Ronaldoo7",
     "region": "NA Central",
@@ -180,7 +180,7 @@
     "real": true
   },
   {
-    "id": "saf_001__na_central",
+    "id": "saf_001__na_central__chapter_1",
     "player_id": "saf_001",
     "name": "Saf",
     "region": "NA Central",
@@ -200,7 +200,7 @@
     "real": true
   },
   {
-    "id": "rise_001__na_central",
+    "id": "rise_001__na_central__chapter_1",
     "player_id": "rise_001",
     "name": "Rise",
     "region": "NA Central",
@@ -220,7 +220,7 @@
     "real": true
   },
   {
-    "id": "vinny1x_001__na_central",
+    "id": "vinny1x_001__na_central__chapter_1",
     "player_id": "vinny1x_001",
     "name": "Vinny1x",
     "region": "NA Central",
@@ -240,7 +240,7 @@
     "real": true
   },
   {
-    "id": "symfuhny_001__na_central",
+    "id": "symfuhny_001__na_central__chapter_1",
     "player_id": "symfuhny_001",
     "name": "Symfuhny",
     "region": "NA Central",
@@ -260,7 +260,7 @@
     "real": true
   },
   {
-    "id": "natehill_001__na_central",
+    "id": "natehill_001__na_central__chapter_1",
     "player_id": "natehill_001",
     "name": "Nate Hill",
     "region": "NA Central",
@@ -280,7 +280,7 @@
     "real": true
   },
   {
-    "id": "chap_001__na_central",
+    "id": "chap_001__na_central__chapter_1",
     "player_id": "chap_001",
     "name": "Chap",
     "region": "NA Central",
@@ -300,7 +300,7 @@
     "real": true
   },
   {
-    "id": "vivid_001__na_central",
+    "id": "vivid_001__na_central__chapter_1",
     "player_id": "vivid_001",
     "name": "Vivid",
     "region": "NA Central",
@@ -320,7 +320,7 @@
     "real": true
   },
   {
-    "id": "sceptic_001__na_central",
+    "id": "sceptic_001__na_central__chapter_1",
     "player_id": "sceptic_001",
     "name": "Sceptic",
     "region": "NA Central",
@@ -340,7 +340,7 @@
     "real": true
   },
   {
-    "id": "kreo_001__na_central",
+    "id": "kreo_001__na_central__chapter_1",
     "player_id": "kreo_001",
     "name": "Kreo",
     "region": "NA Central",
@@ -360,7 +360,7 @@
     "real": true
   },
   {
-    "id": "ninja_001__na_central",
+    "id": "ninja_001__na_central__chapter_1",
     "player_id": "ninja_001",
     "name": "Ninja",
     "region": "NA Central",
@@ -380,7 +380,7 @@
     "real": true
   },
   {
-    "id": "daequan_001__na_central",
+    "id": "daequan_001__na_central__chapter_1",
     "player_id": "daequan_001",
     "name": "Daequan",
     "region": "NA Central",
@@ -400,7 +400,7 @@
     "real": true
   },
   {
-    "id": "aqua_001__europe",
+    "id": "aqua_001__europe__chapter_1",
     "player_id": "aqua_001",
     "name": "Aqua",
     "region": "Europe",
@@ -420,7 +420,7 @@
     "real": true
   },
   {
-    "id": "nyhrox_001__europe",
+    "id": "nyhrox_001__europe__chapter_1",
     "player_id": "nyhrox_001",
     "name": "Nyhrox",
     "region": "Europe",
@@ -440,7 +440,7 @@
     "real": true
   },
   {
-    "id": "tschinken_001__europe",
+    "id": "tschinken_001__europe__chapter_1",
     "player_id": "tschinken_001",
     "name": "Tschinken",
     "region": "Europe",
@@ -460,7 +460,7 @@
     "real": true
   },
   {
-    "id": "stompy_001__europe",
+    "id": "stompy_001__europe__chapter_1",
     "player_id": "stompy_001",
     "name": "Stompy",
     "region": "Europe",
@@ -480,7 +480,7 @@
     "real": true
   },
   {
-    "id": "benjyfishy_001__europe",
+    "id": "benjyfishy_001__europe__chapter_1",
     "player_id": "benjyfishy_001",
     "name": "Benjyfishy",
     "region": "Europe",
@@ -500,7 +500,7 @@
     "real": true
   },
   {
-    "id": "mrsavage_001__europe",
+    "id": "mrsavage_001__europe__chapter_1",
     "player_id": "mrsavage_001",
     "name": "MrSavage",
     "region": "Europe",
@@ -520,7 +520,7 @@
     "real": true
   },
   {
-    "id": "mongraal_001__europe",
+    "id": "mongraal_001__europe__chapter_1",
     "player_id": "mongraal_001",
     "name": "Mongraal",
     "region": "Europe",
@@ -540,7 +540,7 @@
     "real": true
   },
   {
-    "id": "mitr0_001__europe",
+    "id": "mitr0_001__europe__chapter_1",
     "player_id": "mitr0_001",
     "name": "Mitr0",
     "region": "Europe",
@@ -560,7 +560,7 @@
     "real": true
   },
   {
-    "id": "fwexy_001__europe",
+    "id": "fwexy_001__europe__chapter_1",
     "player_id": "fwexy_001",
     "name": "Fwexy",
     "region": "Europe",
@@ -580,7 +580,7 @@
     "real": true
   },
   {
-    "id": "letw1k3_001__europe",
+    "id": "letw1k3_001__europe__chapter_1",
     "player_id": "letw1k3_001",
     "name": "letw1k3",
     "region": "Europe",
@@ -600,7 +600,7 @@
     "real": true
   },
   {
-    "id": "chapix_001__europe",
+    "id": "chapix_001__europe__chapter_1",
     "player_id": "chapix_001",
     "name": "Chapix",
     "region": "Europe",
@@ -620,7 +620,7 @@
     "real": true
   },
   {
-    "id": "crue_001__europe",
+    "id": "crue_001__europe__chapter_1",
     "player_id": "crue_001",
     "name": "Crue",
     "region": "Europe",
@@ -640,7 +640,7 @@
     "real": true
   },
   {
-    "id": "m11z_001__europe",
+    "id": "m11z_001__europe__chapter_1",
     "player_id": "m11z_001",
     "name": "M11Z",
     "region": "Europe",
@@ -660,7 +660,7 @@
     "real": true
   },
   {
-    "id": "deadra_001__europe",
+    "id": "deadra_001__europe__chapter_1",
     "player_id": "deadra_001",
     "name": "Deadra",
     "region": "Europe",
@@ -680,7 +680,7 @@
     "real": true
   },
   {
-    "id": "kiryache_001__europe",
+    "id": "kiryache_001__europe__chapter_1",
     "player_id": "kiryache_001",
     "name": "Kiryache",
     "region": "Europe",
@@ -701,7 +701,7 @@
     "role_assigned": true
   },
   {
-    "id": "tickle_001__europe",
+    "id": "tickle_001__europe__chapter_1",
     "player_id": "tickle_001",
     "name": "Tickle",
     "region": "Europe",
@@ -721,7 +721,7 @@
     "real": true
   },
   {
-    "id": "arion_001__europe",
+    "id": "arion_001__europe__chapter_1",
     "player_id": "arion_001",
     "name": "Arion",
     "region": "Europe",
@@ -741,7 +741,7 @@
     "real": true
   },
   {
-    "id": "mexe_001__europe",
+    "id": "mexe_001__europe__chapter_1",
     "player_id": "mexe_001",
     "name": "Mexe",
     "region": "Europe",
@@ -761,7 +761,7 @@
     "real": true
   },
   {
-    "id": "skram_001__europe",
+    "id": "skram_001__europe__chapter_1",
     "player_id": "skram_001",
     "name": "Skram",
     "region": "Europe",
@@ -781,7 +781,7 @@
     "real": true
   },
   {
-    "id": "oblivion_001__europe",
+    "id": "oblivion_001__europe__chapter_1",
     "player_id": "oblivion_001",
     "name": "Oblivion",
     "region": "Europe",
@@ -801,7 +801,7 @@
     "real": true
   },
   {
-    "id": "jayrosez_001__na_west",
+    "id": "jayrosez_001__na_west__chapter_1",
     "player_id": "jayrosez_001",
     "name": "Jayrosez",
     "region": "NA West",
@@ -821,7 +821,7 @@
     "real": true
   },
   {
-    "id": "dog_001__na_west",
+    "id": "dog_001__na_west__chapter_1",
     "player_id": "dog_001",
     "name": "Dog",
     "region": "NA West",
@@ -841,7 +841,7 @@
     "real": true
   },
   {
-    "id": "buubee_001__na_west",
+    "id": "buubee_001__na_west__chapter_1",
     "player_id": "buubee_001",
     "name": "Buubee",
     "region": "NA West",
@@ -861,7 +861,7 @@
     "real": true
   },
   {
-    "id": "arkhram_001__na_west",
+    "id": "arkhram_001__na_west__chapter_1",
     "player_id": "arkhram_001",
     "name": "Arkhram",
     "region": "NA West",
@@ -881,7 +881,7 @@
     "real": true
   },
   {
-    "id": "falconer_001__na_west",
+    "id": "falconer_001__na_west__chapter_1",
     "player_id": "falconer_001",
     "name": "Falconer",
     "region": "NA West",
@@ -901,7 +901,7 @@
     "real": true
   },
   {
-    "id": "epikwhale_001__na_west",
+    "id": "epikwhale_001__na_west__chapter_1",
     "player_id": "epikwhale_001",
     "name": "EpikWhale",
     "region": "NA West",
@@ -921,7 +921,7 @@
     "real": true
   },
   {
-    "id": "vicaros_001_NAW__na_west",
+    "id": "vicaros_001_NAW__na_west__chapter_1",
     "player_id": "vicaros_001_NAW",
     "name": "Vicaros",
     "region": "NA West",
@@ -941,7 +941,7 @@
     "real": true
   },
   {
-    "id": "painful_001_NAW__na_west",
+    "id": "painful_001_NAW__na_west__chapter_1",
     "player_id": "painful_001_NAW",
     "name": "Painful",
     "region": "NA West",
@@ -961,7 +961,7 @@
     "real": true
   },
   {
-    "id": "thegeneral_001_NAW__na_west",
+    "id": "thegeneral_001_NAW__na_west__chapter_1",
     "player_id": "thegeneral_001_NAW",
     "name": "TheGeneral",
     "region": "NA West",
@@ -982,7 +982,7 @@
     "role_assigned": true
   },
   {
-    "id": "hiimtylerh_001_NAW__na_west",
+    "id": "hiimtylerh_001_NAW__na_west__chapter_1",
     "player_id": "hiimtylerh_001_NAW",
     "name": "hiimtylerh",
     "region": "NA West",
@@ -1002,7 +1002,7 @@
     "real": true
   },
   {
-    "id": "takamura_001__asia",
+    "id": "takamura_001__asia__chapter_1",
     "player_id": "takamura_001",
     "name": "Takamura",
     "region": "Asia",
@@ -1022,7 +1022,7 @@
     "real": true
   },
   {
-    "id": "rizart_001__asia",
+    "id": "rizart_001__asia__chapter_1",
     "player_id": "rizart_001",
     "name": "RizArt",
     "region": "Asia",
@@ -1042,7 +1042,7 @@
     "real": true
   },
   {
-    "id": "maufin_001__asia",
+    "id": "maufin_001__asia__chapter_1",
     "player_id": "maufin_001",
     "name": "Maufin",
     "region": "Asia",
@@ -1062,7 +1062,7 @@
     "real": true
   },
   {
-    "id": "ruri_001__asia",
+    "id": "ruri_001__asia__chapter_1",
     "player_id": "ruri_001",
     "name": "Ruri",
     "region": "Asia",
@@ -1082,7 +1082,7 @@
     "real": true
   },
   {
-    "id": "bell_001__asia",
+    "id": "bell_001__asia__chapter_1",
     "player_id": "bell_001",
     "name": "Bell",
     "region": "Asia",
@@ -1102,7 +1102,7 @@
     "real": true
   },
   {
-    "id": "scarlet_001__asia",
+    "id": "scarlet_001__asia__chapter_1",
     "player_id": "scarlet_001",
     "name": "Scarlet",
     "region": "Asia",
@@ -1122,7 +1122,7 @@
     "real": true
   },
   {
-    "id": "medusa_001__asia",
+    "id": "medusa_001__asia__chapter_1",
     "player_id": "medusa_001",
     "name": "Medusa",
     "region": "Asia",
@@ -1142,7 +1142,7 @@
     "real": true
   },
   {
-    "id": "sinooh_001__asia",
+    "id": "sinooh_001__asia__chapter_1",
     "player_id": "sinooh_001",
     "name": "SinOoh",
     "region": "Asia",
@@ -1162,7 +1162,7 @@
     "real": true
   },
   {
-    "id": "faxfox_001__asia",
+    "id": "faxfox_001__asia__chapter_1",
     "player_id": "faxfox_001",
     "name": "FaxFox",
     "region": "Asia",
@@ -1182,7 +1182,7 @@
     "real": true
   },
   {
-    "id": "sexyboy_001__asia",
+    "id": "sexyboy_001__asia__chapter_1",
     "player_id": "sexyboy_001",
     "name": "SexyBoy",
     "region": "Asia",
@@ -1203,7 +1203,7 @@
     "role_assigned": true
   },
   {
-    "id": "vivid_001__middle_east",
+    "id": "vivid_001__middle_east__chapter_1",
     "player_id": "vivid_001",
     "name": "Vivid",
     "region": "Middle East",
@@ -1223,7 +1223,7 @@
     "real": true
   },
   {
-    "id": "issa_001__middle_east",
+    "id": "issa_001__middle_east__chapter_1",
     "player_id": "issa_001",
     "name": "Issa",
     "region": "Middle East",
@@ -1243,7 +1243,7 @@
     "real": true
   },
   {
-    "id": "e11_001__middle_east",
+    "id": "e11_001__middle_east__chapter_1",
     "player_id": "e11_001",
     "name": "E11",
     "region": "Middle East",
@@ -1263,7 +1263,7 @@
     "real": true
   },
   {
-    "id": "king_001_ME__middle_east",
+    "id": "king_001_ME__middle_east__chapter_1",
     "player_id": "king_001_ME",
     "name": "K1nG",
     "region": "Middle East",
@@ -1283,7 +1283,7 @@
     "real": true
   },
   {
-    "id": "skite_001__middle_east",
+    "id": "skite_001__middle_east__chapter_1",
     "player_id": "skite_001",
     "name": "Skite",
     "region": "Middle East",
@@ -1303,7 +1303,7 @@
     "real": true
   },
   {
-    "id": "falcon_001__middle_east",
+    "id": "falcon_001__middle_east__chapter_1",
     "player_id": "falcon_001",
     "name": "Falcon",
     "region": "Middle East",
@@ -1323,7 +1323,7 @@
     "real": true
   },
   {
-    "id": "mshary_001__middle_east",
+    "id": "mshary_001__middle_east__chapter_1",
     "player_id": "mshary_001",
     "name": "Mshary",
     "region": "Middle East",
@@ -1343,7 +1343,7 @@
     "real": true
   },
   {
-    "id": "rapit_001__middle_east",
+    "id": "rapit_001__middle_east__chapter_1",
     "player_id": "rapit_001",
     "name": "Rapit",
     "region": "Middle East",
@@ -1364,7 +1364,7 @@
     "role_assigned": true
   },
   {
-    "id": "p5ek_001__middle_east",
+    "id": "p5ek_001__middle_east__chapter_1",
     "player_id": "p5ek_001",
     "name": "P5EK",
     "region": "Middle East",
@@ -1385,7 +1385,7 @@
     "role_assigned": true
   },
   {
-    "id": "leleo_001__brazil",
+    "id": "leleo_001__brazil__chapter_1",
     "player_id": "leleo_001",
     "name": "Leleo",
     "region": "Brazil",
@@ -1405,7 +1405,7 @@
     "real": true
   },
   {
-    "id": "kurtz_001__brazil",
+    "id": "kurtz_001__brazil__chapter_1",
     "player_id": "kurtz_001",
     "name": "Kurtz",
     "region": "Brazil",
@@ -1425,7 +1425,7 @@
     "real": true
   },
   {
-    "id": "wisheydp_001__brazil",
+    "id": "wisheydp_001__brazil__chapter_1",
     "player_id": "wisheydp_001",
     "name": "Wisheydp",
     "region": "Brazil",
@@ -1445,7 +1445,7 @@
     "real": true
   },
   {
-    "id": "nicks_001__brazil",
+    "id": "nicks_001__brazil__chapter_1",
     "player_id": "nicks_001",
     "name": "Nicks",
     "region": "Brazil",
@@ -1465,7 +1465,7 @@
     "real": true
   },
   {
-    "id": "drakonz_001__brazil",
+    "id": "drakonz_001__brazil__chapter_1",
     "player_id": "drakonz_001",
     "name": "DrakoNz",
     "region": "Brazil",
@@ -1485,7 +1485,7 @@
     "real": true
   },
   {
-    "id": "blackoutz_001__brazil",
+    "id": "blackoutz_001__brazil__chapter_1",
     "player_id": "blackoutz_001",
     "name": "Blackoutz",
     "region": "Brazil",
@@ -1505,7 +1505,7 @@
     "real": true
   },
   {
-    "id": "lasers_001__brazil",
+    "id": "lasers_001__brazil__chapter_1",
     "player_id": "lasers_001",
     "name": "Lasers",
     "region": "Brazil",
@@ -1525,7 +1525,7 @@
     "real": true
   },
   {
-    "id": "gordinn_001__brazil",
+    "id": "gordinn_001__brazil__chapter_1",
     "player_id": "gordinn_001",
     "name": "GordiNN",
     "region": "Brazil",
@@ -1545,7 +1545,7 @@
     "real": true
   },
   {
-    "id": "gustavo_001__brazil",
+    "id": "gustavo_001__brazil__chapter_1",
     "player_id": "gustavo_001",
     "name": "Gustavo",
     "region": "Brazil",
@@ -1566,7 +1566,7 @@
     "role_assigned": true
   },
   {
-    "id": "sheco_001__brazil",
+    "id": "sheco_001__brazil__chapter_1",
     "player_id": "sheco_001",
     "name": "Sheco",
     "region": "Brazil",
@@ -1587,7 +1587,7 @@
     "role_assigned": true
   },
   {
-    "id": "hillo_001__oceania",
+    "id": "hillo_001__oceania__chapter_1",
     "player_id": "hillo_001",
     "name": "Hillo",
     "region": "Oceania",
@@ -1607,7 +1607,7 @@
     "real": true
   },
   {
-    "id": "slaya_001__oceania",
+    "id": "slaya_001__oceania__chapter_1",
     "player_id": "slaya_001",
     "name": "Slaya",
     "region": "Oceania",
@@ -1627,7 +1627,7 @@
     "real": true
   },
   {
-    "id": "cat_001__oceania",
+    "id": "cat_001__oceania__chapter_1",
     "player_id": "cat_001",
     "name": "Cat",
     "region": "Oceania",
@@ -1648,7 +1648,7 @@
     "role_assigned": true
   },
   {
-    "id": "jahlyn_001__oceania",
+    "id": "jahlyn_001__oceania__chapter_1",
     "player_id": "jahlyn_001",
     "name": "Jahlyn",
     "region": "Oceania",
@@ -1668,7 +1668,7 @@
     "real": true
   },
   {
-    "id": "gheez_001__oceania",
+    "id": "gheez_001__oceania__chapter_1",
     "player_id": "gheez_001",
     "name": "Gheez",
     "region": "Oceania",
@@ -1688,7 +1688,7 @@
     "real": true
   },
   {
-    "id": "zoreh_001__oceania",
+    "id": "zoreh_001__oceania__chapter_1",
     "player_id": "zoreh_001",
     "name": "Zoreh",
     "region": "Oceania",
@@ -1708,7 +1708,7 @@
     "real": true
   },
   {
-    "id": "skyla_001__oceania",
+    "id": "skyla_001__oceania__chapter_1",
     "player_id": "skyla_001",
     "name": "Skyla",
     "region": "Oceania",
@@ -1728,7 +1728,7 @@
     "real": true
   },
   {
-    "id": "speedynd_001__oceania",
+    "id": "speedynd_001__oceania__chapter_1",
     "player_id": "speedynd_001",
     "name": "SpeedyND",
     "region": "Oceania",
@@ -1749,7 +1749,7 @@
     "role_assigned": true
   },
   {
-    "id": "link_001__oceania",
+    "id": "link_001__oceania__chapter_1",
     "player_id": "link_001",
     "name": "Link",
     "region": "Oceania",
@@ -1767,5 +1767,1813 @@
     },
     "flavor_text": "Link competed for Oceania in Chapter 1.",
     "real": true
+  },
+  {
+    "id": "bugha_001__na_central__chapter_2",
+    "player_id": "bugha_001",
+    "name": "Bugha",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 90,
+      "aim": 78,
+      "mechanics": 92,
+      "smarts": 88,
+      "clutch": 96
+    },
+    "flavor_text": "Bugha competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "zayt_001__na_central__chapter_2",
+    "player_id": "zayt_001",
+    "name": "Zayt",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 88,
+      "aim": 74,
+      "mechanics": 80,
+      "smarts": 92,
+      "clutch": 86
+    },
+    "flavor_text": "Zayt competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "saf_001__na_central__chapter_2",
+    "player_id": "saf_001",
+    "name": "Saf",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 84,
+      "aim": 70,
+      "mechanics": 76,
+      "smarts": 86,
+      "clutch": 80
+    },
+    "flavor_text": "Saf competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "clix_001__na_central__chapter_2",
+    "player_id": "clix_001",
+    "name": "Clix",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 70,
+      "aim": 88,
+      "mechanics": 68,
+      "smarts": 62,
+      "clutch": 58
+    },
+    "flavor_text": "Clix competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "bizzle_001__na_central__chapter_2",
+    "player_id": "bizzle_001",
+    "name": "Bizzle",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 78,
+      "aim": 82,
+      "mechanics": 74,
+      "smarts": 68,
+      "clutch": 72
+    },
+    "flavor_text": "Bizzle competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "dubs_001__na_central__chapter_2",
+    "player_id": "dubs_001",
+    "name": "Dubs",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 76,
+      "aim": 80,
+      "mechanics": 78,
+      "smarts": 74,
+      "clutch": 84
+    },
+    "flavor_text": "Dubs competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "megga_001__na_central__chapter_2",
+    "player_id": "megga_001",
+    "name": "Megga",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 72,
+      "aim": 76,
+      "mechanics": 74,
+      "smarts": 70,
+      "clutch": 80
+    },
+    "flavor_text": "Megga competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "mero_001__na_central__chapter_2",
+    "player_id": "mero_001",
+    "name": "Mero",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 82,
+      "aim": 78,
+      "mechanics": 84,
+      "smarts": 88,
+      "clutch": 90
+    },
+    "flavor_text": "Mero competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "reverse2k_001__na_central__chapter_2",
+    "player_id": "reverse2k_001",
+    "name": "Reverse2k",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 74,
+      "aim": 76,
+      "mechanics": 78,
+      "smarts": 76,
+      "clutch": 82
+    },
+    "flavor_text": "Reverse2k competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "deyy_001__na_central__chapter_2",
+    "player_id": "deyy_001",
+    "name": "Deyy",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 76,
+      "aim": 74,
+      "mechanics": 76,
+      "smarts": 78,
+      "clutch": 83
+    },
+    "flavor_text": "Deyy competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "dukez_001__na_central__chapter_2",
+    "player_id": "dukez_001",
+    "name": "Dukez",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 60,
+      "mechanics": 64,
+      "smarts": 58,
+      "clutch": 50
+    },
+    "flavor_text": "Dukez competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "justice_001__na_central__chapter_2",
+    "player_id": "justice_001",
+    "name": "Justice",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 44,
+      "clutch": 38
+    },
+    "flavor_text": "Justice competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "userz_001__na_central__chapter_2",
+    "player_id": "userz_001",
+    "name": "Userz",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 42,
+      "clutch": 36
+    },
+    "flavor_text": "Userz competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "acorn_001__na_central__chapter_2",
+    "player_id": "acorn_001",
+    "name": "Acorn",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 60,
+      "clutch": 44
+    },
+    "flavor_text": "Acorn competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "slackes_001__na_central__chapter_2",
+    "player_id": "slackes_001",
+    "name": "Slackes",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 35
+    },
+    "flavor_text": "Slackes competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "jahq_001__na_central__chapter_2",
+    "player_id": "jahq_001",
+    "name": "Jahq",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 33
+    },
+    "flavor_text": "Jahq competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "zexrow_001__na_central__chapter_2",
+    "player_id": "zexrow_001",
+    "name": "ZexRow",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 70,
+      "aim": 72,
+      "mechanics": 74,
+      "smarts": 76,
+      "clutch": 68
+    },
+    "flavor_text": "ZexRow competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "vinny1x_001__na_central__chapter_2",
+    "player_id": "vinny1x_001",
+    "name": "Vinny1x",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 58,
+      "mechanics": 60,
+      "smarts": 54,
+      "clutch": 48
+    },
+    "flavor_text": "Vinny1x competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "natehill_001__na_central__chapter_2",
+    "player_id": "natehill_001",
+    "name": "Nate Hill",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 52,
+      "aim": 50,
+      "mechanics": 54,
+      "smarts": 50,
+      "clutch": 44
+    },
+    "flavor_text": "Nate Hill competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "tfue_001__na_central__chapter_2",
+    "player_id": "tfue_001",
+    "name": "Tfue",
+    "region": "NA Central",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 84,
+      "aim": 78,
+      "mechanics": 86,
+      "smarts": 72,
+      "clutch": 46
+    },
+    "flavor_text": "Tfue competed for NA Central in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "redrush_001__europe__chapter_2",
+    "player_id": "redrush_001",
+    "name": "RedRush",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 80,
+      "aim": 78,
+      "mechanics": 82,
+      "smarts": 84,
+      "clutch": 88
+    },
+    "flavor_text": "RedRush competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "drobban_001__europe__chapter_2",
+    "player_id": "drobban_001",
+    "name": "Drobban",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 76,
+      "aim": 80,
+      "mechanics": 78,
+      "smarts": 80,
+      "clutch": 85
+    },
+    "flavor_text": "Drobban competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "wakie_001__europe__chapter_2",
+    "player_id": "wakie_001",
+    "name": "Wakie",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 74,
+      "aim": 76,
+      "mechanics": 76,
+      "smarts": 78,
+      "clutch": 83
+    },
+    "flavor_text": "Wakie competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "znappy_001__europe__chapter_2",
+    "player_id": "znappy_001",
+    "name": "Znappy",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 72,
+      "aim": 74,
+      "mechanics": 74,
+      "smarts": 76,
+      "clutch": 82
+    },
+    "flavor_text": "Znappy competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "andilex_001__europe__chapter_2",
+    "player_id": "andilex_001",
+    "name": "Andilex",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 78,
+      "aim": 82,
+      "mechanics": 80,
+      "smarts": 76,
+      "clutch": 86
+    },
+    "flavor_text": "Andilex competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "nayte_001__europe__chapter_2",
+    "player_id": "nayte_001",
+    "name": "Nayte",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 74,
+      "aim": 80,
+      "mechanics": 76,
+      "smarts": 74,
+      "clutch": 84
+    },
+    "flavor_text": "Nayte competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "jannisz_001__europe__chapter_2",
+    "player_id": "jannisz_001",
+    "name": "JannisZ",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 76,
+      "aim": 84,
+      "mechanics": 78,
+      "smarts": 74,
+      "clutch": 82
+    },
+    "flavor_text": "JannisZ competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "tayson_001__europe__chapter_2",
+    "player_id": "tayson_001",
+    "name": "TaySon",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 82,
+      "aim": 80,
+      "mechanics": 84,
+      "smarts": 86,
+      "clutch": 90
+    },
+    "flavor_text": "TaySon competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "mongraal_001__europe__chapter_2",
+    "player_id": "mongraal_001",
+    "name": "Mongraal",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 93,
+      "aim": 80,
+      "mechanics": 90,
+      "smarts": 72,
+      "clutch": 82
+    },
+    "flavor_text": "Mongraal competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "mitr0_001__europe__chapter_2",
+    "player_id": "mitr0_001",
+    "name": "Mitr0",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 80,
+      "aim": 76,
+      "mechanics": 85,
+      "smarts": 88,
+      "clutch": 80
+    },
+    "flavor_text": "Mitr0 competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "hen_001__europe__chapter_2",
+    "player_id": "hen_001",
+    "name": "Hen",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 60,
+      "aim": 62,
+      "mechanics": 58,
+      "smarts": 64,
+      "clutch": 55
+    },
+    "flavor_text": "Hen competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "chapix_001__europe__chapter_2",
+    "player_id": "chapix_001",
+    "name": "Chapix",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 64,
+      "aim": 68,
+      "mechanics": 65,
+      "smarts": 62,
+      "clutch": 60
+    },
+    "flavor_text": "Chapix competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "queasy_001__europe__chapter_2",
+    "player_id": "queasy_001",
+    "name": "Queasy",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 64,
+      "mechanics": 60,
+      "smarts": 66,
+      "clutch": 54
+    },
+    "flavor_text": "Queasy competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "trulex_001__europe__chapter_2",
+    "player_id": "trulex_001",
+    "name": "TruleX",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 42,
+      "clutch": 38
+    },
+    "flavor_text": "TruleX competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "jur3ky_001__europe__chapter_2",
+    "player_id": "jur3ky_001",
+    "name": "Jur3ky",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 36
+    },
+    "flavor_text": "Jur3ky competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "kiryache_001__europe__chapter_2",
+    "player_id": "kiryache_001",
+    "name": "Kiryache",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 38,
+      "aim": 36,
+      "mechanics": 38,
+      "smarts": 36,
+      "clutch": 30
+    },
+    "flavor_text": "Kiryache competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "stormyrite_001__europe__chapter_2",
+    "player_id": "stormyrite_001",
+    "name": "Stormyrite",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 34
+    },
+    "flavor_text": "Stormyrite competed for Europe in Chapter 2.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "toose_001__europe__chapter_2",
+    "player_id": "toose_001",
+    "name": "Toose",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Toose competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "setty_001__europe__chapter_2",
+    "player_id": "setty_001",
+    "name": "Setty",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 60,
+      "mechanics": 58,
+      "smarts": 62,
+      "clutch": 52
+    },
+    "flavor_text": "Setty competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "kami_001__europe__chapter_2",
+    "player_id": "kami_001",
+    "name": "Kami",
+    "region": "Europe",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 54,
+      "aim": 58,
+      "mechanics": 56,
+      "smarts": 60,
+      "clutch": 50
+    },
+    "flavor_text": "Kami competed for Europe in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "epikwhale_001__na_west__chapter_2",
+    "player_id": "epikwhale_001",
+    "name": "EpikWhale",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 78,
+      "aim": 74,
+      "mechanics": 84,
+      "smarts": 80,
+      "clutch": 88
+    },
+    "flavor_text": "EpikWhale competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "arkhram_001__na_west__chapter_2",
+    "player_id": "arkhram_001",
+    "name": "Arkhram",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 76,
+      "aim": 72,
+      "mechanics": 78,
+      "smarts": 82,
+      "clutch": 84
+    },
+    "flavor_text": "Arkhram competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "rehx_001__na_west__chapter_2",
+    "player_id": "rehx_001",
+    "name": "Rehx",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 74,
+      "aim": 76,
+      "mechanics": 76,
+      "smarts": 78,
+      "clutch": 82
+    },
+    "flavor_text": "Rehx competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "reet_001__na_west__chapter_2",
+    "player_id": "reet_001",
+    "name": "Reet",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 56,
+      "mechanics": 60,
+      "smarts": 55,
+      "clutch": 50
+    },
+    "flavor_text": "Reet competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "snacky_001__na_west__chapter_2",
+    "player_id": "snacky_001",
+    "name": "Snacky",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 44,
+      "mechanics": 48,
+      "smarts": 42,
+      "clutch": 36
+    },
+    "flavor_text": "Snacky competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "favs_001__na_west__chapter_2",
+    "player_id": "favs_001",
+    "name": "Favs",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 34
+    },
+    "flavor_text": "Favs competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "painful_001_NAW__na_west__chapter_2",
+    "player_id": "painful_001_NAW",
+    "name": "Painful",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 38,
+      "mechanics": 40,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Painful competed for NA West in Chapter 2.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "vicaros_001_NAW__na_west__chapter_2",
+    "player_id": "vicaros_001_NAW",
+    "name": "Vicaros",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 58,
+      "mechanics": 60,
+      "smarts": 64,
+      "clutch": 70
+    },
+    "flavor_text": "Vicaros competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "thegeneral_001_NAW__na_west__chapter_2",
+    "player_id": "thegeneral_001_NAW",
+    "name": "TheGeneral",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 40,
+      "mechanics": 42,
+      "smarts": 39,
+      "clutch": 34
+    },
+    "flavor_text": "TheGeneral competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "hiimtylerh_001_NAW__na_west__chapter_2",
+    "player_id": "hiimtylerh_001_NAW",
+    "name": "hiimtylerh",
+    "region": "NA West",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 37,
+      "aim": 35,
+      "mechanics": 37,
+      "smarts": 36,
+      "clutch": 30
+    },
+    "flavor_text": "hiimtylerh competed for NA West in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "jynx_001__oceania__chapter_2",
+    "player_id": "jynx_001",
+    "name": "Jynx",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 72,
+      "aim": 76,
+      "mechanics": 74,
+      "smarts": 78,
+      "clutch": 82
+    },
+    "flavor_text": "Jynx competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "worthy_001__oceania__chapter_2",
+    "player_id": "worthy_001",
+    "name": "Worthy",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 68,
+      "aim": 70,
+      "mechanics": 68,
+      "smarts": 74,
+      "clutch": 78
+    },
+    "flavor_text": "Worthy competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "volx_001__oceania__chapter_2",
+    "player_id": "volx_001",
+    "name": "Volx",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 66,
+      "aim": 68,
+      "mechanics": 64,
+      "smarts": 70,
+      "clutch": 76
+    },
+    "flavor_text": "Volx competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "jordan_001__oceania__chapter_2",
+    "player_id": "jordan_001",
+    "name": "Jordan",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 68,
+      "aim": 66,
+      "mechanics": 66,
+      "smarts": 72,
+      "clutch": 80
+    },
+    "flavor_text": "Jordan competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "jesse_001__oceania__chapter_2",
+    "player_id": "jesse_001",
+    "name": "Jesse",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 64,
+      "mechanics": 60,
+      "smarts": 66,
+      "clutch": 74
+    },
+    "flavor_text": "Jesse competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "muz_001__oceania__chapter_2",
+    "player_id": "muz_001",
+    "name": "Muz",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 56,
+      "mechanics": 60,
+      "smarts": 54,
+      "clutch": 50
+    },
+    "flavor_text": "Muz competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "looter_001__oceania__chapter_2",
+    "player_id": "looter_001",
+    "name": "Looter",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 42,
+      "clutch": 38
+    },
+    "flavor_text": "Looter competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "speedy_001__oceania__chapter_2",
+    "player_id": "speedy_001",
+    "name": "Speedy",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 36
+    },
+    "flavor_text": "Speedy competed for Oceania in Chapter 2.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "tuckz_001__oceania__chapter_2",
+    "player_id": "tuckz_001",
+    "name": "Tuckz",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 60,
+      "aim": 62,
+      "mechanics": 58,
+      "smarts": 56,
+      "clutch": 58
+    },
+    "flavor_text": "Tuckz competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "alecc_001__oceania__chapter_2",
+    "player_id": "alecc_001",
+    "name": "Alecc",
+    "region": "Oceania",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 64,
+      "aim": 62,
+      "mechanics": 60,
+      "smarts": 68,
+      "clutch": 74
+    },
+    "flavor_text": "Alecc competed for Oceania in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "king_002__brazil__chapter_2",
+    "player_id": "king_002",
+    "name": "K1nG",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 74,
+      "aim": 70,
+      "mechanics": 72,
+      "smarts": 76,
+      "clutch": 80
+    },
+    "flavor_text": "K1nG competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "phzin_001__brazil__chapter_2",
+    "player_id": "phzin_001",
+    "name": "Phzin",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 60,
+      "mechanics": 54,
+      "smarts": 52,
+      "clutch": 48
+    },
+    "flavor_text": "Phzin competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "cadu_001__brazil__chapter_2",
+    "player_id": "cadu_001",
+    "name": "Cadu",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 44,
+      "clutch": 40
+    },
+    "flavor_text": "Cadu competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "seeyun_001__brazil__chapter_2",
+    "player_id": "seeyun_001",
+    "name": "Seeyun",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 36
+    },
+    "flavor_text": "Seeyun competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "opai_001__brazil__chapter_2",
+    "player_id": "opai_001",
+    "name": "Opai",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 34
+    },
+    "flavor_text": "Opai competed for Brazil in Chapter 2.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "gsx_001__brazil__chapter_2",
+    "player_id": "gsx_001",
+    "name": "GSX",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "GSX competed for Brazil in Chapter 2.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "kitoz_001__brazil__chapter_2",
+    "player_id": "kitoz_001",
+    "name": "Kitoz",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 43,
+      "clutch": 38
+    },
+    "flavor_text": "Kitoz competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "frosty_001__brazil__chapter_2",
+    "player_id": "frosty_001",
+    "name": "Frosty",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 60,
+      "aim": 58,
+      "mechanics": 62,
+      "smarts": 64,
+      "clutch": 72
+    },
+    "flavor_text": "Frosty competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "mojak_001__brazil__chapter_2",
+    "player_id": "mojak_001",
+    "name": "Mojak",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 66,
+      "mechanics": 60,
+      "smarts": 64,
+      "clutch": 74
+    },
+    "flavor_text": "Mojak competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "pulga_001__brazil__chapter_2",
+    "player_id": "pulga_001",
+    "name": "Pulga",
+    "region": "Brazil",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 62,
+      "mechanics": 56,
+      "smarts": 60,
+      "clutch": 70
+    },
+    "flavor_text": "Pulga competed for Brazil in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "maufin_001__asia__chapter_2",
+    "player_id": "maufin_001",
+    "name": "Maufin",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 68,
+      "aim": 66,
+      "mechanics": 67,
+      "smarts": 70,
+      "clutch": 78
+    },
+    "flavor_text": "Maufin competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "ruri_001__asia__chapter_2",
+    "player_id": "ruri_001",
+    "name": "Ruri",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 64,
+      "mechanics": 60,
+      "smarts": 66,
+      "clutch": 74
+    },
+    "flavor_text": "Ruri competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "rizart_001__asia__chapter_2",
+    "player_id": "rizart_001",
+    "name": "RizArt",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 64,
+      "aim": 66,
+      "mechanics": 63,
+      "smarts": 65,
+      "clutch": 68
+    },
+    "flavor_text": "RizArt competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "qjac_001__asia__chapter_2",
+    "player_id": "qjac_001",
+    "name": "Qjac",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 68,
+      "mechanics": 60,
+      "smarts": 64,
+      "clutch": 76
+    },
+    "flavor_text": "Qjac competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "ryle_001__asia__chapter_2",
+    "player_id": "ryle_001",
+    "name": "Ryle",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 64,
+      "mechanics": 56,
+      "smarts": 60,
+      "clutch": 70
+    },
+    "flavor_text": "Ryle competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "rimuru_001__asia__chapter_2",
+    "player_id": "rimuru_001",
+    "name": "Rimuru",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 62,
+      "mechanics": 54,
+      "smarts": 58,
+      "clutch": 68
+    },
+    "flavor_text": "Rimuru competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "shamokiy_001__asia__chapter_2",
+    "player_id": "shamokiy_001",
+    "name": "Shamokiy",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 36
+    },
+    "flavor_text": "Shamokiy competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "allen_001__asia__chapter_2",
+    "player_id": "allen_001",
+    "name": "Allen",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 34
+    },
+    "flavor_text": "Allen competed for Asia in Chapter 2.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "zagou_001__asia__chapter_2",
+    "player_id": "zagou_001",
+    "name": "Zagou",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 54,
+      "clutch": 44
+    },
+    "flavor_text": "Zagou competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "wildhawk_001__asia__chapter_2",
+    "player_id": "wildhawk_001",
+    "name": "WildHawk",
+    "region": "Asia",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "WildHawk competed for Asia in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "vagnar_001__middle_east__chapter_2",
+    "player_id": "vagnar_001",
+    "name": "VagnaR",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 64,
+      "aim": 68,
+      "mechanics": 62,
+      "smarts": 66,
+      "clutch": 76
+    },
+    "flavor_text": "VagnaR competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "i4xpro_001__middle_east__chapter_2",
+    "player_id": "i4xpro_001",
+    "name": "I4xPRO",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 60,
+      "aim": 66,
+      "mechanics": 58,
+      "smarts": 62,
+      "clutch": 72
+    },
+    "flavor_text": "I4xPRO competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "dexefite_001__middle_east__chapter_2",
+    "player_id": "dexefite_001",
+    "name": "Dexefite",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 64,
+      "mechanics": 56,
+      "smarts": 60,
+      "clutch": 70
+    },
+    "flavor_text": "Dexefite competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "nm7_001__middle_east__chapter_2",
+    "player_id": "nm7_001",
+    "name": "Nm7",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 60,
+      "mechanics": 54,
+      "smarts": 58,
+      "clutch": 64
+    },
+    "flavor_text": "Nm7 competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "rv_001__middle_east__chapter_2",
+    "player_id": "rv_001",
+    "name": "Rv",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 34
+    },
+    "flavor_text": "Rv competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "modisk_001__middle_east__chapter_2",
+    "player_id": "modisk_001",
+    "name": "Modisk",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Modisk competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "kai_001__middle_east__chapter_2",
+    "player_id": "kai_001",
+    "name": "Kai",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 38,
+      "aim": 40,
+      "mechanics": 37,
+      "smarts": 36,
+      "clutch": 30
+    },
+    "flavor_text": "Kai competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "abufal7_001__middle_east__chapter_2",
+    "player_id": "abufal7_001",
+    "name": "AbuFal7",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 37,
+      "aim": 39,
+      "mechanics": 36,
+      "smarts": 35,
+      "clutch": 29
+    },
+    "flavor_text": "AbuFal7 competed for Middle East in Chapter 2.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "phantom_001__middle_east__chapter_2",
+    "player_id": "phantom_001",
+    "name": "Phantom",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 45,
+      "clutch": 40
+    },
+    "flavor_text": "Phantom competed for Middle East in Chapter 2.",
+    "real": true
+  },
+  {
+    "id": "hellonsteam_001__middle_east__chapter_2",
+    "player_id": "hellonsteam_001",
+    "name": "Hellonsteam",
+    "region": "Middle East",
+    "chapter": "Chapter 2",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 36,
+      "aim": 38,
+      "mechanics": 35,
+      "smarts": 34,
+      "clutch": 28
+    },
+    "flavor_text": "Hellonsteam competed for Middle East in Chapter 2.",
+    "real": true,
+    "role_assigned": true
   }
 ]

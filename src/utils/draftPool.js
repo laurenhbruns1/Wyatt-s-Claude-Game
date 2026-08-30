@@ -34,13 +34,17 @@ export function poolFor({ region, chapter, ultimate = false }) {
   return ultimate ? dedupeByPlayerId(players) : players.filter((p) => p.region === region && p.chapter === chapter)
 }
 
-/** Ultimate mode pools every region together — collapse a player who's
- * eligible in multiple regions (same player_id) down to one card. */
+/** Ultimate mode pools every region AND chapter together. Collapse a player
+ * who's eligible in multiple regions in the SAME chapter (same player_id +
+ * chapter) down to one card — but keep different chapters of the same
+ * player as separate cards, since their stats genuinely differ by era
+ * (e.g. Chapter 1 Bugha vs. Chapter 2 Bugha are different draftable
+ * versions, not duplicates). */
 function dedupeByPlayerId(pool) {
   const seen = new Set()
   const out = []
   for (const p of pool) {
-    const key = p.player_id ?? p.id
+    const key = `${p.player_id ?? p.id}__${p.chapter}`
     if (seen.has(key)) continue
     seen.add(key)
     out.push(p)
