@@ -3,9 +3,12 @@ import { getFitLevel } from '../utils/fit'
 import FitDot from './FitDot'
 
 export default function SquadBoard({ squad, activeSlotId }) {
+  // Open slots stay up front; a slot drops to the back the moment it's filled.
+  const orderedSlots = [...SLOTS.filter((s) => !squad[s.id]), ...SLOTS.filter((s) => squad[s.id])]
+
   return (
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-      {SLOTS.map((slot) => {
+      {orderedSlots.map((slot) => {
         const player = squad[slot.id]
         const isActive = slot.id === activeSlotId
         return (
