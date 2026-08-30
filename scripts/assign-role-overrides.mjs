@@ -93,6 +93,21 @@ const OVERRIDES = {
   'battal_001__middle_east__chapter_6': 'igl', // Middle East had no IGL
   'rew_001__middle_east__chapter_6': 'builder', // Middle East had no Builder
 
+  // Chapter 7
+  'shur4_001__europe__chapter_7': 'fragger', // Europe had no Fragger
+  'joshbot_001__europe__chapter_7': 'igl', // Europe had no IGL
+  'repairs_001__europe__chapter_7': 'builder', // Europe had no Builder
+  'oatley_001__oceania__chapter_7': 'fragger', // Oceania had no Fragger
+  'star_001__oceania__chapter_7': 'igl', // Oceania had no IGL
+  'mxnty_001__oceania__chapter_7': 'builder', // Oceania had no Builder
+  'axadasz_001__brazil__chapter_7': 'fragger', // Brazil had no Fragger
+  'edson_001__brazil__chapter_7': 'igl', // Brazil had no IGL
+  'night_001__brazil__chapter_7': 'builder', // Brazil had no Builder
+  'noelcap_001__asia__chapter_7': 'fragger', // Asia had no Fragger
+  'vix_001__middle_east__chapter_7': 'fragger', // Middle East had no Fragger
+  'cubix_001__middle_east__chapter_7': 'igl', // Middle East had no IGL
+  'saad_001__middle_east__chapter_7': 'builder', // Middle East had no Builder
+
   // Clutch stopped counting toward Fragger (Fighting is now the only route
   // in) — these regions' only Fragger had gotten there via a Clutch-highest
   // stat line, so they lost their sole Fragger once that stopped applying.

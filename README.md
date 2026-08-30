@@ -9,7 +9,7 @@ Fortnite (regions, chapters/eras).
 ## Data
 
 Players in `src/data/players.json` are **real competitive Fortnite players**,
-supplied chapter-by-chapter (Chapters 1-6 so far, 529 players) with real
+supplied chapter-by-chapter (Chapters 1-7 so far, 664 players) with real
 stats for five categories: Fighting, Aim, Mechanics, Smarts, Clutch.
 
 A few things about this data that are worth knowing:
@@ -29,7 +29,7 @@ A few things about this data that are worth knowing:
   player whose average of Fighting/Aim/Mechanics/Smarts is 86.5+ locks to
   Fragger outright, regardless of which single stat is technically highest
   (e.g. Chapter 1 Bugha, whose Smarts barely edges Fighting but who's
-  clearly an elite fight-winner at that level) — currently 10 players clear
+  clearly an elite fight-winner at that level) — currently 14 players clear
   this bar.
 - A **handful of players carry a manual role override** (`role_assigned:
   true`, shown as "(assigned)" on their card) instead of their stat-derived
@@ -78,7 +78,7 @@ stats, not names. In Ultimate it stacks with the Region/Position/Chapter
 dropdowns rather than replacing them.
 
 **The spin only offers chapters that actually have players loaded** (see
-`AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — Chapters 1-6 right now.
+`AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — Chapters 1-7 right now.
 This opens up automatically as more chapters are imported; no need to
 toggle anything by hand.
 
