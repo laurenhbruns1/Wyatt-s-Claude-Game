@@ -4154,11 +4154,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 64,
-      "aim": 68,
-      "mechanics": 62,
-      "smarts": 66,
-      "clutch": 60
+      "fighting": 72,
+      "aim": 76,
+      "mechanics": 70,
+      "smarts": 74,
+      "clutch": 68
     },
     "flavor_text": "Malibuca competed for Europe in Chapter 3.",
     "real": true
@@ -5967,11 +5967,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 68,
-      "aim": 72,
-      "mechanics": 66,
-      "smarts": 70,
-      "clutch": 64
+      "fighting": 76,
+      "aim": 80,
+      "mechanics": 74,
+      "smarts": 78,
+      "clutch": 72
     },
     "flavor_text": "Malibuca competed for Europe in Chapter 4.",
     "real": true
@@ -7621,11 +7621,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 70,
-      "aim": 74,
-      "mechanics": 68,
-      "smarts": 72,
-      "clutch": 66
+      "fighting": 78,
+      "aim": 82,
+      "mechanics": 76,
+      "smarts": 80,
+      "clutch": 74
     },
     "flavor_text": "Malibuca competed for Europe in Chapter 5.",
     "real": true
@@ -7741,11 +7741,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 54,
-      "aim": 56,
-      "mechanics": 52,
-      "smarts": 51,
-      "clutch": 46
+      "fighting": 62,
+      "aim": 64,
+      "mechanics": 60,
+      "smarts": 59,
+      "clutch": 54
     },
     "flavor_text": "vic0 competed for Europe in Chapter 5.",
     "real": true
@@ -7801,11 +7801,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 48,
-      "aim": 50,
-      "mechanics": 46,
-      "smarts": 45,
-      "clutch": 40
+      "fighting": 56,
+      "aim": 58,
+      "mechanics": 54,
+      "smarts": 53,
+      "clutch": 48
     },
     "flavor_text": "t3eny competed for Europe in Chapter 5.",
     "real": true
@@ -9234,11 +9234,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 58,
-      "aim": 60,
-      "mechanics": 56,
-      "smarts": 55,
-      "clutch": 50
+      "fighting": 66,
+      "aim": 68,
+      "mechanics": 64,
+      "smarts": 63,
+      "clutch": 58
     },
     "flavor_text": "vic0 competed for Europe in Chapter 6.",
     "real": true
@@ -9294,11 +9294,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 74,
-      "aim": 78,
-      "mechanics": 72,
-      "smarts": 76,
-      "clutch": 70
+      "fighting": 82,
+      "aim": 86,
+      "mechanics": 80,
+      "smarts": 84,
+      "clutch": 78
     },
     "flavor_text": "Malibuca competed for Europe in Chapter 6.",
     "real": true
@@ -11346,14 +11346,14 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
-      "fighting": 78,
-      "aim": 82,
-      "mechanics": 76,
-      "smarts": 78,
-      "clutch": 90
+      "fighting": 94,
+      "aim": 96,
+      "mechanics": 92,
+      "smarts": 90,
+      "clutch": 96
     },
     "flavor_text": "vic0 competed for Europe in Chapter 7.",
     "real": true
@@ -11366,14 +11366,14 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
-      "fighting": 82,
-      "aim": 86,
-      "mechanics": 80,
-      "smarts": 82,
-      "clutch": 92
+      "fighting": 96,
+      "aim": 98,
+      "mechanics": 94,
+      "smarts": 92,
+      "clutch": 98
     },
     "flavor_text": "Malibuca competed for Europe in Chapter 7.",
     "real": true
@@ -11669,14 +11669,14 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
-      "fighting": 56,
-      "aim": 58,
-      "mechanics": 54,
-      "smarts": 53,
-      "clutch": 56
+      "fighting": 90,
+      "aim": 92,
+      "mechanics": 88,
+      "smarts": 86,
+      "clutch": 90
     },
     "flavor_text": "Shxrk competed for Europe in Chapter 7.",
     "real": true
@@ -11689,14 +11689,14 @@
     "chapter": "Chapter 7",
     "org": "",
     "role_tags": [
-      "rotator"
+      "fragger"
     ],
     "stats": {
-      "fighting": 54,
-      "aim": 56,
-      "mechanics": 52,
-      "smarts": 51,
-      "clutch": 54
+      "fighting": 90,
+      "aim": 92,
+      "mechanics": 88,
+      "smarts": 86,
+      "clutch": 92
     },
     "flavor_text": "t3eny competed for Europe in Chapter 7.",
     "real": true
