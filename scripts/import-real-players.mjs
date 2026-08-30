@@ -71,7 +71,7 @@ function parseCsv(text) {
 // excluded — that's sim-only, not a role driver) is highest: Fighting ->
 // Fragger, Aim -> Rotator, Mechanics -> Builder, Smarts -> IGL. Ties go to
 // the first entry below tied for the max. An "elite overall" tier (avg of
-// Fighting/Aim/Mechanics/Smarts >= 90) overrides this and locks to Fragger
+// Fighting/Aim/Mechanics/Smarts >= 86.5) overrides this and locks to Fragger
 // outright — must match src/utils/fit.js's computeNaturalRole exactly.
 const STAT_TO_ROLE = [
   ['fighting', 'fragger'],
@@ -79,7 +79,7 @@ const STAT_TO_ROLE = [
   ['mechanics', 'builder'],
   ['smarts', 'igl'],
 ]
-const ELITE_AVG_THRESHOLD = 90
+const ELITE_AVG_THRESHOLD = 86.5
 
 function inferRoleTags(stats) {
   const eliteAverage = (stats.fighting + stats.aim + stats.mechanics + stats.smarts) / 4

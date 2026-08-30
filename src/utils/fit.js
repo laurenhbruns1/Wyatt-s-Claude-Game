@@ -17,7 +17,7 @@ const STAT_TO_ROLE = [
 // just one specialty) plays like a Fragger regardless of which single stat
 // happens to edge out the others — e.g. Chapter 1 Bugha (94/91/87/96), whose
 // Smarts barely edges Fighting but who's clearly an elite fight-winner.
-const ELITE_AVG_THRESHOLD = 90
+const ELITE_AVG_THRESHOLD = 86.5
 
 function eliteAverage(stats) {
   return (stats.fighting + stats.aim + stats.mechanics + stats.smarts) / 4

@@ -19,7 +19,7 @@ const STAT_TO_ROLE = [
   ['mechanics', 'builder'],
   ['smarts', 'igl'],
 ]
-const ELITE_AVG_THRESHOLD = 90
+const ELITE_AVG_THRESHOLD = 86.5
 
 function computeNaturalRole(stats) {
   const eliteAverage = (stats.fighting + stats.aim + stats.mechanics + stats.smarts) / 4

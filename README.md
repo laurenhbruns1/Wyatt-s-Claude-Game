@@ -26,10 +26,10 @@ A few things about this data that are worth knowing:
   hard lock, not a soft preference. **Clutch does not drive role
   assignment** — it's purely a tournament-sim stat (comeback mechanic), not
   a route into Fragger. **An "elite overall" tier overrides this**: a
-  player whose average of Fighting/Aim/Mechanics/Smarts is 90+ locks to
+  player whose average of Fighting/Aim/Mechanics/Smarts is 86.5+ locks to
   Fragger outright, regardless of which single stat is technically highest
   (e.g. Chapter 1 Bugha, whose Smarts barely edges Fighting but who's
-  clearly an elite fight-winner at that level) — currently 4 players clear
+  clearly an elite fight-winner at that level) — currently 10 players clear
   this bar.
 - A **handful of players carry a manual role override** (`role_assigned:
   true`, shown as "(assigned)" on their card) instead of their stat-derived
