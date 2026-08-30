@@ -108,6 +108,12 @@ only new rows get appended.
   Chapter 1 Bugha vs. Chapter 5 Bugha), each card's subtitle also shows which
   chapter it's from — the only mode where that's shown, since every other
   mode is already scoped to one chapter per spin
+- **Region Lock** — pick one region up front on the home screen (e.g. Asia);
+  every re-spin for the rest of the draft stays on that region and only
+  randomizes the chapter
+- **Chapter Lock** — pick one chapter up front on the home screen (e.g.
+  Chapter 3); every re-spin for the rest of the draft stays on that chapter
+  and only randomizes the region
 
 ## Tech
 

@@ -12252,11 +12252,11 @@
       "rotator"
     ],
     "stats": {
-      "fighting": 42,
-      "aim": 44,
-      "mechanics": 40,
-      "smarts": 39,
-      "clutch": 34
+      "fighting": 64,
+      "aim": 66,
+      "mechanics": 62,
+      "smarts": 60,
+      "clutch": 58
     },
     "flavor_text": "ZDog competed for Oceania in Chapter 7.",
     "real": true

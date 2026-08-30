@@ -5,13 +5,16 @@ import DraftScreen from './components/DraftScreen'
 import FreeDraftScreen from './components/FreeDraftScreen'
 import SimulationScreen from './components/SimulationScreen'
 import ResultScreen from './components/ResultScreen'
-import { MODES, PLAYSTYLES, SLOTS } from './data/constants'
+import { MODES, PLAYSTYLES, REGIONS, SLOTS } from './data/constants'
 import {
+  AVAILABLE_CHAPTERS,
   dailyPool,
   excludeDrafted,
   poolFor,
   spinCombo,
+  spinComboChapterLocked,
   spinComboForDaily,
+  spinComboRegionLocked,
   todaysSeed,
 } from './utils/draftPool'
 import { simulateSeason } from './utils/sim'
@@ -66,8 +69,9 @@ function poolHasAnyNeededRole(pool, roleIds) {
  * shows everyone eligible from that spin at once (mixed roles) instead of
  * one role at a time — each pick locks into its own slot, and the next
  * spin only needs to offer at least one of whichever roles are still
- * open, not necessarily all of them. */
-function rollWholeDraft(mode, squadSoFar) {
+ * open, not necessarily all of them. `locks` carries the user-chosen
+ * region/chapter for Region Lock/Chapter Lock mode. */
+function rollWholeDraft(mode, squadSoFar, locks = {}) {
   const pickIndex = Object.keys(squadSoFar).length
   const needed = remainingRoles(squadSoFar)
   let combo
@@ -80,6 +84,12 @@ function rollWholeDraft(mode, squadSoFar) {
       const seedSlot = pickIndex + attempt * 100
       combo = spinComboForDaily(seedSlot)
       pool = dailyPool(combo, seedSlot)
+    } else if (mode === 'region_lock') {
+      combo = spinComboRegionLocked(locks.region)
+      pool = poolFor(combo)
+    } else if (mode === 'chapter_lock') {
+      combo = spinComboChapterLocked(locks.chapter)
+      pool = poolFor(combo)
     } else {
       combo = spinCombo()
       pool = poolFor(combo)
@@ -94,6 +104,10 @@ export default function App() {
   const [screen, setScreen] = useState('home')
   const [mode, setMode] = useState('classic')
   const [playstyle, setPlaystyle] = useState('balanced')
+  // Region Lock / Chapter Lock only: the one thing the player picks up
+  // front before the draft starts re-spinning everything else.
+  const [lockedRegion, setLockedRegion] = useState(REGIONS[0])
+  const [lockedChapter, setLockedChapter] = useState(AVAILABLE_CHAPTERS[0])
 
   const [combo, setCombo] = useState(null)
   const [pool, setPool] = useState([])
@@ -117,6 +131,7 @@ export default function App() {
   const rotation = mode === 'rotation'
   const activeSlot = SLOTS[activeSlotIndex]
   const playstyleDef = PLAYSTYLES.find((p) => p.id === playstyle)
+  const locks = { region: lockedRegion, chapter: lockedChapter }
 
   function finishDraft(nextSquad) {
     setSquad(nextSquad)
@@ -144,7 +159,7 @@ export default function App() {
       setCombo(nextCombo)
       setPool(nextPool)
     } else {
-      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode, {})
+      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode, {}, locks)
       setCombo(nextCombo)
       setPool(nextPool)
     }
@@ -182,7 +197,7 @@ export default function App() {
     }
     const nextSquad = { ...squad, [role]: player }
     if (Object.keys(nextSquad).length < SLOTS.length) {
-      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode, nextSquad)
+      const { combo: nextCombo, pool: nextPool } = rollWholeDraft(mode, nextSquad, locks)
       setSquad(nextSquad)
       setCombo(nextCombo)
       setPool(nextPool)
@@ -217,6 +232,10 @@ export default function App() {
           setMode={setMode}
           playstyle={playstyle}
           setPlaystyle={setPlaystyle}
+          lockedRegion={lockedRegion}
+          setLockedRegion={setLockedRegion}
+          lockedChapter={lockedChapter}
+          setLockedChapter={setLockedChapter}
           onStart={handleStart}
           bestRecord={bestRecord}
           dailyDone={dailyDone}

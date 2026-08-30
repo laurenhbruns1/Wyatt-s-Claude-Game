@@ -107,6 +107,16 @@ export const MODES = [
     label: 'Ultimate/All-Time',
     blurb: 'No region/chapter restriction — draft across everything',
   },
+  {
+    id: 'region_lock',
+    label: 'Region Lock',
+    blurb: 'Pick one region up front — the chapter still re-spins every pick',
+  },
+  {
+    id: 'chapter_lock',
+    label: 'Chapter Lock',
+    blurb: 'Pick one chapter up front — the region still re-spins every pick',
+  },
 ]
 
 export const STAT_LABELS = {

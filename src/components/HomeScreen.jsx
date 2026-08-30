@@ -1,10 +1,15 @@
-import { MODES, PLAYSTYLES } from '../data/constants'
+import { MODES, PLAYSTYLES, REGIONS } from '../data/constants'
+import { AVAILABLE_CHAPTERS } from '../utils/draftPool'
 
 export default function HomeScreen({
   mode,
   setMode,
   playstyle,
   setPlaystyle,
+  lockedRegion,
+  setLockedRegion,
+  lockedChapter,
+  setLockedChapter,
   onStart,
   bestRecord,
   dailyDone,
@@ -53,6 +58,44 @@ export default function HomeScreen({
           ))}
         </div>
       </section>
+
+      {mode === 'region_lock' && (
+        <section>
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
+            Region
+          </h2>
+          <select
+            value={lockedRegion}
+            onChange={(e) => setLockedRegion(e.target.value)}
+            className="w-full rounded-xl border border-slate-700 bg-slate-900 px-4 py-3 text-sm text-slate-100"
+          >
+            {REGIONS.map((r) => (
+              <option key={r} value={r}>
+                {r}
+              </option>
+            ))}
+          </select>
+        </section>
+      )}
+
+      {mode === 'chapter_lock' && (
+        <section>
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
+            Chapter
+          </h2>
+          <select
+            value={lockedChapter}
+            onChange={(e) => setLockedChapter(e.target.value)}
+            className="w-full rounded-xl border border-slate-700 bg-slate-900 px-4 py-3 text-sm text-slate-100"
+          >
+            {AVAILABLE_CHAPTERS.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </section>
+      )}
 
       <section>
         <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">

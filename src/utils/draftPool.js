@@ -18,6 +18,24 @@ export function spinCombo(rng = Math.random) {
   }
 }
 
+/** Region Lock mode: the region is fixed by the player up front, only the
+ * chapter re-spins every pick. */
+export function spinComboRegionLocked(region, rng = Math.random) {
+  return {
+    region,
+    chapter: CHAPTER_POOL[Math.floor(rng() * CHAPTER_POOL.length)],
+  }
+}
+
+/** Chapter Lock mode: the chapter is fixed by the player up front, only the
+ * region re-spins every pick. */
+export function spinComboChapterLocked(chapter, rng = Math.random) {
+  return {
+    region: REGIONS[Math.floor(rng() * REGIONS.length)],
+    chapter,
+  }
+}
+
 export function todaysSeed() {
   return seedFromString(todayKey())
 }
