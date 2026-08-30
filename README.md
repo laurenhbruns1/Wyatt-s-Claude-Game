@@ -9,7 +9,7 @@ Fortnite (regions, chapters/eras).
 ## Data
 
 Players in `src/data/players.json` are **real competitive Fortnite players**,
-supplied chapter-by-chapter (Chapters 1-2 so far, 178 players) with real
+supplied chapter-by-chapter (Chapters 1-3 so far, 268 players) with real
 stats for five categories: Fighting, Aim, Mechanics, Smarts, Clutch.
 
 A few things about this data that are worth knowing:
@@ -60,7 +60,7 @@ premise is drafting off-role — the hard lock elsewhere would make that
 impossible.
 
 **The spin only offers chapters that actually have players loaded** (see
-`AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — Chapters 1-2 right now.
+`AVAILABLE_CHAPTERS` in `src/utils/draftPool.js`) — Chapters 1-3 right now.
 This opens up automatically as more chapters are imported; no need to
 toggle anything by hand.
 

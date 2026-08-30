@@ -42,6 +42,18 @@ const OVERRIDES = {
   'allen_001__asia__chapter_2': 'builder', // Asia had no Builder
   'hellonsteam_001__middle_east__chapter_2': 'igl', // Middle East had no IGL
   'abufal7_001__middle_east__chapter_2': 'builder', // Middle East had no Builder
+
+  // Chapter 3
+  'rexzi_001__na_west__chapter_3': 'fragger', // NA West had no Fragger
+  'yumi_001__na_west__chapter_3': 'igl', // NA West had no IGL
+  'basil_001__oceania__chapter_3': 'igl', // Oceania had no IGL
+  'jace_001__oceania__chapter_3': 'builder', // Oceania had no Builder
+  'retake_001__brazil__chapter_3': 'igl', // Brazil had no IGL
+  'nutifps_001__brazil__chapter_3': 'builder', // Brazil had no Builder
+  'albedo_001__asia__chapter_3': 'fragger', // Asia had no Fragger
+  'merem_001__asia__chapter_3': 'builder', // Asia had no Builder
+  'tacky_001__middle_east__chapter_3': 'igl', // Middle East had no IGL
+  'nachiiri_001__middle_east__chapter_3': 'builder', // Middle East had no Builder
 }
 
 const players = JSON.parse(readFileSync(DATA_PATH, 'utf8'))

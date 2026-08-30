@@ -3575,5 +3575,1815 @@
     "flavor_text": "Hellonsteam competed for Middle East in Chapter 2.",
     "real": true,
     "role_assigned": true
+  },
+  {
+    "id": "bugha_001__na_central__chapter_3",
+    "player_id": "bugha_001",
+    "name": "Bugha",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 88,
+      "aim": 76,
+      "mechanics": 90,
+      "smarts": 86,
+      "clutch": 92
+    },
+    "flavor_text": "Bugha competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "mero_001__na_central__chapter_3",
+    "player_id": "mero_001",
+    "name": "Mero",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 84,
+      "aim": 80,
+      "mechanics": 86,
+      "smarts": 90,
+      "clutch": 92
+    },
+    "flavor_text": "Mero competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "commandment_001__na_central__chapter_3",
+    "player_id": "commandment_001",
+    "name": "Commandment",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 58,
+      "mechanics": 60,
+      "smarts": 64,
+      "clutch": 56
+    },
+    "flavor_text": "Commandment competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "avery_001__na_central__chapter_3",
+    "player_id": "avery_001",
+    "name": "Avery",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 54,
+      "aim": 56,
+      "mechanics": 52,
+      "smarts": 58,
+      "clutch": 48
+    },
+    "flavor_text": "Avery competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "pamstou_001__na_central__chapter_3",
+    "player_id": "pamstou_001",
+    "name": "PaMstou",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 54,
+      "clutch": 44
+    },
+    "flavor_text": "PaMstou competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "fatch_001__na_central__chapter_3",
+    "player_id": "fatch_001",
+    "name": "Fatch",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 52,
+      "clutch": 42
+    },
+    "flavor_text": "Fatch competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "dukez_001__na_central__chapter_3",
+    "player_id": "dukez_001",
+    "name": "Dukez",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 68,
+      "aim": 64,
+      "mechanics": 70,
+      "smarts": 66,
+      "clutch": 62
+    },
+    "flavor_text": "Dukez competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "clix_001__na_central__chapter_3",
+    "player_id": "clix_001",
+    "name": "Clix",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 76,
+      "aim": 90,
+      "mechanics": 74,
+      "smarts": 68,
+      "clutch": 64
+    },
+    "flavor_text": "Clix competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "ajerss_001__na_central__chapter_3",
+    "player_id": "ajerss_001",
+    "name": "Ajerss",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 74,
+      "aim": 68,
+      "mechanics": 72,
+      "smarts": 64,
+      "clutch": 60
+    },
+    "flavor_text": "Ajerss competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "khanada_001__na_central__chapter_3",
+    "player_id": "khanada_001",
+    "name": "Khanada",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 64,
+      "mechanics": 60,
+      "smarts": 66,
+      "clutch": 58
+    },
+    "flavor_text": "Khanada competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "peterbot_001__na_central__chapter_3",
+    "player_id": "peterbot_001",
+    "name": "Peterbot",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 66,
+      "aim": 62,
+      "mechanics": 78,
+      "smarts": 68,
+      "clutch": 64
+    },
+    "flavor_text": "Peterbot competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "bylah_001__na_central__chapter_3",
+    "player_id": "bylah_001",
+    "name": "Bylah",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 46,
+      "clutch": 40
+    },
+    "flavor_text": "Bylah competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "deyy_001__na_central__chapter_3",
+    "player_id": "deyy_001",
+    "name": "Deyy",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 78,
+      "aim": 76,
+      "mechanics": 78,
+      "smarts": 80,
+      "clutch": 85
+    },
+    "flavor_text": "Deyy competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "muz_001__na_central__chapter_3",
+    "player_id": "muz_001",
+    "name": "Muz",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 54,
+      "mechanics": 58,
+      "smarts": 52,
+      "clutch": 48
+    },
+    "flavor_text": "Muz competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "acorn_001__na_central__chapter_3",
+    "player_id": "acorn_001",
+    "name": "Acorn",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 60,
+      "mechanics": 56,
+      "smarts": 74,
+      "clutch": 56
+    },
+    "flavor_text": "Acorn competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "cold_001__na_central__chapter_3",
+    "player_id": "cold_001",
+    "name": "Cold",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 64,
+      "aim": 66,
+      "mechanics": 62,
+      "smarts": 68,
+      "clutch": 60
+    },
+    "flavor_text": "Cold competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "zayt_001__na_central__chapter_3",
+    "player_id": "zayt_001",
+    "name": "Zayt",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 82,
+      "aim": 70,
+      "mechanics": 76,
+      "smarts": 88,
+      "clutch": 78
+    },
+    "flavor_text": "Zayt competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "saf_001__na_central__chapter_3",
+    "player_id": "saf_001",
+    "name": "Saf",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 78,
+      "aim": 66,
+      "mechanics": 72,
+      "smarts": 82,
+      "clutch": 74
+    },
+    "flavor_text": "Saf competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "zexrow_001__na_central__chapter_3",
+    "player_id": "zexrow_001",
+    "name": "ZexRow",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 68,
+      "aim": 70,
+      "mechanics": 72,
+      "smarts": 74,
+      "clutch": 66
+    },
+    "flavor_text": "ZexRow competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "vinny1x_001__na_central__chapter_3",
+    "player_id": "vinny1x_001",
+    "name": "Vinny1x",
+    "region": "NA Central",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 54,
+      "aim": 56,
+      "mechanics": 58,
+      "smarts": 52,
+      "clutch": 46
+    },
+    "flavor_text": "Vinny1x competed for NA Central in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "hen_001__europe__chapter_3",
+    "player_id": "hen_001",
+    "name": "Hen",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 66,
+      "aim": 68,
+      "mechanics": 64,
+      "smarts": 72,
+      "clutch": 64
+    },
+    "flavor_text": "Hen competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "queasy_001__europe__chapter_3",
+    "player_id": "queasy_001",
+    "name": "Queasy",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 66,
+      "aim": 72,
+      "mechanics": 68,
+      "smarts": 76,
+      "clutch": 66
+    },
+    "flavor_text": "Queasy competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "aqua_001__europe__chapter_3",
+    "player_id": "aqua_001",
+    "name": "Aqua",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 78,
+      "aim": 84,
+      "mechanics": 82,
+      "smarts": 80,
+      "clutch": 86
+    },
+    "flavor_text": "Aqua competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "veno_001__europe__chapter_3",
+    "player_id": "veno_001",
+    "name": "Veno",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 68,
+      "aim": 72,
+      "mechanics": 66,
+      "smarts": 64,
+      "clutch": 60
+    },
+    "flavor_text": "Veno competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "vadeal_001__europe__chapter_3",
+    "player_id": "vadeal_001",
+    "name": "Vadeal",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 66,
+      "mechanics": 60,
+      "smarts": 68,
+      "clutch": 58
+    },
+    "flavor_text": "Vadeal competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "jannisz_001__europe__chapter_3",
+    "player_id": "jannisz_001",
+    "name": "JannisZ",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 78,
+      "aim": 86,
+      "mechanics": 80,
+      "smarts": 76,
+      "clutch": 84
+    },
+    "flavor_text": "JannisZ competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "kami_001__europe__chapter_3",
+    "player_id": "kami_001",
+    "name": "Kami",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 68,
+      "mechanics": 64,
+      "smarts": 70,
+      "clutch": 58
+    },
+    "flavor_text": "Kami competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "setty_001__europe__chapter_3",
+    "player_id": "setty_001",
+    "name": "Setty",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 64,
+      "aim": 70,
+      "mechanics": 66,
+      "smarts": 72,
+      "clutch": 62
+    },
+    "flavor_text": "Setty competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "malibuca_001__europe__chapter_3",
+    "player_id": "malibuca_001",
+    "name": "Malibuca",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 64,
+      "aim": 68,
+      "mechanics": 62,
+      "smarts": 66,
+      "clutch": 60
+    },
+    "flavor_text": "Malibuca competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "merstach_001__europe__chapter_3",
+    "player_id": "merstach_001",
+    "name": "Merstach",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 62,
+      "aim": 66,
+      "mechanics": 60,
+      "smarts": 64,
+      "clutch": 58
+    },
+    "flavor_text": "Merstach competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "joefn_001__europe__chapter_3",
+    "player_id": "joefn_001",
+    "name": "JoeFN",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 44,
+      "clutch": 40
+    },
+    "flavor_text": "JoeFN competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "zandy_001__europe__chapter_3",
+    "player_id": "zandy_001",
+    "name": "zAndy",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 42,
+      "clutch": 38
+    },
+    "flavor_text": "zAndy competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "anas_001__europe__chapter_3",
+    "player_id": "anas_001",
+    "name": "Anas",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 36
+    },
+    "flavor_text": "Anas competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "pinq_001__europe__chapter_3",
+    "player_id": "pinq_001",
+    "name": "Pinq",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 34
+    },
+    "flavor_text": "Pinq competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "tayson_001__europe__chapter_3",
+    "player_id": "tayson_001",
+    "name": "TaySon",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 84,
+      "aim": 82,
+      "mechanics": 86,
+      "smarts": 88,
+      "clutch": 90
+    },
+    "flavor_text": "TaySon competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "mongraal_001__europe__chapter_3",
+    "player_id": "mongraal_001",
+    "name": "Mongraal",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 94,
+      "aim": 82,
+      "mechanics": 92,
+      "smarts": 74,
+      "clutch": 84
+    },
+    "flavor_text": "Mongraal competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "mitr0_001__europe__chapter_3",
+    "player_id": "mitr0_001",
+    "name": "Mitr0",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 82,
+      "aim": 78,
+      "mechanics": 87,
+      "smarts": 90,
+      "clutch": 82
+    },
+    "flavor_text": "Mitr0 competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "mrsavage_001__europe__chapter_3",
+    "player_id": "mrsavage_001",
+    "name": "MrSavage",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 84,
+      "aim": 86,
+      "mechanics": 90,
+      "smarts": 84,
+      "clutch": 86
+    },
+    "flavor_text": "MrSavage competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "benjyfishy_001__europe__chapter_3",
+    "player_id": "benjyfishy_001",
+    "name": "Benjyfishy",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 80,
+      "aim": 83,
+      "mechanics": 94,
+      "smarts": 82,
+      "clutch": 76
+    },
+    "flavor_text": "Benjyfishy competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "chapix_001__europe__chapter_3",
+    "player_id": "chapix_001",
+    "name": "Chapix",
+    "region": "Europe",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 66,
+      "aim": 70,
+      "mechanics": 67,
+      "smarts": 64,
+      "clutch": 62
+    },
+    "flavor_text": "Chapix competed for Europe in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "favs_001__na_west__chapter_3",
+    "player_id": "favs_001",
+    "name": "Favs",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 44,
+      "clutch": 38
+    },
+    "flavor_text": "Favs competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "snacky_001__na_west__chapter_3",
+    "player_id": "snacky_001",
+    "name": "Snacky",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 48,
+      "mechanics": 52,
+      "smarts": 46,
+      "clutch": 40
+    },
+    "flavor_text": "Snacky competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "parz_001__na_west__chapter_3",
+    "player_id": "parz_001",
+    "name": "Parz",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 58,
+      "mechanics": 54,
+      "smarts": 52,
+      "clutch": 48
+    },
+    "flavor_text": "Parz competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "rays_001__na_west__chapter_3",
+    "player_id": "rays_001",
+    "name": "Rays",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 36
+    },
+    "flavor_text": "Rays competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "rexzi_001__na_west__chapter_3",
+    "player_id": "rexzi_001",
+    "name": "Rexzi",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 34
+    },
+    "flavor_text": "Rexzi competed for NA West in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "dynamic_001__na_west__chapter_3",
+    "player_id": "dynamic_001",
+    "name": "Dynamic",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Dynamic competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "caleb_001__na_west__chapter_3",
+    "player_id": "caleb_001",
+    "name": "Caleb",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 38,
+      "aim": 40,
+      "mechanics": 37,
+      "smarts": 36,
+      "clutch": 30
+    },
+    "flavor_text": "Caleb competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "knzo_001__na_west__chapter_3",
+    "player_id": "knzo_001",
+    "name": "Knzo",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 37,
+      "aim": 39,
+      "mechanics": 36,
+      "smarts": 35,
+      "clutch": 29
+    },
+    "flavor_text": "Knzo competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "yumi_001__na_west__chapter_3",
+    "player_id": "yumi_001",
+    "name": "Yumi",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 43,
+      "clutch": 38
+    },
+    "flavor_text": "Yumi competed for NA West in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "kewl_001__na_west__chapter_3",
+    "player_id": "kewl_001",
+    "name": "Kewl",
+    "region": "NA West",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 41,
+      "clutch": 36
+    },
+    "flavor_text": "Kewl competed for NA West in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "volx_001__oceania__chapter_3",
+    "player_id": "volx_001",
+    "name": "Volx",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 68,
+      "aim": 70,
+      "mechanics": 66,
+      "smarts": 72,
+      "clutch": 78
+    },
+    "flavor_text": "Volx competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "looter_001__oceania__chapter_3",
+    "player_id": "looter_001",
+    "name": "Looter",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 46,
+      "clutch": 42
+    },
+    "flavor_text": "Looter competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "alex_001_OCE__oceania__chapter_3",
+    "player_id": "alex_001_OCE",
+    "name": "Alex",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 52,
+      "aim": 54,
+      "mechanics": 50,
+      "smarts": 48,
+      "clutch": 44
+    },
+    "flavor_text": "Alex competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "jynx_001__oceania__chapter_3",
+    "player_id": "jynx_001",
+    "name": "Jynx",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 74,
+      "aim": 78,
+      "mechanics": 76,
+      "smarts": 80,
+      "clutch": 86
+    },
+    "flavor_text": "Jynx competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "baily_001__oceania__chapter_3",
+    "player_id": "baily_001",
+    "name": "Baily",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 44,
+      "aim": 46,
+      "mechanics": 42,
+      "smarts": 40,
+      "clutch": 36
+    },
+    "flavor_text": "Baily competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "basil_001__oceania__chapter_3",
+    "player_id": "basil_001",
+    "name": "Basil",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 38,
+      "clutch": 34
+    },
+    "flavor_text": "Basil competed for Oceania in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "jace_001__oceania__chapter_3",
+    "player_id": "jace_001",
+    "name": "Jace",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 45,
+      "clutch": 40
+    },
+    "flavor_text": "Jace competed for Oceania in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "worthy_001__oceania__chapter_3",
+    "player_id": "worthy_001",
+    "name": "Worthy",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 70,
+      "aim": 72,
+      "mechanics": 70,
+      "smarts": 76,
+      "clutch": 80
+    },
+    "flavor_text": "Worthy competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "vortexm_001__oceania__chapter_3",
+    "player_id": "vortexm_001",
+    "name": "VortexM",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 47,
+      "clutch": 42
+    },
+    "flavor_text": "VortexM competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "sunz_001__oceania__chapter_3",
+    "player_id": "sunz_001",
+    "name": "Sunz",
+    "region": "Oceania",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Sunz competed for Oceania in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "phzin_001__brazil__chapter_3",
+    "player_id": "phzin_001",
+    "name": "Phzin",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 60,
+      "aim": 64,
+      "mechanics": 58,
+      "smarts": 56,
+      "clutch": 52
+    },
+    "flavor_text": "Phzin competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "king_002__brazil__chapter_3",
+    "player_id": "king_002",
+    "name": "K1nG",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 76,
+      "aim": 72,
+      "mechanics": 74,
+      "smarts": 78,
+      "clutch": 82
+    },
+    "flavor_text": "K1nG competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "xeat_001__brazil__chapter_3",
+    "player_id": "xeat_001",
+    "name": "Xeat",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 60,
+      "mechanics": 56,
+      "smarts": 54,
+      "clutch": 50
+    },
+    "flavor_text": "Xeat competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "kitoz_001__brazil__chapter_3",
+    "player_id": "kitoz_001",
+    "name": "Kitoz",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 47,
+      "clutch": 42
+    },
+    "flavor_text": "Kitoz competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "cadu_001__brazil__chapter_3",
+    "player_id": "cadu_001",
+    "name": "Cadu",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 52,
+      "aim": 54,
+      "mechanics": 50,
+      "smarts": 48,
+      "clutch": 44
+    },
+    "flavor_text": "Cadu competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "seeyun_001__brazil__chapter_3",
+    "player_id": "seeyun_001",
+    "name": "Seeyun",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 42,
+      "clutch": 38
+    },
+    "flavor_text": "Seeyun competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "retake_001__brazil__chapter_3",
+    "player_id": "retake_001",
+    "name": "Retake",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Retake competed for Brazil in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "barroso_001__brazil__chapter_3",
+    "player_id": "barroso_001",
+    "name": "Barroso",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 38,
+      "aim": 40,
+      "mechanics": 37,
+      "smarts": 36,
+      "clutch": 30
+    },
+    "flavor_text": "Barroso competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "nutifps_001__brazil__chapter_3",
+    "player_id": "nutifps_001",
+    "name": "Nutifps",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 45,
+      "clutch": 40
+    },
+    "flavor_text": "Nutifps competed for Brazil in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "gabzera_001__brazil__chapter_3",
+    "player_id": "gabzera_001",
+    "name": "Gabzera",
+    "region": "Brazil",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 52,
+      "aim": 54,
+      "mechanics": 50,
+      "smarts": 50,
+      "clutch": 46
+    },
+    "flavor_text": "Gabzera competed for Brazil in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "runa_001__asia__chapter_3",
+    "player_id": "runa_001",
+    "name": "Runa",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 52,
+      "aim": 54,
+      "mechanics": 50,
+      "smarts": 48,
+      "clutch": 44
+    },
+    "flavor_text": "Runa competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "pepoclip_001__asia__chapter_3",
+    "player_id": "pepoclip_001",
+    "name": "Pepoclip",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 46,
+      "clutch": 42
+    },
+    "flavor_text": "Pepoclip competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "zagou_001__asia__chapter_3",
+    "player_id": "zagou_001",
+    "name": "Zagou",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 58,
+      "mechanics": 54,
+      "smarts": 62,
+      "clutch": 50
+    },
+    "flavor_text": "Zagou competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "merem_001__asia__chapter_3",
+    "player_id": "merem_001",
+    "name": "Merem",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 43,
+      "clutch": 38
+    },
+    "flavor_text": "Merem competed for Asia in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "rainy_001__asia__chapter_3",
+    "player_id": "rainy_001",
+    "name": "Rainy",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 48,
+      "aim": 50,
+      "mechanics": 46,
+      "smarts": 45,
+      "clutch": 40
+    },
+    "flavor_text": "Rainy competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "albedo_001__asia__chapter_3",
+    "player_id": "albedo_001",
+    "name": "Albedo",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Albedo competed for Asia in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "wickesy_001__asia__chapter_3",
+    "player_id": "wickesy_001",
+    "name": "Wickesy",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 47,
+      "clutch": 42
+    },
+    "flavor_text": "Wickesy competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "allen_001__asia__chapter_3",
+    "player_id": "allen_001",
+    "name": "Allen",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 46,
+      "aim": 48,
+      "mechanics": 44,
+      "smarts": 42,
+      "clutch": 38
+    },
+    "flavor_text": "Allen competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "leyyner_001__asia__chapter_3",
+    "player_id": "leyyner_001",
+    "name": "Leyyner",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 38,
+      "aim": 40,
+      "mechanics": 37,
+      "smarts": 36,
+      "clutch": 30
+    },
+    "flavor_text": "Leyyner competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "tori_001__asia__chapter_3",
+    "player_id": "tori_001",
+    "name": "Tori",
+    "region": "Asia",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 37,
+      "aim": 39,
+      "mechanics": 36,
+      "smarts": 35,
+      "clutch": 29
+    },
+    "flavor_text": "Tori competed for Asia in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "fks_001__middle_east__chapter_3",
+    "player_id": "fks_001",
+    "name": "FKS",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 58,
+      "aim": 62,
+      "mechanics": 56,
+      "smarts": 60,
+      "clutch": 56
+    },
+    "flavor_text": "FKS competed for Middle East in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "bleed_001__middle_east__chapter_3",
+    "player_id": "bleed_001",
+    "name": "Bleed",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 42,
+      "aim": 44,
+      "mechanics": 40,
+      "smarts": 39,
+      "clutch": 34
+    },
+    "flavor_text": "Bleed competed for Middle East in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "vagnar_001__middle_east__chapter_3",
+    "player_id": "vagnar_001",
+    "name": "VagnaR",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 66,
+      "aim": 70,
+      "mechanics": 64,
+      "smarts": 68,
+      "clutch": 78
+    },
+    "flavor_text": "VagnaR competed for Middle East in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "fhd_001__middle_east__chapter_3",
+    "player_id": "fhd_001",
+    "name": "FHD",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "fragger"
+    ],
+    "stats": {
+      "fighting": 60,
+      "aim": 64,
+      "mechanics": 58,
+      "smarts": 62,
+      "clutch": 68
+    },
+    "flavor_text": "FHD competed for Middle East in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "gntl_001__middle_east__chapter_3",
+    "player_id": "gntl_001",
+    "name": "GntL",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 52,
+      "aim": 54,
+      "mechanics": 50,
+      "smarts": 49,
+      "clutch": 44
+    },
+    "flavor_text": "GntL competed for Middle East in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "nachiiri_001__middle_east__chapter_3",
+    "player_id": "nachiiri_001",
+    "name": "Nachiiri",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "builder"
+    ],
+    "stats": {
+      "fighting": 50,
+      "aim": 52,
+      "mechanics": 48,
+      "smarts": 47,
+      "clutch": 42
+    },
+    "flavor_text": "Nachiiri competed for Middle East in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "kalgamer_001__middle_east__chapter_3",
+    "player_id": "kalgamer_001",
+    "name": "Kalgamer",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 56,
+      "aim": 58,
+      "mechanics": 54,
+      "smarts": 55,
+      "clutch": 52
+    },
+    "flavor_text": "Kalgamer competed for Middle East in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "hero_001__middle_east__chapter_3",
+    "player_id": "hero_001",
+    "name": "Hero",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 60,
+      "aim": 62,
+      "mechanics": 58,
+      "smarts": 60,
+      "clutch": 58
+    },
+    "flavor_text": "Hero competed for Middle East in Chapter 3.",
+    "real": true
+  },
+  {
+    "id": "tacky_001__middle_east__chapter_3",
+    "player_id": "tacky_001",
+    "name": "Tacky",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "igl"
+    ],
+    "stats": {
+      "fighting": 40,
+      "aim": 42,
+      "mechanics": 38,
+      "smarts": 37,
+      "clutch": 32
+    },
+    "flavor_text": "Tacky competed for Middle East in Chapter 3.",
+    "real": true,
+    "role_assigned": true
+  },
+  {
+    "id": "balor_001__middle_east__chapter_3",
+    "player_id": "balor_001",
+    "name": "Balor",
+    "region": "Middle East",
+    "chapter": "Chapter 3",
+    "org": "",
+    "role_tags": [
+      "rotator"
+    ],
+    "stats": {
+      "fighting": 38,
+      "aim": 40,
+      "mechanics": 37,
+      "smarts": 36,
+      "clutch": 30
+    },
+    "flavor_text": "Balor competed for Middle East in Chapter 3.",
+    "real": true
   }
 ]
