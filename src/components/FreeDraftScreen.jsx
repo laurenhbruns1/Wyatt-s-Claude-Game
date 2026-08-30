@@ -36,7 +36,9 @@ function statAverage(stats) {
 export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
   const blind = mode === 'blind'
   const ultimate = mode === 'ultimate'
-  const classic = mode === 'classic'
+  // Any mode where stats are actually visible sorts best-first — only Blind
+  // (the whole point being "no stats") keeps its shuffled order instead.
+  const statsVisible = !blind
   const filledCount = Object.keys(squad).length
 
   // Ultimate's pool spans every region/chapter/player, so it's worth being
@@ -114,13 +116,13 @@ export default function FreeDraftScreen({ squad, pool, mode, onDraft }) {
           })
           // Pickable cards first — anything crossed off or role-filled sinks
           // to the bottom so there's nothing to scroll past to keep drafting.
-          // Classic mode additionally sorts the still-pickable group best-first
-          // (by overall stat average) since stats are visible anyway.
+          // Any mode with stats visible additionally sorts the still-pickable
+          // group best-first (by overall stat average).
           .sort((a, b) => {
             const sunkA = a.disabled || a.crossedOff ? 1 : 0
             const sunkB = b.disabled || b.crossedOff ? 1 : 0
             if (sunkA !== sunkB) return sunkA - sunkB
-            if (classic) return statAverage(b.player.stats) - statAverage(a.player.stats)
+            if (statsVisible) return statAverage(b.player.stats) - statAverage(a.player.stats)
             return 0
           })
           .map(({ player, role, crossedOff, disabled }) => (
